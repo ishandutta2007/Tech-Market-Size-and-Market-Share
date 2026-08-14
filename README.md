@@ -25,8 +25,9 @@
 | **B2C E-commerce**<br>(Retail & Consumer Goods) | ~\$2.0 Trillion | ~\$6.3 Trillion | 1. **Amazon** (22.0%)<br>2. **Alibaba (Taobao/Tmall)** (18.0%)<br>3. **JD.com** (10.0%)<br>4. **Pinduoduo** (8.0%) |
 | **B2B E-commerce**<br>(Wholesale Procurement) | ~\$500 Billion | ~\$22.0 Trillion | 1. **Alibaba.com**<br>2. **Amazon Business**<br>3. **Global Sources**<br>4. **IndiaMART** |
 | **AI Chips & GPUs**<br>(Data Center & AI Processors) | ~\$130 Billion | - | 1. **Nvidia** (85.0%)<br>2. **AMD** (10.0%)<br>3. **Intel** (3.0%) |
+| **General Semiconductors**<br>(Memory, Mobile SoCs & CPUs) | ~\$470 Billion | - | 1. **Samsung (Memory)**<br>2. **Intel**<br>3. **Qualcomm**<br>4. **Broadcom**<br>5. **SK Hynix** |
 | **Streaming Video**<br>(SVOD Platforms) | ~\$120 Billion | - | 1. **Netflix** (22.0%)<br>2. **Amazon Prime Video** (18.0%)<br>3. **Disney+** (15.0%)<br>4. **Warner Bros (Max)** (10.0%) |
-| **Total Estimated Market** | **~\$5.275 Trillion** | **~\$28.3 Trillion** | **Combined major tech sectors listed above** |
+| **Total Estimated Market** | **~\$5.745 Trillion** | **~\$28.3 Trillion** | **Combined major tech sectors listed above** |
 
 ---
 
