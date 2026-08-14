@@ -23,9 +23,9 @@
 | **PC Hardware**<br>(Laptops & Desktops) | ~\$220 Billion | - | 1. **Lenovo** (26.0%)<br>2. **HP Inc.** (21.0%)<br>3. **Dell** (15.0%)<br>4. **Apple** (9.5%)<br>5. **ASUS** (7.0%)<br>6. **Acer** (6.5%)<br>7. **Samsung** (2.5%)<br>8. **Huawei** (2.0%)<br>...<br>**. Microsoft (Surface)** (1.5%) |
 | **Smartphones**<br>(Hardware Devices) | ~\$520 Billion | - | 1. **Apple** (20.0%)<br>2. **Samsung** (19.5%)<br>3. **Xiaomi** (14.0%)<br>4. **Oppo** (9.0%)<br>5. **Transsion** (8.5%) |
 | **B2C E-commerce**<br>(Retail & Consumer Goods) | ~\$2.0 Trillion | ~\$6.3 Trillion | 1. **Amazon** (22.0%)<br>2. **Alibaba (Taobao/Tmall)** (18.0%)<br>3. **JD.com** (10.0%)<br>4. **Pinduoduo** (8.0%) |
-| **B2B E-commerce**<br>(Wholesale Procurement) | ~\$500 Billion | ~\$22.0 Trillion | 1. **Alibaba.com**<br>2. **Amazon Business**<br>3. **Global Sources**<br>4. **IndiaMART** |
+| **B2B E-commerce**<br>(Wholesale Procurement) | ~\$500 Billion | ~\$22.0 Trillion | 1. **Alibaba.com** (15.0%)<br>2. **Amazon Business** (12.0%)<br>3. **Global Sources** (5.0%)<br>4. **IndiaMART** (3.0%) |
 | **AI Chips & GPUs**<br>(Data Center & AI Processors) | ~\$130 Billion | - | 1. **Nvidia** (85.0%)<br>2. **AMD** (10.0%)<br>3. **Intel** (3.0%) |
-| **General Semiconductors**<br>(Memory, Mobile SoCs & CPUs) | ~\$470 Billion | - | 1. **Samsung (Memory)**<br>2. **Intel**<br>3. **Qualcomm**<br>4. **Broadcom**<br>5. **SK Hynix** |
+| **General Semiconductors**<br>(Memory, Mobile SoCs & CPUs) | ~\$470 Billion | - | 1. **Samsung (Memory/LSI)** (11.0%)<br>2. **Intel** (10.5%)<br>3. **Qualcomm** (7.5%)<br>4. **Broadcom** (7.0%)<br>5. **SK Hynix** (6.5%) |
 | **Streaming Video**<br>(SVOD Platforms) | ~\$120 Billion | - | 1. **Netflix** (22.0%)<br>2. **Amazon Prime Video** (18.0%)<br>3. **Disney+** (15.0%)<br>4. **Warner Bros (Max)** (10.0%) |
 | **Total Estimated Market** | **~\$5.745 Trillion** | **~\$28.3 Trillion** | **Combined major tech sectors listed above** |
 
