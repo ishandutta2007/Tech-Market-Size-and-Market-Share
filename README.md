@@ -1,6 +1,10 @@
-# Tech-Market-Size-and-Market-Share
+<div align="center">
+  <img src="assets/banner.svg" alt="Tech Market Size Banner" width="100%" />
+</div>
 
-### 📊 Market Size and Market Share by Tech Sector (2025–2026 Estimates)
+# 🌐 Tech-Market-Size-and-Market-Share 🚀
+
+### 📊 Market Size and Market Share by Tech Sector (2025–2026 Estimates) 📈
 
 | **Sector** | **Global Market Size** | **Market Leaders & Competitors (Estimated Mean Share %)** |
 | :--- | :--- | :--- |
@@ -13,10 +17,11 @@
 | **E-commerce**<br>(Online Retail) | ~\$6.3 Trillion | 1. **Amazon** (22.0%)<br>2. **Alibaba** (18.0%)<br>3. **JD.com** (10.0%)<br>4. **Pinduoduo** (8.0%) |
 | **AI Chips & GPUs**<br>(Data Center & AI Processors) | ~\$130 Billion | 1. **Nvidia** (85.0%)<br>2. **AMD** (10.0%)<br>3. **Intel** (3.0%) |
 | **Streaming Video**<br>(SVOD Platforms) | ~\$120 Billion | 1. **Netflix** (22.0%)<br>2. **Amazon Prime Video** (18.0%)<br>3. **Disney+** (15.0%)<br>4. **Warner Bros (Max)** (10.0%) |
+| **Total Estimated Market** | **~\$9.075 Trillion** | **Combined major tech sectors listed above** |
 
 ---
 
-### 🔎 Market Dynamics Highlights
-* **The Advertising Long-Tail:** While Google and Meta dominate, Chinese tech conglomerates (ByteDance, Alibaba, Tencent) hold ranks 4, 5, and 6 due to their massive domestic digital ad networks. Microsoft sits directly at **Rank 7** primarily due to LinkedIn Ads and Bing search traffic.
-* **PC Consolidation:** The "Big 3" (Lenovo, HP, and Dell) command over 60% of the entire hardware market. This leaves ranks 4–8 fighting for single-digit slices, while Microsoft's high-end Surface lineup operates as a niche premium ecosystem under 2% market volume.
+### 🔎 Market Dynamics Highlights 💡
+* 🎯 **The Advertising Long-Tail:** While Google and Meta dominate, Chinese tech conglomerates (ByteDance, Alibaba, Tencent) hold ranks 4, 5, and 6 due to their massive domestic digital ad networks. Microsoft sits directly at **Rank 7** primarily due to LinkedIn Ads and Bing search traffic.
+* 💻 **PC Consolidation:** The "Big 3" (Lenovo, HP, and Dell) command over 60% of the entire hardware market. This leaves ranks 4–8 fighting for single-digit slices, while Microsoft's high-end Surface lineup operates as a niche premium ecosystem under 2% market volume.
 
