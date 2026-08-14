@@ -17,7 +17,7 @@
 | **Sector** | **Global Market Size (Revenue)** | **Estimated GMV** | **Market Leaders & Competitors (Estimated Mean Share %)** |
 | :--- | :--- | :--- | :--- |
 | **SaaS**<br>(Software as a Service) | ~\$488 Billion | - | 1. **Salesforce** (14.0%)<br>2. **Microsoft** (14.0%)<br>3. **Adobe** (6.0%)<br>4. **SAP / Oracle** (5.0%) |
-| **Generative AI & Foundation Models**<br>(LLMs, APIs & Assistants) | ~\$60 Billion | - | 1. **OpenAI** (40.0%)<br>2. **Google (Gemini)** (20.0%)<br>3. **Anthropic** (10.0%)<br>4. **xAI (Grok)** (5.0%)<br>5. **DeepSeek / Zhipu** (4.0%)<br>6. **ElevenLabs** (2.0%) |
+| **Generative AI & Foundation Models**<br>(LLMs, APIs & Assistants) | ~\$60 Billion | - | 1. **OpenAI** (40.0%)<br>2. **Google (Gemini)** (20.0%)<br>3. **Anthropic** (10.0%)<br>4. **xAI (Grok)** (5.0%)<br>5. **DeepSeek** (4.0%)<br>6. **Zhipu** (4.0%)<br>7. **ElevenLabs** (2.0%) |
 | **Cloud Infrastructure**<br>(IaaS/PaaS) | ~\$410 Billion | - | 1. **Amazon (AWS)** (31.0%)<br>2. **Microsoft (Azure)** (24.0%)<br>3. **Google Cloud** (12.0%) |
 | **Digital Advertising**<br>(Search, Video & Social Ads) | ~\$662 Billion | - | 1. **Google** (34.5%)<br>2. **Meta (Facebook)** (22.5%)<br>3. **Amazon** (8.5%)<br>4. **ByteDance (TikTok)** (5.0%)<br>5. **Alibaba** (4.0%)<br>6. **Tencent** (3.0%)<br>7. **Microsoft (Bing/LinkedIn)** (2.5%)<br>8. **Apple** (1.5%) |
 | **Gaming**<br>(Software, Hardware, Subscriptions) | ~\$225 Billion | - | 1. **Tencent** (14.0%)<br>2. **Sony (PlayStation)** (12.0%)<br>3. **Microsoft (Xbox)** (9.5%)<br>4. **Nintendo** (7.5%) |
