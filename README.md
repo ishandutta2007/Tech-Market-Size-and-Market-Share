@@ -17,7 +17,7 @@
 | **Sector** | **Global Market Size (Revenue)** | **Estimated GMV** | **Market Leaders & Competitors (Estimated Mean Share %)** |
 | :--- | :--- | :--- | :--- |
 | **SaaS**<br>(Enterprise Software) | ~\$488 Billion | - | 1. **Microsoft** (18.0%)<br>2. **Salesforce** (12.5%)<br>3. **SAP** (5.5%)<br>4. **Oracle** (4.5%)<br>5. **Adobe** (4.0%)<br>6. **Google (Workspace)** (3.0%) |
-| **Generative AI & Foundation Models**<br>(LLMs, APIs & Subscriptions) | ~\$60 Billion | - | 1. **OpenAI** (45.0%)<br>2. **Google (Gemini)** (18.0%)<br>3. **Anthropic** (12.0%)<br>4. **xAI (Grok)** (5.0%)<br>5. **DeepSeek / Zhipu** (6.0%)<br>6. **ElevenLabs** (3.0%) |
+| **Generative AI & Foundation Models**<br>(LLMs, APIs & Subscriptions) | ~\$60 Billion | - | 1. **OpenAI** (33.0%)<br>2. **Anthropic** (25.0%)<br>3. **Google (Gemini)** (18.5%)<br>4. **xAI (Grok)** (5.0%)<br>5. **DeepSeek** (4.5%)<br>6. **Zhipu AI** (2.5%)<br>7. **MiniMax** (2.0%)<br>8. **Moonshot AI (Kimi)** (1.5%)<br>9. **Mistral AI** (2.0%)<br>10. **ElevenLabs** (1.5%)<br>11. **Cohere** (1.5%) |
 | **Cloud Infrastructure**<br>(IaaS/PaaS/Hosted Cloud) | ~\$410 Billion | - | 1. **Amazon (AWS)** (29.0%)<br>2. **Microsoft (Azure)** (20.0%)<br>3. **Google Cloud** (13.0%)<br>4. **Alibaba Cloud** (4.0%)<br>5. **Oracle Cloud** (3.0%) |
 | **Digital Advertising**<br>(Search, Social, Video & Retail Ads) | ~\$662 Billion | - | 1. **Meta (Facebook/Instagram)** (26.8%)<br>2. **Google (Alphabet)** (26.4%)<br>3. **Amazon Ads** (9.0%)<br>4. **ByteDance (TikTok/Douyin)** (7.9%)<br>5. **Alibaba** (4.5%)<br>6. **Tencent** (2.5%)<br>7. **Microsoft (LinkedIn/Bing)** (2.1%)<br>8. **Apple** (1.6%) |
 | **Gaming**<br>(Software, Services & Hardware) | ~\$225 Billion | - | 1. **Tencent** (16.0%)<br>2. **Sony (PlayStation)** (14.5%)<br>3. **Microsoft (Xbox / ABK)** (12.5%)<br>4. **Apple (App Store)** (7.5%)<br>5. **Nintendo** (6.0%)<br>6. **NetEase** (5.5%) |
@@ -33,6 +33,8 @@
 ---
 
 ### 🔎 Market Dynamics Highlights 💡
+* 🤖 **The Generative AI "Bifurcation" (Consumer vs. Enterprise):** While OpenAI maintains leadership in direct consumer subscriptions (~60%+ of web AI traffic), **Anthropic (Claude)** has surged to capture **~32-38% of enterprise API / coding spend** (as tracked by Menlo Ventures and Ramp data), closely rivaling OpenAI in business revenue. Google Gemini captures ~18.5% through enterprise Workspace & GCP integration.
+* 🇨🇳 **China's Frontier AI Landscape:** Beyond open-weights leader **DeepSeek**, China's top foundation model startups—notably **Zhipu AI** (GLM), **MiniMax** (global consumer/voice apps), and **Moonshot AI** (Kimi's long-context breakthroughs)—collectively command ~10-12% of the global foundation model market.
 * 🎯 **Digital Advertising Realignment:** Meta and Google now each control ~26-27% of global digital advertising, with Meta surging due to AI-driven ad performance (Advantage+). Meanwhile, ByteDance (TikTok + Douyin) and Amazon Ads have expanded significantly to claim ~8% and ~9% global shares respectively.
 * 🛍️ **Global E-commerce vs. Regional Nuance:** While Amazon commands ~38% of US e-commerce, on a *global* GMV basis Alibaba Group (Taobao/Tmall) leads at >20%, followed by Amazon (~12.5%) and fast-growing PDD Holdings / Temu (~10.5%).
 * ☁️ **Cloud & AI Hyperscaling:** The Cloud Infrastructure (IaaS/PaaS) "Big Three" (AWS, Azure, GCP) command ~62% of enterprise cloud spend, with Azure & GCP closing the gap on AWS via generative AI workloads.
