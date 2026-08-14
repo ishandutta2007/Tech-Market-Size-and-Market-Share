@@ -4,6 +4,14 @@
 
 # 🌐 Tech-Market-Size-and-Market-Share 🚀
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> **A comprehensive open-source database tracking global technology market sizes, industry revenue, and competitive market shares across key sectors including SaaS, Cloud Infrastructure, AI GPUs, E-commerce, and Digital Advertising.**
+
 ### 📊 Market Size and Market Share by Tech Sector (2025–2026 Estimates) 📈
 
 | **Sector** | **Global Market Size** | **Market Leaders & Competitors (Estimated Mean Share %)** |
@@ -14,10 +22,13 @@
 | **Gaming**<br>(Software, Hardware, Subscriptions) | ~\$225 Billion | 1. **Tencent** (14.0%)<br>2. **Sony (PlayStation)** (12.0%)<br>3. **Microsoft (Xbox)** (9.5%)<br>4. **Nintendo** (7.5%) |
 | **PC Hardware**<br>(Laptops & Desktops) | ~\$220 Billion | 1. **Lenovo** (26.0%)<br>2. **HP Inc.** (21.0%)<br>3. **Dell** (15.0%)<br>4. **Apple** (9.5%)<br>5. **ASUS** (7.0%)<br>6. **Acer** (6.5%)<br>7. **Samsung** (2.5%)<br>8. **Huawei** (2.0%)<br>...<br>**. Microsoft (Surface)** (1.5%) |
 | **Smartphones**<br>(Hardware Devices) | ~\$520 Billion | 1. **Apple** (20.0%)<br>2. **Samsung** (19.5%)<br>3. **Xiaomi** (14.0%)<br>4. **Oppo** (9.0%)<br>5. **Transsion** (8.5%) |
-| **E-commerce**<br>(Online Retail) | ~\$6.3 Trillion | 1. **Amazon** (22.0%)<br>2. **Alibaba** (18.0%)<br>3. **JD.com** (10.0%)<br>4. **Pinduoduo** (8.0%) |
+| **B2C E-commerce\***<br>(Retail & Consumer Goods) | ~\$6.3 Trillion | 1. **Amazon** (22.0%)<br>2. **Alibaba (Taobao/Tmall)** (18.0%)<br>3. **JD.com** (10.0%)<br>4. **Pinduoduo** (8.0%) |
+| **B2B E-commerce\***<br>(Wholesale Procurement) | ~\$22.0 Trillion | 1. **Alibaba.com**<br>2. **Amazon Business**<br>3. **Global Sources**<br>4. **IndiaMART** |
 | **AI Chips & GPUs**<br>(Data Center & AI Processors) | ~\$130 Billion | 1. **Nvidia** (85.0%)<br>2. **AMD** (10.0%)<br>3. **Intel** (3.0%) |
 | **Streaming Video**<br>(SVOD Platforms) | ~\$120 Billion | 1. **Netflix** (22.0%)<br>2. **Amazon Prime Video** (18.0%)<br>3. **Disney+** (15.0%)<br>4. **Warner Bros (Max)** (10.0%) |
-| **Total Estimated Market** | **~\$9.075 Trillion** | **Combined major tech sectors listed above** |
+| **Total Estimated Market** | **~\$31.075 Trillion** | **Combined major tech sectors listed above** |
+
+<small>*\* Note: E-commerce market size figures reflect Total Gross Merchandise Volume (GMV) of goods exchanged, rather than the standalone corporate revenue of marketplace operators.*</small>
 
 ---
 
