@@ -4,7 +4,7 @@ param (
 )
 
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
-$DataFile = Join-Path $ProjectRoot "data/market_share_$Year.json"
+$DataFile = Join-Path $ProjectRoot "data\market_share_$Year.json"
 $OutputFile = Join-Path $ProjectRoot $Output
 
 if (-not (Test-Path $DataFile)) {
@@ -21,6 +21,7 @@ $CompanyMappings = @{
     "Microsoft (LinkedIn/Bing)" = "Microsoft";
     "Microsoft (Surface)" = "Microsoft";
     "Microsoft (Xbox)" = "Microsoft";
+    "Microsoft (Security)" = "Microsoft";
     "Microsoft Azure Quantum" = "Microsoft";
     "Google" = "Alphabet (Google)";
     "Google (Alphabet)" = "Alphabet (Google)";
@@ -64,52 +65,68 @@ $CompanyMappings = @{
     "PDD Holdings" = "PDD Holdings";
     "PDD Holdings (Temu/Pinduoduo)" = "PDD Holdings";
     "JD.com" = "JD.com";
-    "OpenAI" = "OpenAI";
-    "Anthropic" = "Anthropic";
-    "Sony" = "Sony";
-    "Sony (PlayStation)" = "Sony";
-    "Crunchyroll (Sony)" = "Sony";
-    "Netflix" = "Netflix";
+    "Cisco" = "Cisco";
+    "Cisco (Security)" = "Cisco";
+    "Huawei" = "Huawei";
+    "Huawei Cloud" = "Huawei";
     "Lenovo" = "Lenovo";
     "Motorola / Lenovo" = "Lenovo";
     "HP Inc." = "HP Inc.";
     "Dell" = "Dell";
     "Xiaomi" = "Xiaomi";
-    "SK Hynix" = "SK Hynix";
-    "Broadcom" = "Broadcom";
-    "Broadcom (Custom AI XPUs)" = "Broadcom";
-    "Qualcomm" = "Qualcomm";
-    "Intel" = "Intel";
-    "Intel (Gaudi)" = "Intel";
-    "AMD" = "AMD";
-    "AMD (Instinct)" = "AMD";
-    "AMD (Client/Embedded)" = "AMD";
-    "Binance" = "Binance";
-    "Coinbase" = "Coinbase";
-    "Shopify" = "Shopify";
-    "Shopify (Merchant Ecosystem)" = "Shopify";
-    "Meituan" = "Meituan";
-    "Salesforce" = "Salesforce";
-    "Oracle" = "Oracle";
-    "Oracle Cloud (OCI)" = "Oracle";
-    "Oracle Cloud" = "Oracle";
-    "SAP" = "SAP";
-    "Adobe" = "Adobe";
-    "Intuit" = "Intuit";
-    "ServiceNow" = "ServiceNow";
-    "Workday" = "Workday";
-    "Huawei" = "Huawei";
-    "Huawei Cloud" = "Huawei";
-    "ASUS" = "ASUS";
-    "Acer" = "Acer";
+    "Transsion" = "Transsion";
     "Oppo" = "Oppo";
     "Vivo" = "Vivo";
     "Honor" = "Honor";
-    "Transsion" = "Transsion";
+    "Realme" = "Realme";
+    "Salesforce" = "Salesforce";
+    "Intel" = "Intel";
+    "Intel (Gaudi)" = "Intel";
+    "Meituan" = "Meituan";
+    "Netflix" = "Netflix";
+    "SK Hynix" = "SK Hynix";
+    "Broadcom" = "Broadcom";
+    "Broadcom (Custom AI XPUs)" = "Broadcom";
+    "ASML" = "ASML";
+    "Qualcomm" = "Qualcomm";
+    "Sony" = "Sony";
+    "Sony (PlayStation)" = "Sony";
+    "Crunchyroll (Sony)" = "Sony";
+    "Oracle" = "Oracle";
+    "Oracle Cloud (OCI)" = "Oracle";
+    "Oracle Cloud" = "Oracle";
+    "Applied Materials" = "Applied Materials";
+    "AMD" = "AMD";
+    "AMD (Instinct)" = "AMD";
+    "AMD (Client/Embedded)" = "AMD";
+    "SAP" = "SAP";
+    "Micron" = "Micron";
+    "OpenAI" = "OpenAI";
+    "Lam Research" = "Lam Research";
+    "Adobe" = "Adobe";
+    "Arista Networks" = "Arista Networks";
+    "Palo Alto Networks" = "Palo Alto Networks";
+    "Tokyo Electron" = "Tokyo Electron";
+    "Tokyo Electron (TEL)" = "Tokyo Electron";
+    "Intuit" = "Intuit";
+    "Nokia" = "Nokia";
+    "Anthropic" = "Anthropic";
+    "Ericsson" = "Ericsson";
+    "CrowdStrike" = "CrowdStrike";
+    "KLA Corporation" = "KLA Corporation";
+    "Fortinet" = "Fortinet";
+    "ServiceNow" = "ServiceNow";
+    "Workday" = "Workday";
+    "Shopify" = "Shopify";
+    "Shopify (Merchant Ecosystem)" = "Shopify";
+    "Binance" = "Binance";
+    "Coinbase" = "Coinbase";
+    "ASUS" = "ASUS";
+    "Acer" = "Acer";
+    "MSI" = "MSI";
     "Warner Bros (Max)" = "Warner Bros. Discovery";
     "Disney+ / Hulu" = "Disney";
     "Disney+" = "Disney";
-    "Micron" = "Micron";
     "MediaTek" = "MediaTek";
     "Texas Instruments" = "Texas Instruments";
     "FANUC" = "FANUC";
@@ -128,7 +145,20 @@ $CompanyMappings = @{
     "Quantinuum (Honeywell)" = "Honeywell (Quantinuum)";
     "IonQ" = "IonQ";
     "D-Wave Quantum" = "D-Wave Quantum";
-    "Rigetti Computing" = "Rigetti"
+    "Rigetti Computing" = "Rigetti";
+    "Juniper Networks / HPE" = "HPE (Juniper)";
+    "ZTE" = "ZTE";
+    "Extreme Networks" = "Extreme Networks";
+    "Ciena" = "Ciena";
+    "Cloudflare" = "Cloudflare";
+    "Zscaler" = "Zscaler";
+    "Check Point" = "Check Point";
+    "Okta" = "Okta";
+    "SentinelOne" = "SentinelOne";
+    "Trend Micro" = "Trend Micro";
+    "Advantest" = "Advantest";
+    "Teradyne" = "Teradyne";
+    "ASM International" = "ASM International"
 }
 
 function Escape-Xml([string]$str) {
@@ -160,8 +190,6 @@ function Parse-Pct($pctStr) {
     try { return [double]$clean / 100.0 } catch { return 0.0 }
 }
 
-# Direct platform corporate revenue distribution for GMV-driven sectors (B2C & B2B e-commerce)
-# to avoid conflating ecosystem GMV market shares with direct corporate revenue pools
 $SectorRevenueShares = @{
     "b2c_ecommerce" = @{
         "Amazon" = 0.190;
@@ -197,7 +225,12 @@ function Bezier-Ribbon($x0, $y0_top, $y0_bot, $x1, $y1_top, $y1_bot) {
     return "M $x0_s $y0_t_s C $cx0 $y0_t_s, $cx1 $y1_t_s, $x1_s $y1_t_s L $x1_s $y1_b_s C $cx1 $y1_b_s, $cx0 $y0_b_s, $x0_s $y0_b_s Z"
 }
 
-$palette = @("#f97316", "#38bdf8", "#10b981", "#8b5cf6", "#f59e0b", "#ec4899", "#06b6d4", "#6366f1", "#84cc16", "#a855f7", "#eab308", "#14b8a6", "#0ea5e9", "#d946ef", "#64748b")
+$palette = @(
+    "#f97316", "#38bdf8", "#10b981", "#8b5cf6", "#f59e0b",
+    "#ec4899", "#06b6d4", "#6366f1", "#84cc16", "#a855f7",
+    "#eab308", "#14b8a6", "#0ea5e9", "#d946ef", "#64748b",
+    "#f43f5e", "#22d3ee", "#e11d48", "#3b82f6", "#10b981"
+)
 
 $sectorData = @()
 $totalMarketRev = 0.0
@@ -253,12 +286,14 @@ foreach ($sec in $sectorData) {
             }
         }
     }
+    
     $unaccountedPct = [Math]::Max(0.0, 1.0 - $accountedPct)
     if ($unaccountedPct -gt 0.005) {
         $otherVal = $sec.revenue * $unaccountedPct
         $otherLabel = "Other Industry Players"
         if (-not $companyTotals.ContainsKey($otherLabel)) { $companyTotals[$otherLabel] = 0.0 }
         $companyTotals[$otherLabel] += $otherVal
+
         $flowsSecToComp += [PSCustomObject]@{
             sec_idx = $s_idx
             comp_name = $otherLabel
@@ -268,18 +303,23 @@ foreach ($sec in $sectorData) {
     $s_idx++
 }
 
-$sortedComps = $companyTotals.GetEnumerator() | Sort-Object Value -Descending
+$sortedComps = $companyTotals.GetEnumerator() | Sort-Object -Property Value -Descending
 $topComps = @()
 $otherAcc = 0.0
-foreach ($item in $sortedComps) {
-    if ($item.Key -eq "Other Industry Players") {
-        $otherAcc += $item.Value
-    } elseif ($item.Value -ge 40.0) {
-        $topComps += $item.Key
+$MIN_THRESHOLD = 14.5
+
+foreach ($kv in $sortedComps) {
+    $name = $kv.Key
+    $val = $kv.Value
+    if ($name -eq "Other Industry Players") {
+        $otherAcc += $val
+    } elseif ($val -ge $MIN_THRESHOLD) {
+        $topComps += $name
     } else {
-        $otherAcc += $item.Value
+        $otherAcc += $val
     }
 }
+
 if ($otherAcc -gt 0) {
     $topComps += "Other Industry Players"
 }
@@ -287,7 +327,7 @@ if ($otherAcc -gt 0) {
 $mergedFlows = @{}
 foreach ($f in $flowsSecToComp) {
     $target = if ($topComps -contains $f.comp_name) { $f.comp_name } else { "Other Industry Players" }
-    $key = "$($f.sec_idx):$target"
+    $key = "$($f.sec_idx)|$target"
     if (-not $mergedFlows.ContainsKey($key)) { $mergedFlows[$key] = 0.0 }
     $mergedFlows[$key] += $f.value
 }
@@ -296,44 +336,50 @@ $compColors = @(
     "#f97316", "#38bdf8", "#8b5cf6", "#10b981", "#f59e0b",
     "#ec4899", "#06b6d4", "#a855f7", "#84cc16", "#6366f1",
     "#eab308", "#14b8a6", "#f43f5e", "#22d3ee", "#e11d48",
-    "#10b981", "#3b82f6", "#f97316", "#8b5cf6"
+    "#10b981", "#3b82f6", "#f97316", "#8b5cf6", "#0ea5e9",
+    "#14b8a6", "#f59e0b", "#ec4899", "#a855f7", "#84cc16",
+    "#6366f1", "#eab308", "#38bdf8", "#f43f5e", "#22d3ee"
 )
 
 $compNodeData = @()
 $c_idx = 0
-foreach ($c_name in $topComps) {
-    $val = 0.0
-    for ($i = 0; $i -lt $sectorData.Count; $i++) {
-        $k = "$($i):$c_name"
-        if ($mergedFlows.ContainsKey($k)) { $val += $mergedFlows[$k] }
+foreach ($cName in $topComps) {
+    $cVal = 0.0
+    for ($s = 0; $s -lt $sectorData.Count; $s++) {
+        $k = "$s|$cName"
+        if ($mergedFlows.ContainsKey($k)) {
+            $cVal += $mergedFlows[$k]
+        }
     }
-    $col = if ($c_name -eq "Other Industry Players") { "#475569" } else { $compColors[$c_idx % $compColors.Count] }
+    $col = if ($cName -eq "Other Industry Players") { "#475569" } else { $compColors[$c_idx % $compColors.Count] }
     $compNodeData += [PSCustomObject]@{
-        name = $c_name
-        value = $val
+        name = $cName
+        value = $cVal
         color = $col
     }
     $c_idx++
 }
 
-$width = 1440
-$height = 1000
+$width = 1480
+$height = 1480
 $marginTop = 90
-$marginBottom = 50
+$marginBottom = 45
 $marginLeft = 30
 $marginRight = 260
+
 $usableH = $height - $marginTop - $marginBottom
-$gapYSec = 12
-$gapYComp = 10
+$gapYSec = 8
+$gapYComp = 6
 
 $totalGapsCol2 = $gapYSec * ($sectorData.Count - 1)
 $totalGapsCol3 = $gapYComp * ($compNodeData.Count - 1)
+
 $maxFlowH = $usableH - [Math]::Max($totalGapsCol2, $totalGapsCol3)
 $scaleY = $maxFlowH / $totalMarketRev
 
 $wNode = 20
 $xCol1 = $marginLeft
-$xCol2 = 540
+$xCol2 = 560
 $xCol3 = $width - $marginRight
 
 $totalNodeH = $totalMarketRev * $scaleY
@@ -348,6 +394,7 @@ foreach ($sec in $sectorData) {
         h = $h
         data = $sec
         curr_out_y = $currY2
+        curr_in_y = $currY2
     }
     $currY2 += $h + $gapYSec
 }
@@ -366,27 +413,29 @@ foreach ($comp in $compNodeData) {
 }
 
 $ribbons = @()
+
 $currOutY1 = $yCol1Start
 foreach ($n2 in $col2Nodes) {
     $flowH = $n2.h
     $pathD = Bezier-Ribbon ($xCol1 + $wNode) $currOutY1 ($currOutY1 + $flowH) $xCol2 $n2.y ($n2.y + $flowH)
+    $secRevStr = if ($n2.data.revenue -ge 1000) { "{0:N2}T" -f ($n2.data.revenue / 1000.0) } else { "{0:N1}B" -f $n2.data.revenue }
     $ribbons += [PSCustomObject]@{
         path = $pathD
         color = $n2.data.color
         opacity = "0.32"
-        tooltip = Escape-Xml "$($n2.data.name): ~`$$("{0:N1}" -f $n2.data.revenue)B"
+        tooltip = Escape-Xml "$($n2.data.name): ~`$$secRevStr"
     }
     $currOutY1 += $flowH
 }
 
-for ($s = 0; $s -lt $sectorData.Count; $s++) {
-    $n2 = $col2Nodes[$s]
-    $sec = $sectorData[$s]
+for ($s_i = 0; $s_i -lt $sectorData.Count; $s_i++) {
+    $sec = $sectorData[$s_i]
+    $n2 = $col2Nodes[$s_i]
     foreach ($comp in $compNodeData) {
         $compName = $comp.name
-        $k = "$($s):$compName"
-        if ($mergedFlows.ContainsKey($k) -and $mergedFlows[$k] -gt 0.1) {
-            $val = $mergedFlows[$k]
+        $k = "$s_i|$compName"
+        $val = if ($mergedFlows.ContainsKey($k)) { $mergedFlows[$k] } else { 0.0 }
+        if ($val -gt 0.1) {
             $flowH = $val * $scaleY
             $n3 = $col3Nodes[$compName]
             $pathD = Bezier-Ribbon ($xCol2 + $wNode) $n2.curr_out_y ($n2.curr_out_y + $flowH) $xCol3 $n3.curr_in_y ($n3.curr_in_y + $flowH)
@@ -409,10 +458,10 @@ $sb = [System.Text.StringBuilder]::new()
 [void]$sb.AppendLine("<svg xmlns=`"http://www.w3.org/2000/svg`" viewBox=`"0 0 $width $height`" width=`"100%`" height=`"100%`" font-family=`"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`">")
 [void]$sb.AppendLine("  <rect width=`"$width`" height=`"$height`" fill=`"#090d16`" rx=`"14`" />")
 [void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"38`" fill=`"#f8fafc`" font-size=`"22`" font-weight=`"700`">Global Tech Market Flow &amp; Revenue Distribution</text>")
-[void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"58`" fill=`"#94a3b8`" font-size=`"13`">Estimated 2025–2026 Annualized Revenue Breakdown (~`$$totalTStr Trillion Total Market)</text>")
-[void]$sb.AppendLine("  <text x=`"$xCol1`" y=`"$($marginTop - 18)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`">GLOBAL MARKET</text>")
-[void]$sb.AppendLine("  <text x=`"$xCol2`" y=`"$($marginTop - 18)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`" text-anchor=`"end`">TECH SECTORS</text>")
-[void]$sb.AppendLine("  <text x=`"$($xCol3 + $wNode + 12)`" y=`"$($marginTop - 18)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`">MARKET LEADERS &amp; ECOSYSTEMS</text>")
+[void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"58`" fill=`"#94a3b8`" font-size=`"13`">Estimated 2025-2026 Annualized Revenue Breakdown (~`$$totalTStr Trillion Total Market)</text>")
+[void]$sb.AppendLine("  <text x=`"$xCol1`" y=`"$($marginTop - 16)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`">GLOBAL MARKET</text>")
+[void]$sb.AppendLine("  <text x=`"$xCol2`" y=`"$($marginTop - 16)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`" text-anchor=`"end`">TECH SECTORS</text>")
+[void]$sb.AppendLine("  <text x=`"$($xCol3 + $wNode + 12)`" y=`"$($marginTop - 16)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`">MARKET LEADERS &amp; ECOSYSTEMS</text>")
 
 [void]$sb.AppendLine("  <g class=`"ribbons`">")
 foreach ($r in $ribbons) {
@@ -439,45 +488,45 @@ foreach ($n2 in $col2Nodes) {
     $secNameEsc = Escape-Xml $sec.name
     [void]$sb.AppendLine("  <g transform=`"translate($xCol2, $y2_s)`">")
     [void]$sb.AppendLine("    <rect width=`"$wNode`" height=`"$h2_s`" rx=`"3`" fill=`"$($sec.color)`" />")
-    if ($n2.h -lt 18) {
+    if ($n2.h -lt 16) {
         $lblY = "{0:F1}" -f ($midY + 4)
-        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY`" text-anchor=`"end`" fill=`"#f8fafc`" font-size=`"12`" font-weight=`"600`">$secNameEsc <tspan fill=`"#94a3b8`" font-size=`"10.5`">($vStr)</tspan></text>")
+        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY`" text-anchor=`"end`" fill=`"#f8fafc`" font-size=`"11.5`" font-weight=`"600`">$secNameEsc <tspan fill=`"#94a3b8`" font-size=`"10`">($vStr)</tspan></text>")
     } else {
-        $lblY_t = "{0:F1}" -f ($midY - 3)
-        $lblY_b = "{0:F1}" -f ($midY + 11)
-        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY_t`" text-anchor=`"end`" fill=`"#f8fafc`" font-size=`"12`" font-weight=`"600`">$secNameEsc</text>")
-        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY_b`" text-anchor=`"end`" fill=`"#94a3b8`" font-size=`"10.5`">$vStr</text>")
+        $lblY1 = "{0:F1}" -f ($midY - 2)
+        $lblY2 = "{0:F1}" -f ($midY + 11)
+        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY1`" text-anchor=`"end`" fill=`"#f8fafc`" font-size=`"11.5`" font-weight=`"600`">$secNameEsc</text>")
+        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY2`" text-anchor=`"end`" fill=`"#94a3b8`" font-size=`"10`">$vStr</text>")
     }
     [void]$sb.AppendLine("  </g>")
 }
 
 foreach ($comp in $compNodeData) {
     $n3 = $col3Nodes[$comp.name]
-    $vStr = if ($comp.value -ge 1000) { "~`$" + ("{0:N2}" -f ($comp.value / 1000.0)) + "T" } elseif ($comp.value -lt 10) { "~`$" + ("{0:N1}" -f $comp.value) + "B" } else { "~`$" + ("{0:N0}" -f $comp.value) + "B" }
+    $vStr = if ($comp.value -ge 1000) { "~`$" + ("{0:N2}" -f ($comp.value / 1000.0)) + "T" } else { "~`$" + ("{0:N0}" -f $comp.value) + "B" }
     $y3_s = "{0:F1}" -f $n3.y
     $h3_s = "{0:F1}" -f $n3.h
     $midY = $n3.h / 2.0
     $compNameEsc = Escape-Xml $comp.name
     [void]$sb.AppendLine("  <g transform=`"translate($xCol3, $y3_s)`">")
     [void]$sb.AppendLine("    <rect width=`"$wNode`" height=`"$h3_s`" rx=`"3`" fill=`"$($comp.color)`" />")
-    if ($n3.h -lt 18) {
+    if ($n3.h -lt 16) {
         $lblY = "{0:F1}" -f ($midY + 4)
-        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY`" fill=`"#f8fafc`" font-size=`"12`" font-weight=`"600`">$compNameEsc <tspan fill=`"#94a3b8`" font-size=`"10.5`">($vStr)</tspan></text>")
+        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY`" fill=`"#f8fafc`" font-size=`"11.5`" font-weight=`"600`">$compNameEsc <tspan fill=`"#94a3b8`" font-size=`"10`">($vStr)</tspan></text>")
     } else {
-        $lblY_t = "{0:F1}" -f ($midY - 2)
-        $lblY_b = "{0:F1}" -f ($midY + 11)
-        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY_t`" fill=`"#f8fafc`" font-size=`"12`" font-weight=`"600`">$compNameEsc</text>")
-        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY_b`" fill=`"#94a3b8`" font-size=`"10.5`">$vStr</text>")
+        $lblY1 = "{0:F1}" -f ($midY - 2)
+        $lblY2 = "{0:F1}" -f ($midY + 11)
+        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY1`" fill=`"#f8fafc`" font-size=`"11.5`" font-weight=`"600`">$compNameEsc</text>")
+        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY2`" fill=`"#94a3b8`" font-size=`"10`">$vStr</text>")
     }
     [void]$sb.AppendLine("  </g>")
 }
 
 [void]$sb.AppendLine("</svg>")
 
-$OutputFolder = Split-Path -Parent $OutputFile
-if (-not (Test-Path $OutputFolder)) {
-    New-Item -ItemType Directory -Path $OutputFolder -Force | Out-Null
+$OutDir = Split-Path -Parent $OutputFile
+if (-not (Test-Path $OutDir)) {
+    New-Item -ItemType Directory -Path $OutDir -Force | Out-Null
 }
 
 [System.IO.File]::WriteAllText($OutputFile, $sb.ToString(), [System.Text.Encoding]::UTF8)
-Write-Host "Successfully generated Sankey Diagram: $(Split-Path -Leaf $OutputFile)!"
+Write-Host "Successfully generated Sankey Diagram: $OutputFile!"

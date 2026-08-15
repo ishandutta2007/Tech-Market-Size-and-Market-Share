@@ -1,13 +1,13 @@
 {
   "year": "2025–2026",
   "title": "Market Size and Market Share by Tech Sector (2025–2026 Estimates)",
-  "total_revenue": "~$5.910 Trillion",
+  "total_revenue": "~$6.470 Trillion",
   "total_gmv": "~$31.3 Trillion",
   "sectors": [
     {
       "id": "saas",
       "name": "SaaS",
-      "subtitle": "Enterprise Software",
+      "subtitle": "Enterprise Applications (ERP, CRM, HCM, ITSM & Productivity)",
       "revenue": "~$488 Billion",
       "gmv": "-",
       "leaders": [
@@ -180,6 +180,61 @@
       "note": "Market shares represent global B2B GMV share (~$22.0T). Highly fragmented market dominated by legacy offline enterprise contracts, EDI, and custom ERP procurement portals."
     },
     {
+      "id": "enterprise_networking",
+      "name": "Enterprise Networking & Telecom Equipment",
+      "subtitle": "Switches, Routers, Enterprise WLAN & Telecom RAN",
+      "revenue": "~$215 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Cisco", "share": "36.0%" },
+        { "name": "Huawei", "share": "22.0%" },
+        { "name": "Arista Networks", "share": "8.5%" },
+        { "name": "Nokia", "share": "7.0%" },
+        { "name": "Ericsson", "share": "6.5%" },
+        { "name": "Juniper Networks / HPE", "share": "4.5%" },
+        { "name": "ZTE", "share": "3.5%" },
+        { "name": "Extreme Networks", "share": "1.5%" },
+        { "name": "Ciena", "share": "1.5%" }
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "subtitle": "Endpoint, Identity, SASE, SIEM & Cloud Security",
+      "revenue": "~$210 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Microsoft (Security)", "share": "10.5%" },
+        { "name": "Palo Alto Networks", "share": "8.5%" },
+        { "name": "CrowdStrike", "share": "6.0%" },
+        { "name": "Cisco (Security)", "share": "5.5%" },
+        { "name": "Fortinet", "share": "5.0%" },
+        { "name": "Cloudflare", "share": "3.0%" },
+        { "name": "Zscaler", "share": "2.5%" },
+        { "name": "Check Point", "share": "2.0%" },
+        { "name": "Okta", "share": "2.0%" },
+        { "name": "SentinelOne", "share": "1.5%" },
+        { "name": "Trend Micro", "share": "1.5%" }
+      ]
+    },
+    {
+      "id": "semiconductor_equipment",
+      "name": "Semiconductor Capital Equipment",
+      "subtitle": "Lithography, Etch, Deposition & Wafer Fab Equipment (WFE)",
+      "revenue": "~$135 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "ASML", "share": "26.5%" },
+        { "name": "Applied Materials", "share": "21.5%" },
+        { "name": "Lam Research", "share": "14.5%" },
+        { "name": "Tokyo Electron", "share": "13.0%" },
+        { "name": "KLA Corporation", "share": "9.0%" },
+        { "name": "Advantest", "share": "3.5%" },
+        { "name": "Teradyne", "share": "2.5%" },
+        { "name": "ASM International", "share": "2.0%" }
+      ]
+    },
+    {
       "id": "ai_chips_gpus",
       "name": "AI Chips & GPUs",
       "subtitle": "Data Center & AI Accelerators",
@@ -303,6 +358,21 @@
       "icon": "🤖",
       "title": "The Generative AI \"Bifurcation\" (Consumer vs. Enterprise)",
       "text": "While OpenAI maintains leadership in direct consumer subscriptions (~60%+ of web AI traffic), Anthropic (Claude) has surged to capture ~32-38% of enterprise API / coding spend (as tracked by Menlo Ventures and Ramp data), closely rivaling OpenAI in business revenue. Google Gemini captures ~18.5% through enterprise Workspace & GCP integration."
+    },
+    {
+      "icon": "🔬",
+      "title": "Semiconductor Lithography & Capital Equipment Chokepoint",
+      "text": "The semiconductor manufacturing foundation (~$135B WFE market) is anchored by ASML's near-monopoly on EUV/High-NA lithography systems (~26.5%), flanked by Applied Materials, Lam Research, Tokyo Electron, and KLA commanding critical etch, deposition, and metrology steps necessary for sub-2nm and HBM3e/HBM4 packaging."
+    },
+    {
+      "icon": "🌐",
+      "title": "Enterprise Networking & AI Cluster Switching",
+      "text": "Enterprise networking and telecom equipment (~$215B) is led by Cisco (~36%) and Huawei (~22%), with Arista Networks (~8.5%) rapidly capturing high-margin cloud-scale 800G/1.6T AI backend switching fabrics."
+    },
+    {
+      "icon": "🛡️",
+      "title": "Cybersecurity Platformization",
+      "text": "The ~$210B cybersecurity sector is rapidly consolidating around comprehensive security platforms: Microsoft Security leads (~10.5%), followed by Palo Alto Networks (~8.5%), CrowdStrike (~6.0%), Cisco Security (~5.5%), and Fortinet (~5.0%)."
     },
     {
       "icon": "🦾",

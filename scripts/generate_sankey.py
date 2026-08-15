@@ -21,6 +21,7 @@ COMPANY_MAPPINGS = {
     "Microsoft (LinkedIn/Bing)": "Microsoft",
     "Microsoft (Surface)": "Microsoft",
     "Microsoft (Xbox)": "Microsoft",
+    "Microsoft (Security)": "Microsoft",
     "Microsoft Azure Quantum": "Microsoft",
     "Google": "Alphabet (Google)",
     "Google (Alphabet)": "Alphabet (Google)",
@@ -64,52 +65,68 @@ COMPANY_MAPPINGS = {
     "PDD Holdings": "PDD Holdings",
     "PDD Holdings (Temu/Pinduoduo)": "PDD Holdings",
     "JD.com": "JD.com",
-    "OpenAI": "OpenAI",
-    "Anthropic": "Anthropic",
-    "Sony": "Sony",
-    "Sony (PlayStation)": "Sony",
-    "Crunchyroll (Sony)": "Sony",
-    "Netflix": "Netflix",
+    "Cisco": "Cisco",
+    "Cisco (Security)": "Cisco",
+    "Huawei": "Huawei",
+    "Huawei Cloud": "Huawei",
     "Lenovo": "Lenovo",
     "Motorola / Lenovo": "Lenovo",
     "HP Inc.": "HP Inc.",
     "Dell": "Dell",
     "Xiaomi": "Xiaomi",
-    "SK Hynix": "SK Hynix",
-    "Broadcom": "Broadcom",
-    "Broadcom (Custom AI XPUs)": "Broadcom",
-    "Qualcomm": "Qualcomm",
-    "Intel": "Intel",
-    "Intel (Gaudi)": "Intel",
-    "AMD": "AMD",
-    "AMD (Instinct)": "AMD",
-    "AMD (Client/Embedded)": "AMD",
-    "Binance": "Binance",
-    "Coinbase": "Coinbase",
-    "Shopify": "Shopify",
-    "Shopify (Merchant Ecosystem)": "Shopify",
-    "Meituan": "Meituan",
-    "Salesforce": "Salesforce",
-    "Oracle": "Oracle",
-    "Oracle Cloud (OCI)": "Oracle",
-    "Oracle Cloud": "Oracle",
-    "SAP": "SAP",
-    "Adobe": "Adobe",
-    "Intuit": "Intuit",
-    "ServiceNow": "ServiceNow",
-    "Workday": "Workday",
-    "Huawei": "Huawei",
-    "Huawei Cloud": "Huawei",
-    "ASUS": "ASUS",
-    "Acer": "Acer",
+    "Transsion": "Transsion",
     "Oppo": "Oppo",
     "Vivo": "Vivo",
     "Honor": "Honor",
-    "Transsion": "Transsion",
+    "Realme": "Realme",
+    "Salesforce": "Salesforce",
+    "Intel": "Intel",
+    "Intel (Gaudi)": "Intel",
+    "Meituan": "Meituan",
+    "Netflix": "Netflix",
+    "SK Hynix": "SK Hynix",
+    "Broadcom": "Broadcom",
+    "Broadcom (Custom AI XPUs)": "Broadcom",
+    "ASML": "ASML",
+    "Qualcomm": "Qualcomm",
+    "Sony": "Sony",
+    "Sony (PlayStation)": "Sony",
+    "Crunchyroll (Sony)": "Sony",
+    "Oracle": "Oracle",
+    "Oracle Cloud (OCI)": "Oracle",
+    "Oracle Cloud": "Oracle",
+    "Applied Materials": "Applied Materials",
+    "AMD": "AMD",
+    "AMD (Instinct)": "AMD",
+    "AMD (Client/Embedded)": "AMD",
+    "SAP": "SAP",
+    "Micron": "Micron",
+    "OpenAI": "OpenAI",
+    "Lam Research": "Lam Research",
+    "Adobe": "Adobe",
+    "Arista Networks": "Arista Networks",
+    "Palo Alto Networks": "Palo Alto Networks",
+    "Tokyo Electron": "Tokyo Electron",
+    "Tokyo Electron (TEL)": "Tokyo Electron",
+    "Intuit": "Intuit",
+    "Nokia": "Nokia",
+    "Anthropic": "Anthropic",
+    "Ericsson": "Ericsson",
+    "CrowdStrike": "CrowdStrike",
+    "KLA Corporation": "KLA Corporation",
+    "Fortinet": "Fortinet",
+    "ServiceNow": "ServiceNow",
+    "Workday": "Workday",
+    "Shopify": "Shopify",
+    "Shopify (Merchant Ecosystem)": "Shopify",
+    "Binance": "Binance",
+    "Coinbase": "Coinbase",
+    "ASUS": "ASUS",
+    "Acer": "Acer",
+    "MSI": "MSI",
     "Warner Bros (Max)": "Warner Bros. Discovery",
     "Disney+ / Hulu": "Disney",
     "Disney+": "Disney",
-    "Micron": "Micron",
     "MediaTek": "MediaTek",
     "Texas Instruments": "Texas Instruments",
     "FANUC": "FANUC",
@@ -128,7 +145,20 @@ COMPANY_MAPPINGS = {
     "Quantinuum (Honeywell)": "Honeywell (Quantinuum)",
     "IonQ": "IonQ",
     "D-Wave Quantum": "D-Wave Quantum",
-    "Rigetti Computing": "Rigetti"
+    "Rigetti Computing": "Rigetti",
+    "Juniper Networks / HPE": "HPE (Juniper)",
+    "ZTE": "ZTE",
+    "Extreme Networks": "Extreme Networks",
+    "Ciena": "Ciena",
+    "Cloudflare": "Cloudflare",
+    "Zscaler": "Zscaler",
+    "Check Point": "Check Point",
+    "Okta": "Okta",
+    "SentinelOne": "SentinelOne",
+    "Trend Micro": "Trend Micro",
+    "Advantest": "Advantest",
+    "Teradyne": "Teradyne",
+    "ASM International": "ASM International"
 }
 
 def parse_val_to_billions(val_str: str) -> float:
@@ -192,13 +222,14 @@ def bezier_ribbon(x0, y0_top, y0_bot, x1, y1_top, y1_bot) -> str:
         f"Z"
     )
 
-def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
+def generate_sankey_svg(data: dict, width=1480, height=1480) -> str:
     sectors = data.get("sectors", [])
     
     palette = [
         "#f97316", "#38bdf8", "#10b981", "#8b5cf6", "#f59e0b", 
         "#ec4899", "#06b6d4", "#6366f1", "#84cc16", "#a855f7", 
-        "#eab308", "#14b8a6", "#0ea5e9", "#d946ef", "#64748b"
+        "#eab308", "#14b8a6", "#0ea5e9", "#d946ef", "#64748b",
+        "#f43f5e", "#22d3ee", "#e11d48", "#3b82f6", "#10b981"
     ]
     
     # 1. Parse sectors
@@ -218,7 +249,7 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
                 "note": sec.get("note")
             })
 
-    # Sort sectors descending
+    # Sort sectors descending by revenue
     sector_data.sort(key=lambda s: s["revenue"], reverse=True)
 
     # 2. Map flows to unified companies
@@ -261,19 +292,21 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
                 "value": other_val
             })
 
-    # Filter top companies with revenue threshold >= $40B
+    # Filter top companies with revenue threshold >= $14.5B to capture all major tech leaders
+    # (including Cisco, Qualcomm, SAP, Oracle, SK Hynix, Micron, Anthropic, OpenAI, ASML, Broadcom, etc.)
     sorted_comps = sorted(company_totals.items(), key=lambda x: x[1], reverse=True)
     top_comps = []
     other_acc = 0.0
+    MIN_THRESHOLD = 14.5
     for name, val in sorted_comps:
         if name == "Other Industry Players":
             other_acc += val
-        elif val >= 40.0:
+        elif val >= MIN_THRESHOLD:
             top_comps.append(name)
         else:
             other_acc += val
 
-    # Append aggregated Other
+    # Append aggregated Other Industry Players
     if other_acc > 0:
         top_comps.append("Other Industry Players")
 
@@ -290,7 +323,9 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
         "#f97316", "#38bdf8", "#8b5cf6", "#10b981", "#f59e0b",
         "#ec4899", "#06b6d4", "#a855f7", "#84cc16", "#6366f1",
         "#eab308", "#14b8a6", "#f43f5e", "#22d3ee", "#e11d48",
-        "#10b981", "#3b82f6", "#f97316", "#8b5cf6"
+        "#10b981", "#3b82f6", "#f97316", "#8b5cf6", "#0ea5e9",
+        "#14b8a6", "#f59e0b", "#ec4899", "#a855f7", "#84cc16",
+        "#6366f1", "#eab308", "#38bdf8", "#f43f5e", "#22d3ee"
     ]
     for c_idx, c_name in enumerate(top_comps):
         val = sum(merged_flows.get((s_idx, c_name), 0.0) for s_idx in range(len(sector_data)))
@@ -303,13 +338,13 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
 
     # Layout coordinates
     margin_top = 90
-    margin_bottom = 50
+    margin_bottom = 45
     margin_left = 30
     margin_right = 260
     
     usable_h = height - margin_top - margin_bottom
-    gap_y_sec = 12
-    gap_y_comp = 10
+    gap_y_sec = 8
+    gap_y_comp = 6
     
     total_gaps_col2 = gap_y_sec * (len(sector_data) - 1)
     total_gaps_col3 = gap_y_comp * (len(comp_node_data) - 1)
@@ -320,7 +355,7 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
     # Node positions
     w_node = 20
     x_col1 = margin_left
-    x_col2 = 540
+    x_col2 = 560
     x_col3 = width - margin_right
 
     # 1. Total Market Node (Col 1)
@@ -408,9 +443,9 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
     svg.append(f'  <text x="{margin_left}" y="58" fill="#94a3b8" font-size="13">Estimated 2025–2026 Annualized Revenue Breakdown (~${total_market_rev/1000.0:.2f} Trillion Total Market)</text>')
 
     # Column Headers
-    svg.append(f'  <text x="{x_col1}" y="{margin_top - 18}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">GLOBAL MARKET</text>')
-    svg.append(f'  <text x="{x_col2}" y="{margin_top - 18}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2" text-anchor="end">TECH SECTORS</text>')
-    svg.append(f'  <text x="{x_col3 + w_node + 12}" y="{margin_top - 18}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">MARKET LEADERS &amp; ECOSYSTEMS</text>')
+    svg.append(f'  <text x="{x_col1}" y="{margin_top - 16}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">GLOBAL MARKET</text>')
+    svg.append(f'  <text x="{x_col2}" y="{margin_top - 16}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2" text-anchor="end">TECH SECTORS</text>')
+    svg.append(f'  <text x="{x_col3 + w_node + 12}" y="{margin_top - 16}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">MARKET LEADERS &amp; ECOSYSTEMS</text>')
 
     # Ribbons
     svg.append('  <g class="ribbons">')
@@ -434,11 +469,11 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
         svg.append(f'  <g transform="translate({x_col2}, {n2["y"]:.1f})">')
         svg.append(f'    <rect width="{w_node}" height="{n2["h"]:.1f}" rx="3" fill="{sec["color"]}" />')
         
-        if n2["h"] < 18:
-            svg.append(f'    <text x="-10" y="{mid_y + 4:.1f}" text-anchor="end" fill="#f8fafc" font-size="12" font-weight="600">{sec_name_esc} <tspan fill="#94a3b8" font-size="10.5">({val_str})</tspan></text>')
+        if n2["h"] < 16:
+            svg.append(f'    <text x="-10" y="{mid_y + 4:.1f}" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">{sec_name_esc} <tspan fill="#94a3b8" font-size="10">({val_str})</tspan></text>')
         else:
-            svg.append(f'    <text x="-10" y="{mid_y - 3:.1f}" text-anchor="end" fill="#f8fafc" font-size="12" font-weight="600">{sec_name_esc}</text>')
-            svg.append(f'    <text x="-10" y="{mid_y + 11:.1f}" text-anchor="end" fill="#94a3b8" font-size="10.5">{val_str}</text>')
+            svg.append(f'    <text x="-10" y="{mid_y - 2:.1f}" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">{sec_name_esc}</text>')
+            svg.append(f'    <text x="-10" y="{mid_y + 11:.1f}" text-anchor="end" fill="#94a3b8" font-size="10">{val_str}</text>')
         svg.append('  </g>')
 
     # Col 3: Companies (Labels placed to the right of node at text-anchor="start")
@@ -450,11 +485,11 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
         svg.append(f'  <g transform="translate({x_col3}, {n3["y"]:.1f})">')
         svg.append(f'    <rect width="{w_node}" height="{n3["h"]:.1f}" rx="3" fill="{comp["color"]}" />')
         
-        if n3["h"] < 18:
-            svg.append(f'    <text x="{w_node + 10}" y="{mid_y + 4:.1f}" fill="#f8fafc" font-size="12" font-weight="600">{comp_name_esc} <tspan fill="#94a3b8" font-size="10.5">({val_str})</tspan></text>')
+        if n3["h"] < 16:
+            svg.append(f'    <text x="{w_node + 10}" y="{mid_y + 4:.1f}" fill="#f8fafc" font-size="11.5" font-weight="600">{comp_name_esc} <tspan fill="#94a3b8" font-size="10">({val_str})</tspan></text>')
         else:
-            svg.append(f'    <text x="{w_node + 10}" y="{mid_y - 2:.1f}" fill="#f8fafc" font-size="12" font-weight="600">{comp_name_esc}</text>')
-            svg.append(f'    <text x="{w_node + 10}" y="{mid_y + 11:.1f}" fill="#94a3b8" font-size="10.5">{val_str}</text>')
+            svg.append(f'    <text x="{w_node + 10}" y="{mid_y - 2:.1f}" fill="#f8fafc" font-size="11.5" font-weight="600">{comp_name_esc}</text>')
+            svg.append(f'    <text x="{w_node + 10}" y="{mid_y + 11:.1f}" fill="#94a3b8" font-size="10">{val_str}</text>')
         svg.append('  </g>')
 
     svg.append('</svg>')
