@@ -1,7 +1,7 @@
 {
   "year": "2025–2026",
   "title": "Market Size and Market Share by Tech Sector (2025–2026 Estimates)",
-  "total_revenue": "~$5.843 Trillion",
+  "total_revenue": "~$5.910 Trillion",
   "total_gmv": "~$31.3 Trillion",
   "sectors": [
     {
@@ -128,7 +128,7 @@
       "revenue": "~$520 Billion",
       "gmv": "-",
       "leaders": [
-        { "name": "Apple", "share": "20.0%", "note": ">45% revenue share" },
+        { "name": "Apple", "share": "20.0%" },
         { "name": "Samsung", "share": "19.0%" },
         { "name": "Xiaomi", "share": "14.0%" },
         { "name": "Transsion", "share": "9.0%" },
@@ -138,7 +138,8 @@
         { "name": "Huawei", "share": "5.0%" },
         { "name": "Realme", "share": "3.5%" },
         { "name": "Motorola / Lenovo", "share": "3.0%" }
-      ]
+      ],
+      "note": "Apple captures >45% of global smartphone industry revenues despite 20% unit volume share."
     },
     {
       "id": "b2c_ecommerce",
@@ -166,7 +167,6 @@
       "subtitle": "Wholesale Procurement",
       "revenue": "~$500 Billion",
       "gmv": "~$22.0 Trillion",
-      "note": "Highly Fragmented / Offline & EDI dominated",
       "leaders": [
         { "name": "Alibaba.com", "share": "~1.5%" },
         { "name": "W.W. Grainger", "share": "~0.8%" },
@@ -175,10 +175,11 @@
         { "name": "Global Sources", "share": "<0.5%" },
         { "name": "Made-in-China", "share": "<0.5%" },
         { "name": "IndiaMART", "share": "<0.5%" }
-      ]
+      ],
+      "note": "Highly fragmented market dominated by legacy offline contracts, EDI, and custom ERP procurement portals."
     },
     {
-      "id": "ai_chips",
+      "id": "ai_chips_gpus",
       "name": "AI Chips & GPUs",
       "subtitle": "Data Center & AI Accelerators",
       "revenue": "~$130 Billion",
@@ -234,6 +235,50 @@
       ]
     },
     {
+      "id": "physical_ai_robotics",
+      "name": "Physical AI & Robotics",
+      "subtitle": "Embodied AI, Humanoids, AMRs & Industrial Automation",
+      "revenue": "~$65 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "FANUC", "share": "13.5%" },
+        { "name": "ABB Robotics", "share": "12.0%" },
+        { "name": "Intuitive Surgical", "share": "11.5%" },
+        { "name": "Midea (KUKA)", "share": "9.0%" },
+        { "name": "Yaskawa Electric", "share": "8.5%" },
+        { "name": "Amazon Robotics", "share": "7.0%" },
+        { "name": "DJI (Enterprise/Industrial)", "share": "5.5%" },
+        { "name": "Boston Dynamics / Hyundai", "share": "3.5%" },
+        { "name": "AutoStore / Symbotic", "share": "3.0%" },
+        { "name": "Unitree Robotics", "share": "2.5%" },
+        { "name": "Tesla (Optimus / FSD AI)", "share": "2.0%" },
+        { "name": "Figure AI", "share": "1.5%" },
+        { "name": "Agility Robotics", "share": "1.0%" }
+      ]
+    },
+    {
+      "id": "quantum_computing",
+      "name": "Quantum Computing",
+      "subtitle": "Quantum Hardware, QCaaS Cloud & Algorithms",
+      "revenue": "~$1.8 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "IBM (IBM Quantum)", "share": "32.0%" },
+        { "name": "D-Wave Quantum", "share": "10.5%" },
+        { "name": "Quantinuum (Honeywell)", "share": "10.0%" },
+        { "name": "IonQ", "share": "9.5%" },
+        { "name": "Rigetti Computing", "share": "6.5%" },
+        { "name": "Google Quantum AI", "share": "6.0%" },
+        { "name": "Amazon Braket", "share": "5.0%" },
+        { "name": "Microsoft Azure Quantum", "share": "4.5%" },
+        { "name": "Atom Computing", "share": "3.5%" },
+        { "name": "Origin Quantum", "share": "3.0%" },
+        { "name": "QuEra Computing", "share": "2.5%" },
+        { "name": "IQM Quantum", "share": "2.0%" },
+        { "name": "Pasqal / Alice & Bob", "share": "1.5%" }
+      ]
+    },
+    {
       "id": "web3_blockchain",
       "name": "Web3 & Blockchain Infrastructure",
       "subtitle": "Exchanges, Protocols & Dev Infra",
@@ -257,6 +302,16 @@
       "icon": "🤖",
       "title": "The Generative AI \"Bifurcation\" (Consumer vs. Enterprise)",
       "text": "While OpenAI maintains leadership in direct consumer subscriptions (~60%+ of web AI traffic), Anthropic (Claude) has surged to capture ~32-38% of enterprise API / coding spend (as tracked by Menlo Ventures and Ramp data), closely rivaling OpenAI in business revenue. Google Gemini captures ~18.5% through enterprise Workspace & GCP integration."
+    },
+    {
+      "icon": "🦾",
+      "title": "Physical AI & Robotics Frontier",
+      "text": "Established industrial automation leaders (FANUC, ABB, KUKA, Yaskawa) and medical robotics (Intuitive Surgical) anchor current market revenue (~$65B), while the rapid maturation of Vision-Language-Action (VLA) foundation models has ignited commercial humanoid and warehouse logistics deployments across Tesla (Optimus), Amazon Robotics, Boston Dynamics, Figure AI, and Unitree."
+    },
+    {
+      "icon": "⚛️",
+      "title": "Quantum Computing Inflection",
+      "text": "The quantum computing ecosystem (~$1.8B revenue) is dominated by cloud-accessible quantum QPUs and hybrid algorithms, led by IBM Quantum alongside specialized hardware innovators (IonQ, Quantinuum, D-Wave, Rigetti) and cloud platforms (AWS Braket, Azure Quantum, Google Quantum AI)."
     },
     {
       "icon": "🇨🇳",

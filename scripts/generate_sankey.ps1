@@ -21,17 +21,21 @@ $CompanyMappings = @{
     "Microsoft (LinkedIn/Bing)" = "Microsoft";
     "Microsoft (Surface)" = "Microsoft";
     "Microsoft (Xbox)" = "Microsoft";
+    "Microsoft Azure Quantum" = "Microsoft";
     "Google" = "Alphabet (Google)";
     "Google (Alphabet)" = "Alphabet (Google)";
     "Google (Workspace)" = "Alphabet (Google)";
     "Google Cloud" = "Alphabet (Google)";
     "Google (Gemini)" = "Alphabet (Google)";
     "Google (Play Games)" = "Alphabet (Google)";
+    "Google Quantum AI" = "Alphabet (Google)";
     "Amazon" = "Amazon";
     "Amazon (AWS)" = "Amazon";
     "Amazon Ads" = "Amazon";
     "Amazon Business" = "Amazon";
     "Amazon Prime Video" = "Amazon";
+    "Amazon Robotics" = "Amazon";
+    "Amazon Braket" = "Amazon";
     "Apple" = "Apple";
     "Apple (Mac)" = "Apple";
     "Apple (App Store Games)" = "Apple";
@@ -107,7 +111,24 @@ $CompanyMappings = @{
     "Disney+" = "Disney";
     "Micron" = "Micron";
     "MediaTek" = "MediaTek";
-    "Texas Instruments" = "Texas Instruments"
+    "Texas Instruments" = "Texas Instruments";
+    "FANUC" = "FANUC";
+    "ABB Robotics" = "ABB";
+    "Intuitive Surgical" = "Intuitive Surgical";
+    "Midea (KUKA)" = "Midea Group (KUKA)";
+    "Yaskawa Electric" = "Yaskawa Electric";
+    "DJI (Enterprise/Industrial)" = "DJI";
+    "Boston Dynamics / Hyundai" = "Hyundai (Boston Dynamics)";
+    "AutoStore / Symbotic" = "AutoStore / Symbotic";
+    "Tesla (Optimus / FSD AI)" = "Tesla";
+    "Figure AI" = "Figure AI";
+    "Unitree Robotics" = "Unitree Robotics";
+    "IBM (IBM Quantum)" = "IBM";
+    "IBM Cloud" = "IBM";
+    "Quantinuum (Honeywell)" = "Honeywell (Quantinuum)";
+    "IonQ" = "IonQ";
+    "D-Wave Quantum" = "D-Wave Quantum";
+    "Rigetti Computing" = "Rigetti"
 }
 
 function Escape-Xml([string]$str) {
@@ -152,7 +173,7 @@ function Bezier-Ribbon($x0, $y0_top, $y0_bot, $x1, $y1_top, $y1_bot) {
     return "M $x0_s $y0_t_s C $cx0 $y0_t_s, $cx1 $y1_t_s, $x1_s $y1_t_s L $x1_s $y1_b_s C $cx1 $y1_b_s, $cx0 $y0_b_s, $x0_s $y0_b_s Z"
 }
 
-$palette = @("#f97316", "#38bdf8", "#10b981", "#8b5cf6", "#f59e0b", "#ec4899", "#06b6d4", "#6366f1", "#84cc16", "#a855f7", "#eab308", "#14b8a6", "#64748b")
+$palette = @("#f97316", "#38bdf8", "#10b981", "#8b5cf6", "#f59e0b", "#ec4899", "#06b6d4", "#6366f1", "#84cc16", "#a855f7", "#eab308", "#14b8a6", "#0ea5e9", "#d946ef", "#64748b")
 
 $sectorData = @()
 $totalMarketRev = 0.0
@@ -261,13 +282,13 @@ foreach ($c_name in $topComps) {
 }
 
 $width = 1440
-$height = 960
+$height = 1000
 $marginTop = 90
 $marginBottom = 50
 $marginLeft = 30
 $marginRight = 260
 $usableH = $height - $marginTop - $marginBottom
-$gapYSec = 14
+$gapYSec = 12
 $gapYComp = 10
 
 $totalGapsCol2 = $gapYSec * ($sectorData.Count - 1)
@@ -318,7 +339,7 @@ foreach ($n2 in $col2Nodes) {
         path = $pathD
         color = $n2.data.color
         opacity = "0.32"
-        tooltip = Escape-Xml "$($n2.data.name): ~`$$("{0:N0}" -f $n2.data.revenue)B"
+        tooltip = Escape-Xml "$($n2.data.name): ~`$$("{0:N1}" -f $n2.data.revenue)B"
     }
     $currOutY1 += $flowH
 }
@@ -376,7 +397,7 @@ $midY1_b = "{0:F1}" -f ($totalNodeH / 2.0 + 9)
 
 foreach ($n2 in $col2Nodes) {
     $sec = $n2.data
-    $vStr = if ($sec.revenue -ge 1000) { "~`$" + ("{0:N2}" -f ($sec.revenue / 1000.0)) + "T" } else { "~`$" + ("{0:N0}" -f $sec.revenue) + "B" }
+    $vStr = if ($sec.revenue -ge 1000) { "~`$" + ("{0:N2}" -f ($sec.revenue / 1000.0)) + "T" } elseif ($sec.revenue -lt 10) { "~`$" + ("{0:N1}" -f $sec.revenue) + "B" } else { "~`$" + ("{0:N0}" -f $sec.revenue) + "B" }
     $y2_s = "{0:F1}" -f $n2.y
     $h2_s = "{0:F1}" -f $n2.h
     $midY = $n2.h / 2.0
@@ -397,7 +418,7 @@ foreach ($n2 in $col2Nodes) {
 
 foreach ($comp in $compNodeData) {
     $n3 = $col3Nodes[$comp.name]
-    $vStr = if ($comp.value -ge 1000) { "~`$" + ("{0:N2}" -f ($comp.value / 1000.0)) + "T" } else { "~`$" + ("{0:N0}" -f $comp.value) + "B" }
+    $vStr = if ($comp.value -ge 1000) { "~`$" + ("{0:N2}" -f ($comp.value / 1000.0)) + "T" } elseif ($comp.value -lt 10) { "~`$" + ("{0:N1}" -f $comp.value) + "B" } else { "~`$" + ("{0:N0}" -f $comp.value) + "B" }
     $y3_s = "{0:F1}" -f $n3.y
     $h3_s = "{0:F1}" -f $n3.h
     $midY = $n3.h / 2.0

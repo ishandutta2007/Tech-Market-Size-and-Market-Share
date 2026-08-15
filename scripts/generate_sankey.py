@@ -21,17 +21,21 @@ COMPANY_MAPPINGS = {
     "Microsoft (LinkedIn/Bing)": "Microsoft",
     "Microsoft (Surface)": "Microsoft",
     "Microsoft (Xbox)": "Microsoft",
+    "Microsoft Azure Quantum": "Microsoft",
     "Google": "Alphabet (Google)",
     "Google (Alphabet)": "Alphabet (Google)",
     "Google (Workspace)": "Alphabet (Google)",
     "Google Cloud": "Alphabet (Google)",
     "Google (Gemini)": "Alphabet (Google)",
     "Google (Play Games)": "Alphabet (Google)",
+    "Google Quantum AI": "Alphabet (Google)",
     "Amazon": "Amazon",
     "Amazon (AWS)": "Amazon",
     "Amazon Ads": "Amazon",
     "Amazon Business": "Amazon",
     "Amazon Prime Video": "Amazon",
+    "Amazon Robotics": "Amazon",
+    "Amazon Braket": "Amazon",
     "Apple": "Apple",
     "Apple (Mac)": "Apple",
     "Apple (App Store Games)": "Apple",
@@ -104,10 +108,27 @@ COMPANY_MAPPINGS = {
     "Transsion": "Transsion",
     "Warner Bros (Max)": "Warner Bros. Discovery",
     "Disney+ / Hulu": "Disney",
-    "Disney+": "Disney",
+    "Disney+" = "Disney",
     "Micron": "Micron",
     "MediaTek": "MediaTek",
-    "Texas Instruments": "Texas Instruments"
+    "Texas Instruments": "Texas Instruments",
+    "FANUC": "FANUC",
+    "ABB Robotics": "ABB",
+    "Intuitive Surgical": "Intuitive Surgical",
+    "Midea (KUKA)": "Midea Group (KUKA)",
+    "Yaskawa Electric": "Yaskawa Electric",
+    "DJI (Enterprise/Industrial)": "DJI",
+    "Boston Dynamics / Hyundai": "Hyundai (Boston Dynamics)",
+    "AutoStore / Symbotic": "AutoStore / Symbotic",
+    "Tesla (Optimus / FSD AI)": "Tesla",
+    "Figure AI": "Figure AI",
+    "Unitree Robotics": "Unitree Robotics",
+    "IBM (IBM Quantum)": "IBM",
+    "IBM Cloud": "IBM",
+    "Quantinuum (Honeywell)": "Honeywell (Quantinuum)",
+    "IonQ": "IonQ",
+    "D-Wave Quantum": "D-Wave Quantum",
+    "Rigetti Computing": "Rigetti"
 }
 
 def parse_val_to_billions(val_str: str) -> float:
@@ -147,13 +168,13 @@ def bezier_ribbon(x0, y0_top, y0_bot, x1, y1_top, y1_bot) -> str:
         f"Z"
     )
 
-def generate_sankey_svg(data: dict, width=1440, height=960) -> str:
+def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
     sectors = data.get("sectors", [])
     
     palette = [
         "#f97316", "#38bdf8", "#10b981", "#8b5cf6", "#f59e0b", 
         "#ec4899", "#06b6d4", "#6366f1", "#84cc16", "#a855f7", 
-        "#eab308", "#14b8a6", "#64748b"
+        "#eab308", "#14b8a6", "#0ea5e9", "#d946ef", "#64748b"
     ]
     
     # 1. Parse sectors
@@ -254,7 +275,7 @@ def generate_sankey_svg(data: dict, width=1440, height=960) -> str:
     margin_right = 260
     
     usable_h = height - margin_top - margin_bottom
-    gap_y_sec = 14
+    gap_y_sec = 12
     gap_y_comp = 10
     
     total_gaps_col2 = gap_y_sec * (len(sector_data) - 1)
@@ -315,7 +336,7 @@ def generate_sankey_svg(data: dict, width=1440, height=960) -> str:
             "path": path_d,
             "color": n2["data"]["color"],
             "opacity": "0.32",
-            "tooltip": html.escape(f"{n2['data']['name']}: ~${n2['data']['revenue']:.0f}B")
+            "tooltip": html.escape(f"{n2['data']['name']}: ~${n2['data']['revenue']:.1f}B")
         })
         curr_out_y1 += flow_h
 
@@ -374,7 +395,7 @@ def generate_sankey_svg(data: dict, width=1440, height=960) -> str:
     # Col 2: Sectors (Labels placed to the left of the node at text-anchor="end")
     for n2 in col2_nodes:
         sec = n2["data"]
-        val_str = f"~${sec['revenue']/1000.0:.2f}T" if sec['revenue'] >= 1000 else f"~${sec['revenue']:.0f}B"
+        val_str = f"~${sec['revenue']/1000.0:.2f}T" if sec['revenue'] >= 1000 else (f"~${sec['revenue']:.1f}B" if sec['revenue'] < 10 else f"~${sec['revenue']:.0f}B")
         mid_y = n2["h"] / 2.0
         sec_name_esc = html.escape(sec["name"])
         svg.append(f'  <g transform="translate({x_col2}, {n2["y"]:.1f})">')
