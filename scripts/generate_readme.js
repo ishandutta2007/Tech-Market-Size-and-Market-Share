@@ -109,6 +109,25 @@ ${tableRows}
 
 ### 🔎 Market Dynamics Highlights 💡
 ${highlightsStr}
+
+---
+
+### 🛠️ Developer Guide & Data Updates
+
+All dataset figures are decoupled into structured JSON files located in [`data/`](data/).
+
+* **To update or add new sectors:** Edit [`data/market_share_2026.json`](data/market_share_2026.json).
+* **To regenerate README and Sankey diagram:**
+  ```bash
+  # Python
+  python scripts/generate_sankey.py --year 2026
+  python scripts/generate_readme.py --year 2026
+
+  # PowerShell (Windows native)
+  .\scripts\generate_sankey.ps1 -Year 2026
+  .\scripts\generate_readme.ps1 -Year 2026
+  ```
+* For complete schema guidelines, entity mappings, and contribution rules, read the [**Developer & Contributor Guide (CONTRIBUTING.md)**](CONTRIBUTING.md).
 `;
 }
 

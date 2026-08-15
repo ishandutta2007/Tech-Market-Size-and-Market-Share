@@ -53,3 +53,22 @@
 * 🛍️ **Global E-commerce vs. Regional Nuance:** While Amazon commands ~38% of US e-commerce, on a global GMV basis Alibaba Group (Taobao/Tmall) leads at >20%, followed by Amazon (~12.5%) and fast-growing PDD Holdings / Temu (~10.5%).
 * ☁️ **Cloud & AI Hyperscaling:** The Cloud Infrastructure (IaaS/PaaS) "Big Three" (AWS, Azure, GCP) command ~62% of enterprise cloud spend, with Azure & GCP closing the gap on AWS via generative AI workloads.
 * 💻 **PC Consolidation:** The "Big 3" (Lenovo, HP, and Dell) command ~60% of the entire PC hardware market, while Apple Mac captures ~9% volume with a significantly higher premium ASP (Average Selling Price).
+
+---
+
+### 🛠️ Developer Guide & Data Updates
+
+All dataset figures are decoupled into structured JSON files located in [data/](data/).
+
+* **To update or add new sectors:** Edit [data/market_share_2026.json](data/market_share_2026.json).
+* **To regenerate README and Sankey diagram:**
+  ```bash
+  # Python
+  python scripts/generate_sankey.py --year 2026
+  python scripts/generate_readme.py --year 2026
+
+  # PowerShell (Windows native)
+  .\scripts\generate_sankey.ps1 -Year 2026
+  .\scripts\generate_readme.ps1 -Year 2026
+  ```
+* For complete schema guidelines, entity mappings, and contribution rules, read the [**Developer & Contributor Guide (CONTRIBUTING.md)**](CONTRIBUTING.md).
