@@ -455,7 +455,7 @@ $totalTStr = "{0:N2}" -f ($totalMarketRev / 1000.0)
 
 $sb = [System.Text.StringBuilder]::new()
 [void]$sb.AppendLine('<?xml version="1.0" encoding="UTF-8"?>')
-[void]$sb.AppendLine("<svg xmlns=`"http://www.w3.org/2000/svg`" viewBox=`"0 0 $width $height`" width=`"100%`" height=`"100%`" font-family=`"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`">")
+[void]$sb.AppendLine("<svg xmlns=`"http://www.w3.org/2000/svg`" viewBox=`"0 0 $width $height`" width=`"$width`" height=`"$height`" font-family=`"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`">")
 [void]$sb.AppendLine("  <rect width=`"$width`" height=`"$height`" fill=`"#090d16`" rx=`"16`" />")
 [void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"44`" fill=`"#f8fafc`" font-size=`"26`" font-weight=`"700`">Global Tech Market Flow &amp; Revenue Distribution</text>")
 [void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"70`" fill=`"#94a3b8`" font-size=`"14`">Estimated 2025-2026 Annualized Revenue Breakdown (~`$$totalTStr Trillion Total Market)</text>")

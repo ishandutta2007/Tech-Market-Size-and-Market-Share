@@ -433,7 +433,7 @@ def generate_sankey_svg(data: dict, width=1600, height=2800) -> str:
     # Build pure XML SVG
     svg = []
     svg.append('<?xml version="1.0" encoding="UTF-8"?>')
-    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="100%" font-family="system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif">')
+    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}" font-family="system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif">')
     
     # Background rect
     svg.append(f'  <rect width="{width}" height="{height}" fill="#090d16" rx="16" />')
