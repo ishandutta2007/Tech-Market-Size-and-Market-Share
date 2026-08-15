@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Generate a beautiful, production-ready SVG Sankey Diagram for Tech Market Size and Market Share data.
+Generate a beautiful, robust SVG Sankey Diagram for Tech Market Size and Market Share data.
 Pure Python standard library (zero external dependencies).
+Outputs 100% compliant XML with full entity escaping and zero external CSS reliance.
 
 Usage:
     python scripts/generate_sankey.py [--year 2026] [--output assets/sankey.svg]
@@ -9,7 +10,7 @@ Usage:
 
 import json
 import re
-import math
+import html
 import argparse
 from pathlib import Path
 
@@ -112,7 +113,7 @@ COMPANY_MAPPINGS = {
 def parse_val_to_billions(val_str: str) -> float:
     if not val_str or val_str == "-":
         return 0.0
-    clean = val_str.replace("~", "").replace("$", "").replace(",", "").strip()
+    clean = str(val_str).replace("~", "").replace("$", "").replace(",", "").strip()
     if "Trillion" in clean:
         num = float(clean.replace("Trillion", "").strip())
         return num * 1000.0
@@ -130,7 +131,7 @@ def parse_val_to_billions(val_str: str) -> float:
 def parse_percent(pct_str: str) -> float:
     if not pct_str:
         return 0.0
-    clean = re.sub(r"[~><%]", "", pct_str).replace("each", "").strip()
+    clean = re.sub(r"[~><%]", "", str(pct_str)).replace("each", "").strip()
     try:
         return float(clean) / 100.0
     except ValueError:
@@ -313,8 +314,8 @@ def generate_sankey_svg(data: dict, width=1440, height=960) -> str:
         ribbons.append({
             "path": path_d,
             "color": n2["data"]["color"],
-            "opacity": 0.32,
-            "tooltip": f"{n2['data']['name']}: ~${n2['data']['revenue']:.0f}B"
+            "opacity": "0.32",
+            "tooltip": html.escape(f"{n2['data']['name']}: ~${n2['data']['revenue']:.0f}B")
         })
         curr_out_y1 += flow_h
 
@@ -334,79 +335,73 @@ def generate_sankey_svg(data: dict, width=1440, height=960) -> str:
                 ribbons.append({
                     "path": path_d,
                     "color": n2["data"]["color"],
-                    "opacity": 0.38,
-                    "tooltip": f"{sec['name']} → {c_name}: ~${val:.1f}B"
+                    "opacity": "0.38",
+                    "tooltip": html.escape(f"{sec['name']} → {c_name}: ~${val:.1f}B")
                 })
                 n2["curr_out_y"] += flow_h
                 n3["curr_in_y"] += flow_h
 
-    # Build SVG XML
+    # Build pure XML SVG
     svg = []
-    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="100%" style="background:#090d16; border-radius:14px; font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',Roboto,sans-serif;">')
-    svg.append('<defs>')
-    svg.append('  <style>')
-    svg.append('    .title { fill: #f8fafc; font-size: 22px; font-weight: 700; }')
-    svg.append('    .subtitle { fill: #94a3b8; font-size: 13px; }')
-    svg.append('    .col-header { fill: #38bdf8; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }')
-    svg.append('    .node-label { fill: #f8fafc; font-size: 12px; font-weight: 600; paint-order: stroke fill; stroke: #090d16; stroke-width: 3.5px; stroke-linejoin: round; }')
-    svg.append('    .node-sub { fill: #94a3b8; font-size: 10.5px; paint-order: stroke fill; stroke: #090d16; stroke-width: 3px; stroke-linejoin: round; }')
-    svg.append('    .ribbon { transition: opacity 0.15s ease; cursor: pointer; }')
-    svg.append('    .ribbon:hover { opacity: 0.85 !important; }')
-    svg.append('  </style>')
-    svg.append('</defs>')
-
-    # Header
-    svg.append(f'<text x="{margin_left}" y="38" class="title">Global Tech Market Flow &amp; Revenue Distribution</text>')
-    svg.append(f'<text x="{margin_left}" y="58" class="subtitle">Estimated 2025–2026 Annualized Revenue Breakdown (~${total_market_rev/1000.0:.2f} Trillion Total Market)</text>')
+    svg.append('<?xml version="1.0" encoding="UTF-8"?>')
+    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="100%" font-family="system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif">')
+    
+    # Background rect
+    svg.append(f'  <rect width="{width}" height="{height}" fill="#090d16" rx="14" />')
+    
+    # Header text
+    svg.append(f'  <text x="{margin_left}" y="38" fill="#f8fafc" font-size="22" font-weight="700">Global Tech Market Flow &amp; Revenue Distribution</text>')
+    svg.append(f'  <text x="{margin_left}" y="58" fill="#94a3b8" font-size="13">Estimated 2025–2026 Annualized Revenue Breakdown (~${total_market_rev/1000.0:.2f} Trillion Total Market)</text>')
 
     # Column Headers
-    svg.append(f'<text x="{x_col1}" y="{margin_top - 18}" class="col-header">Global Market</text>')
-    svg.append(f'<text x="{x_col2}" y="{margin_top - 18}" class="col-header" text-anchor="end">Tech Sectors</text>')
-    svg.append(f'<text x="{x_col3 + w_node + 12}" y="{margin_top - 18}" class="col-header">Market Leaders &amp; Ecosystems</text>')
+    svg.append(f'  <text x="{x_col1}" y="{margin_top - 18}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">GLOBAL MARKET</text>')
+    svg.append(f'  <text x="{x_col2}" y="{margin_top - 18}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2" text-anchor="end">TECH SECTORS</text>')
+    svg.append(f'  <text x="{x_col3 + w_node + 12}" y="{margin_top - 18}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">MARKET LEADERS &amp; ECOSYSTEMS</text>')
 
     # Ribbons
-    svg.append('<g class="ribbons">')
+    svg.append('  <g class="ribbons">')
     for r in ribbons:
-        svg.append(f'  <path d="{r["path"]}" fill="{r["color"]}" opacity="{r["opacity"]}" class="ribbon"><title>{r["tooltip"]}</title></path>')
-    svg.append('</g>')
+        svg.append(f'    <path d="{r["path"]}" fill="{r["color"]}" opacity="{r["opacity"]}"><title>{r["tooltip"]}</title></path>')
+    svg.append('  </g>')
 
     # Col 1: Total Market Node
-    svg.append(f'<g transform="translate({x_col1}, {y_col1_start:.1f})">')
-    svg.append(f'  <rect width="{w_node}" height="{total_node_h:.1f}" rx="4" fill="#38bdf8" />')
-    svg.append(f'  <text x="{w_node + 10}" y="{total_node_h / 2.0 - 7:.1f}" class="node-label">All Sectors</text>')
-    svg.append(f'  <text x="{w_node + 10}" y="{total_node_h / 2.0 + 9:.1f}" class="node-sub">~${total_market_rev/1000.0:.2f}T</text>')
-    svg.append('</g>')
+    svg.append(f'  <g transform="translate({x_col1}, {y_col1_start:.1f})">')
+    svg.append(f'    <rect width="{w_node}" height="{total_node_h:.1f}" rx="4" fill="#38bdf8" />')
+    svg.append(f'    <text x="{w_node + 10}" y="{total_node_h / 2.0 - 7:.1f}" fill="#f8fafc" font-size="12" font-weight="600">All Sectors</text>')
+    svg.append(f'    <text x="{w_node + 10}" y="{total_node_h / 2.0 + 9:.1f}" fill="#94a3b8" font-size="10.5">~${total_market_rev/1000.0:.2f}T</text>')
+    svg.append('  </g>')
 
-    # Col 2: Sectors (Labels placed to the left of the node at text-anchor="end" to prevent ribbon collision!)
+    # Col 2: Sectors (Labels placed to the left of the node at text-anchor="end")
     for n2 in col2_nodes:
         sec = n2["data"]
         val_str = f"~${sec['revenue']/1000.0:.2f}T" if sec['revenue'] >= 1000 else f"~${sec['revenue']:.0f}B"
         mid_y = n2["h"] / 2.0
-        svg.append(f'<g transform="translate({x_col2}, {n2["y"]:.1f})">')
-        svg.append(f'  <rect width="{w_node}" height="{n2["h"]:.1f}" rx="3" fill="{sec["color"]}" />')
+        sec_name_esc = html.escape(sec["name"])
+        svg.append(f'  <g transform="translate({x_col2}, {n2["y"]:.1f})">')
+        svg.append(f'    <rect width="{w_node}" height="{n2["h"]:.1f}" rx="3" fill="{sec["color"]}" />')
         
-        # If node is very small, center label vertically
         if n2["h"] < 18:
-            svg.append(f'  <text x="-10" y="{mid_y + 4:.1f}" text-anchor="end" class="node-label">{sec["name"]} <tspan class="node-sub">({val_str})</tspan></text>')
+            svg.append(f'    <text x="-10" y="{mid_y + 4:.1f}" text-anchor="end" fill="#f8fafc" font-size="12" font-weight="600">{sec_name_esc} <tspan fill="#94a3b8" font-size="10.5">({val_str})</tspan></text>')
         else:
-            svg.append(f'  <text x="-10" y="{mid_y - 3:.1f}" text-anchor="end" class="node-label">{sec["name"]}</text>')
-            svg.append(f'  <text x="-10" y="{mid_y + 11:.1f}" text-anchor="end" class="node-sub">{val_str}</text>')
-        svg.append('</g>')
+            svg.append(f'    <text x="-10" y="{mid_y - 3:.1f}" text-anchor="end" fill="#f8fafc" font-size="12" font-weight="600">{sec_name_esc}</text>')
+            svg.append(f'    <text x="-10" y="{mid_y + 11:.1f}" text-anchor="end" fill="#94a3b8" font-size="10.5">{val_str}</text>')
+        svg.append('  </g>')
 
     # Col 3: Companies (Labels placed to the right of node at text-anchor="start")
     for comp in comp_node_data:
         n3 = col3_nodes[comp["name"]]
         val_str = f"~${comp['value']/1000.0:.2f}T" if comp['value'] >= 1000 else f"~${comp['value']:.0f}B"
         mid_y = n3["h"] / 2.0
-        svg.append(f'<g transform="translate({x_col3}, {n3["y"]:.1f})">')
-        svg.append(f'  <rect width="{w_node}" height="{n3["h"]:.1f}" rx="3" fill="{comp["color"]}" />')
+        comp_name_esc = html.escape(comp["name"])
+        svg.append(f'  <g transform="translate({x_col3}, {n3["y"]:.1f})">')
+        svg.append(f'    <rect width="{w_node}" height="{n3["h"]:.1f}" rx="3" fill="{comp["color"]}" />')
         
         if n3["h"] < 18:
-            svg.append(f'  <text x="{w_node + 10}" y="{mid_y + 4:.1f}" class="node-label">{comp["name"]} <tspan class="node-sub">({val_str})</tspan></text>')
+            svg.append(f'    <text x="{w_node + 10}" y="{mid_y + 4:.1f}" fill="#f8fafc" font-size="12" font-weight="600">{comp_name_esc} <tspan fill="#94a3b8" font-size="10.5">({val_str})</tspan></text>')
         else:
-            svg.append(f'  <text x="{w_node + 10}" y="{mid_y - 2:.1f}" class="node-label">{comp["name"]}</text>')
-            svg.append(f'  <text x="{w_node + 10}" y="{mid_y + 11:.1f}" class="node-sub">{val_str}</text>')
-        svg.append('</g>')
+            svg.append(f'    <text x="{w_node + 10}" y="{mid_y - 2:.1f}" fill="#f8fafc" font-size="12" font-weight="600">{comp_name_esc}</text>')
+            svg.append(f'    <text x="{w_node + 10}" y="{mid_y + 11:.1f}" fill="#94a3b8" font-size="10.5">{val_str}</text>')
+        svg.append('  </g>')
 
     svg.append('</svg>')
     return '\n'.join(svg)
