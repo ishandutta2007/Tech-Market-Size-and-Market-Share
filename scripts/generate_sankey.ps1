@@ -155,9 +155,33 @@ function Parse-Val($valStr) {
 
 function Parse-Pct($pctStr) {
     if (-not $pctStr) { return 0.0 }
-    $clean = "$pctStr" -replace '[~><%]', '' -replace 'each', ''
+    $clean = "$pctStr" -replace '[~><%]', '' -replace 'each', '' -replace 'GMV', ''
     $clean = $clean.Trim()
     try { return [double]$clean / 100.0 } catch { return 0.0 }
+}
+
+# Direct platform corporate revenue distribution for GMV-driven sectors (B2C & B2B e-commerce)
+# to avoid conflating ecosystem GMV market shares with direct corporate revenue pools
+$SectorRevenueShares = @{
+    "b2c_ecommerce" = @{
+        "Amazon" = 0.190;
+        "JD.com" = 0.080;
+        "Alibaba (Taobao/Tmall)" = 0.070;
+        "Walmart Online" = 0.050;
+        "PDD Holdings (Temu/Pinduoduo)" = 0.025;
+        "Meituan" = 0.023;
+        "Douyin E-commerce" = 0.015;
+        "Mercado Libre" = 0.010;
+        "Shopee (Sea Group)" = 0.006;
+        "eBay" = 0.005;
+        "Shopify (Merchant Ecosystem)" = 0.000;
+    };
+    "b2b_ecommerce" = @{
+        "W.W. Grainger" = 0.032;
+        "Amazon Business" = 0.020;
+        "Alibaba.com" = 0.015;
+        "Fastenal" = 0.015;
+    }
 }
 
 function Bezier-Ribbon($x0, $y0_top, $y0_bot, $x1, $y1_top, $y1_bot) {
@@ -201,21 +225,32 @@ $flowsSecToComp = @()
 
 $s_idx = 0
 foreach ($sec in $sectorData) {
+    $secId = $sec.id
     $accountedPct = 0.0
     foreach ($leader in $sec.leaders) {
         $rawName = $leader.name
         $mappedName = if ($CompanyMappings.ContainsKey($rawName)) { $CompanyMappings[$rawName] } else { ($rawName -split ' \(')[0].Trim() }
-        $pct = Parse-Pct $leader.share
+        
+        $pct = if ($leader.revenue_share) {
+            Parse-Pct $leader.revenue_share
+        } elseif ($SectorRevenueShares.ContainsKey($secId) -and $SectorRevenueShares[$secId].ContainsKey($rawName)) {
+            $SectorRevenueShares[$secId][$rawName]
+        } else {
+            Parse-Pct $leader.share
+        }
+        
         $flowVal = $sec.revenue * $pct
         $accountedPct += $pct
 
-        if (-not $companyTotals.ContainsKey($mappedName)) { $companyTotals[$mappedName] = 0.0 }
-        $companyTotals[$mappedName] += $flowVal
+        if ($flowVal -gt 0) {
+            if (-not $companyTotals.ContainsKey($mappedName)) { $companyTotals[$mappedName] = 0.0 }
+            $companyTotals[$mappedName] += $flowVal
 
-        $flowsSecToComp += [PSCustomObject]@{
-            sec_idx = $s_idx
-            comp_name = $mappedName
-            value = $flowVal
+            $flowsSecToComp += [PSCustomObject]@{
+                sec_idx = $s_idx
+                comp_name = $mappedName
+                value = $flowVal
+            }
         }
     }
     $unaccountedPct = [Math]::Max(0.0, 1.0 - $accountedPct)

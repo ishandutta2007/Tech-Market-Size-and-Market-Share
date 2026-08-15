@@ -12,15 +12,15 @@
       "gmv": "-",
       "leaders": [
         { "name": "Microsoft", "share": "18.0%" },
-        { "name": "Salesforce", "share": "12.5%" },
+        { "name": "Salesforce", "share": "10.0%" },
         { "name": "SAP", "share": "5.5%" },
         { "name": "Oracle", "share": "4.5%" },
         { "name": "Adobe", "share": "4.0%" },
         { "name": "Intuit", "share": "3.5%" },
         { "name": "Google (Workspace)", "share": "3.0%" },
         { "name": "ServiceNow", "share": "2.5%" },
+        { "name": "Shopify", "share": "2.0%" },
         { "name": "Workday", "share": "2.0%" },
-        { "name": "Shopify", "share": "1.5%" },
         { "name": "Atlassian", "share": "1.2%" }
       ]
     },
@@ -148,18 +148,19 @@
       "revenue": "~$2.0 Trillion",
       "gmv": "~$6.3 Trillion",
       "leaders": [
-        { "name": "Alibaba (Taobao/Tmall)", "share": "20.5%" },
-        { "name": "Amazon", "share": "12.5%" },
-        { "name": "PDD Holdings (Temu/Pinduoduo)", "share": "10.5%" },
-        { "name": "JD.com", "share": "8.5%" },
-        { "name": "Douyin E-commerce", "share": "5.5%" },
-        { "name": "Meituan", "share": "4.5%" },
-        { "name": "Shopify (Merchant Ecosystem)", "share": "4.0%" },
-        { "name": "Walmart Online", "share": "2.0%" },
-        { "name": "Shopee (Sea Group)", "share": "1.5%" },
-        { "name": "eBay", "share": "1.2%" },
-        { "name": "Mercado Libre", "share": "1.0%" }
-      ]
+        { "name": "Alibaba (Taobao/Tmall)", "share": "20.5% GMV" },
+        { "name": "Amazon", "share": "12.5% GMV" },
+        { "name": "PDD Holdings (Temu/Pinduoduo)", "share": "10.5% GMV" },
+        { "name": "JD.com", "share": "8.5% GMV" },
+        { "name": "Douyin E-commerce", "share": "5.5% GMV" },
+        { "name": "Meituan", "share": "4.5% GMV" },
+        { "name": "Shopify (Merchant Ecosystem)", "share": "4.0% GMV" },
+        { "name": "Walmart Online", "share": "2.0% GMV" },
+        { "name": "Shopee (Sea Group)", "share": "1.5% GMV" },
+        { "name": "eBay", "share": "1.2% GMV" },
+        { "name": "Mercado Libre", "share": "1.0% GMV" }
+      ],
+      "note": "Market shares represent global GMV (Gross Merchandise Value) share of ~$6.3T. Direct platform revenues differ significantly by business model (1P retail gross sales vs. 3P marketplace take-rates vs. SaaS enablers). Shopify corporate revenue (~$11B–$13B) is accounted under SaaS to prevent double counting."
     },
     {
       "id": "b2b_ecommerce",
@@ -168,15 +169,15 @@
       "revenue": "~$500 Billion",
       "gmv": "~$22.0 Trillion",
       "leaders": [
-        { "name": "Alibaba.com", "share": "~1.5%" },
-        { "name": "W.W. Grainger", "share": "~0.8%" },
-        { "name": "Amazon Business", "share": "~0.5%" },
-        { "name": "Fastenal", "share": "~0.4%" },
-        { "name": "Global Sources", "share": "<0.5%" },
-        { "name": "Made-in-China", "share": "<0.5%" },
-        { "name": "IndiaMART", "share": "<0.5%" }
+        { "name": "Alibaba.com", "share": "~1.5% GMV" },
+        { "name": "W.W. Grainger", "share": "~0.8% GMV" },
+        { "name": "Amazon Business", "share": "~0.5% GMV" },
+        { "name": "Fastenal", "share": "~0.4% GMV" },
+        { "name": "Global Sources", "share": "<0.5% GMV" },
+        { "name": "Made-in-China", "share": "<0.5% GMV" },
+        { "name": "IndiaMART", "share": "<0.5% GMV" }
       ],
-      "note": "Highly fragmented market dominated by legacy offline contracts, EDI, and custom ERP procurement portals."
+      "note": "Market shares represent global B2B GMV share (~$22.0T). Highly fragmented market dominated by legacy offline enterprise contracts, EDI, and custom ERP procurement portals."
     },
     {
       "id": "ai_chips_gpus",
@@ -330,8 +331,8 @@
     },
     {
       "icon": "🛍️",
-      "title": "Global E-commerce vs. Regional Nuance",
-      "text": "While Amazon commands ~38% of US e-commerce, on a global GMV basis Alibaba Group (Taobao/Tmall) leads at >20%, followed by Amazon (~12.5%) and fast-growing PDD Holdings / Temu (~10.5%)."
+      "title": "E-Commerce GMV vs. Platform Revenue & SaaS Enablement",
+      "text": "Global e-commerce throughput (~$6.3T B2C GMV) is led by Alibaba (~20.5% GMV), Amazon (~12.5% GMV), and PDD/Temu (~10.5% GMV). However, direct platform revenue recognition diverges sharply: 1P retailers book gross product sales, 3P marketplaces capture ~5-15% take-rate fees, and commerce SaaS enablers (Shopify with ~$250B+ merchant GMV) monetize via subscription and fintech solutions (~$11B–$13B SaaS revenue), avoiding double-counting between merchant GMV throughput and corporate software revenue."
     },
     {
       "icon": "☁️",

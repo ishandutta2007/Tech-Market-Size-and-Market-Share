@@ -108,7 +108,7 @@ COMPANY_MAPPINGS = {
     "Transsion": "Transsion",
     "Warner Bros (Max)": "Warner Bros. Discovery",
     "Disney+ / Hulu": "Disney",
-    "Disney+" = "Disney",
+    "Disney+": "Disney",
     "Micron": "Micron",
     "MediaTek": "MediaTek",
     "Texas Instruments": "Texas Instruments",
@@ -152,11 +152,35 @@ def parse_val_to_billions(val_str: str) -> float:
 def parse_percent(pct_str: str) -> float:
     if not pct_str:
         return 0.0
-    clean = re.sub(r"[~><%]", "", str(pct_str)).replace("each", "").strip()
+    clean = re.sub(r"[~><%]", "", str(pct_str)).replace("each", "").replace("GMV", "").strip()
     try:
         return float(clean) / 100.0
     except ValueError:
         return 0.0
+
+# Direct platform corporate revenue distribution for GMV-driven sectors (B2C & B2B e-commerce)
+# to avoid conflating ecosystem GMV market shares with direct corporate revenue pools
+SECTOR_REVENUE_SHARES = {
+    "b2c_ecommerce": {
+        "Amazon": 0.190,
+        "JD.com": 0.080,
+        "Alibaba (Taobao/Tmall)": 0.070,
+        "Walmart Online": 0.050,
+        "PDD Holdings (Temu/Pinduoduo)": 0.025,
+        "Meituan": 0.023,
+        "Douyin E-commerce": 0.015,
+        "Mercado Libre": 0.010,
+        "Shopee (Sea Group)": 0.006,
+        "eBay": 0.005,
+        "Shopify (Merchant Ecosystem)": 0.000
+    },
+    "b2b_ecommerce": {
+        "W.W. Grainger": 0.032,
+        "Amazon Business": 0.020,
+        "Alibaba.com": 0.015,
+        "Fastenal": 0.015
+    }
+}
 
 def bezier_ribbon(x0, y0_top, y0_bot, x1, y1_top, y1_bot) -> str:
     dx = (x1 - x0) * 0.48
@@ -202,20 +226,29 @@ def generate_sankey_svg(data: dict, width=1440, height=1000) -> str:
     flows_sec_to_comp = []
     
     for s_idx, sec in enumerate(sector_data):
+        sec_id = sec.get("id")
         accounted_pct = 0.0
         for leader in sec["leaders"]:
             raw_name = leader.get("name")
             mapped_name = COMPANY_MAPPINGS.get(raw_name, raw_name.split(" (")[0].strip())
-            pct = parse_percent(leader.get("share"))
+            
+            if "revenue_share" in leader:
+                pct = parse_percent(leader.get("revenue_share"))
+            elif sec_id in SECTOR_REVENUE_SHARES and raw_name in SECTOR_REVENUE_SHARES[sec_id]:
+                pct = SECTOR_REVENUE_SHARES[sec_id][raw_name]
+            else:
+                pct = parse_percent(leader.get("share"))
+                
             flow_val = sec["revenue"] * pct
             accounted_pct += pct
             
-            company_totals[mapped_name] = company_totals.get(mapped_name, 0.0) + flow_val
-            flows_sec_to_comp.append({
-                "sec_idx": s_idx,
-                "comp_name": mapped_name,
-                "value": flow_val
-            })
+            if flow_val > 0:
+                company_totals[mapped_name] = company_totals.get(mapped_name, 0.0) + flow_val
+                flows_sec_to_comp.append({
+                    "sec_idx": s_idx,
+                    "comp_name": mapped_name,
+                    "value": flow_val
+                })
             
         unaccounted_pct = max(0.0, 1.0 - accounted_pct)
         if unaccounted_pct > 0.005:
