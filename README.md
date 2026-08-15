@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
   <img src="assets/banner.svg" alt="Tech Market Size Banner" width="100%" />
 </div>
 
@@ -28,17 +28,16 @@
 | **AI Chips & GPUs**<br>(Data Center & AI Accelerators) | ~\$130 Billion | - | 1. **Nvidia** (82.0%)<br>2. **AMD (Instinct)** (7.5%)<br>3. **Broadcom (Custom AI XPUs)** (5.0%)<br>4. **Cloud ASICs (TPU/Trainium/MTIA)** (3.5%)<br>5. **Intel (Gaudi)** (1.0%)<br>6. **Marvell Technology** (1.0%) |
 | **General Semiconductors**<br>(Memory, Mobile SoCs & CPUs) | ~\$470 Billion | - | 1. **Samsung Electronics** (13.0%)<br>2. **Intel** (10.0%)<br>3. **SK Hynix** (8.5%)<br>4. **Qualcomm** (7.5%)<br>5. **Broadcom** (7.0%)<br>6. **Micron** (5.0%)<br>7. **AMD (Client/Embedded)** (4.0%)<br>8. **MediaTek** (3.5%)<br>9. **Texas Instruments** (3.0%)<br>10. **NXP Semiconductors** (2.5%)<br>11. **Infineon** (2.5%)<br>12. **STMicroelectronics** (2.0%)<br>13. **Analog Devices (ADI)** (2.0%) |
 | **Streaming Video**<br>(SVOD Platforms) | ~\$120 Billion | - | 1. **Netflix** (34.0%)<br>2. **Disney+ / Hulu** (16.0%)<br>3. **Amazon Prime Video** (11.5%)<br>4. **Warner Bros (Max)** (9.0%)<br>5. **Paramount+** (4.5%)<br>6. **Peacock** (3.5%)<br>7. **Tencent Video / iQIYI** (~3.5% each)<br>8. **Apple TV+** (3.0%)<br>9. **Crunchyroll (Sony)** (1.5%)<br>10. **JioCinema / Hotstar** (1.2%) |
-| **Web3 & Blockchain Infrastructure**<br>(Exchanges, Protocols & Dev Infra) | ~\$38 Billion | ~\$3.0 Trillion *(Market Cap)* | 1. **Binance** (44.0%)<br>2. **Coinbase** (12.0%)<br>3. **OKX** (9.0%)<br>4. **Bybit** (8.0%)<br>5. **Tether / Circle** (6.5%)<br>6. **L1/L2 Protocols (Ethereum/Solana fees)** (5.5%)<br>7. **Kraken** (3.5%)<br>8. **Robinhood Crypto** (2.5%)<br>9. **Developer Infra (Alchemy/Consensys/Chainlink)** (2.0%) |
+| **Web3 & Blockchain Infrastructure**<br>(Exchanges, Protocols & Dev Infra) | ~\$38 Billion | ~\$3.0 Trillion (Market Cap) | 1. **Binance** (44.0%)<br>2. **Coinbase** (12.0%)<br>3. **OKX** (9.0%)<br>4. **Bybit** (8.0%)<br>5. **Tether / Circle** (6.5%)<br>6. **L1/L2 Protocols (Ethereum/Solana fees)** (5.5%)<br>7. **Kraken** (3.5%)<br>8. **Robinhood Crypto** (2.5%)<br>9. **Developer Infra (Alchemy/Consensys/Chainlink)** (2.0%) |
 | **Total Estimated Market** | **~\$5.843 Trillion** | **~\$31.3 Trillion** | **Combined major tech sectors listed above** |
 
 ---
 
 ### 🔎 Market Dynamics Highlights 💡
-* 🤖 **The Generative AI "Bifurcation" (Consumer vs. Enterprise):** While OpenAI maintains leadership in direct consumer subscriptions (~60%+ of web AI traffic), **Anthropic (Claude)** has surged to capture **~32-38% of enterprise API / coding spend** (as tracked by Menlo Ventures and Ramp data), closely rivaling OpenAI in business revenue. Google Gemini captures ~18.5% through enterprise Workspace & GCP integration.
-* 🇨🇳 **China's Frontier AI Landscape:** Beyond open-weights leader **DeepSeek**, China's top foundation model startups—notably **Zhipu AI** (GLM), **MiniMax** (global consumer/voice apps), and **Moonshot AI** (Kimi's long-context breakthroughs)—collectively command ~10-12% of the global foundation model market.
+* 🤖 **The Generative AI "Bifurcation" (Consumer vs. Enterprise):** While OpenAI maintains leadership in direct consumer subscriptions (~60%+ of web AI traffic), Anthropic (Claude) has surged to capture ~32-38% of enterprise API / coding spend (as tracked by Menlo Ventures and Ramp data), closely rivaling OpenAI in business revenue. Google Gemini captures ~18.5% through enterprise Workspace & GCP integration.
+* 🇨🇳 **China's Frontier AI Landscape:** Beyond open-weights leader DeepSeek, China's top foundation model startups—notably Zhipu AI (GLM), MiniMax (global consumer/voice apps), and Moonshot AI (Kimi's long-context breakthroughs)—collectively command ~10-12% of the global foundation model market.
 * ⛓️ **Web3 Asset Scale vs. Cash-Flow Capture:** While crypto asset market cap spans ~$3.0 Trillion with trillions in turnover, direct platform/protocol fee capture stands at ~$38 Billion, concentrated in centralized liquidity hubs (Binance, Coinbase, OKX), stablecoin reserve rails, and Layer 1/2 gas fees.
 * 🎯 **Digital Advertising Realignment:** Meta and Google now each control ~26-27% of global digital advertising, with Meta surging due to AI-driven ad performance (Advantage+). Meanwhile, ByteDance (TikTok + Douyin) and Amazon Ads have expanded significantly to claim ~8% and ~9% global shares respectively.
-* 🛍️ **Global E-commerce vs. Regional Nuance:** While Amazon commands ~38% of US e-commerce, on a *global* GMV basis Alibaba Group (Taobao/Tmall) leads at >20%, followed by Amazon (~12.5%) and fast-growing PDD Holdings / Temu (~10.5%).
+* 🛍️ **Global E-commerce vs. Regional Nuance:** While Amazon commands ~38% of US e-commerce, on a global GMV basis Alibaba Group (Taobao/Tmall) leads at >20%, followed by Amazon (~12.5%) and fast-growing PDD Holdings / Temu (~10.5%).
 * ☁️ **Cloud & AI Hyperscaling:** The Cloud Infrastructure (IaaS/PaaS) "Big Three" (AWS, Azure, GCP) command ~62% of enterprise cloud spend, with Azure & GCP closing the gap on AWS via generative AI workloads.
 * 💻 **PC Consolidation:** The "Big 3" (Lenovo, HP, and Dell) command ~60% of the entire PC hardware market, while Apple Mac captures ~9% volume with a significantly higher premium ASP (Average Selling Price).
-
