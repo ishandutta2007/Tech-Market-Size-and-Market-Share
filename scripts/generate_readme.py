@@ -91,6 +91,14 @@ def render_readme(data: dict) -> str:
 
 > **A comprehensive open-source database tracking global technology market sizes, industry revenue, and competitive market shares across key sectors including SaaS, Cloud Infrastructure, AI GPUs, E-commerce, and Digital Advertising.**
 
+### 🌊 Global Tech Market Value Flow (Sankey Diagram)
+
+<div align="center">
+  <img src="assets/sankey.svg" alt="Tech Market Flow Sankey Diagram" width="100%" />
+</div>
+
+<br/>
+
 ### 📊 {title} 📈
 
 | **Sector** | **Global Market Size (Revenue)** | **Estimated GMV** | **Market Leaders & Competitors (Estimated Mean Share %)** |
