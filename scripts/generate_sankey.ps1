@@ -14,6 +14,102 @@ if (-not (Test-Path $DataFile)) {
 
 $data = Get-Content -Path $DataFile -Raw -Encoding UTF8 | ConvertFrom-Json
 
+$CompanyMappings = @{
+    "Microsoft" = "Microsoft";
+    "Microsoft (Azure)" = "Microsoft";
+    "Microsoft (Xbox / ABK)" = "Microsoft";
+    "Microsoft (LinkedIn/Bing)" = "Microsoft";
+    "Microsoft (Surface)" = "Microsoft";
+    "Microsoft (Xbox)" = "Microsoft";
+    "Google" = "Alphabet (Google)";
+    "Google (Alphabet)" = "Alphabet (Google)";
+    "Google (Workspace)" = "Alphabet (Google)";
+    "Google Cloud" = "Alphabet (Google)";
+    "Google (Gemini)" = "Alphabet (Google)";
+    "Google (Play Games)" = "Alphabet (Google)";
+    "Amazon" = "Amazon";
+    "Amazon (AWS)" = "Amazon";
+    "Amazon Ads" = "Amazon";
+    "Amazon Business" = "Amazon";
+    "Amazon Prime Video" = "Amazon";
+    "Apple" = "Apple";
+    "Apple (Mac)" = "Apple";
+    "Apple (App Store Games)" = "Apple";
+    "Apple (App Store)" = "Apple";
+    "Apple Ads" = "Apple";
+    "Apple TV+" = "Apple";
+    "Meta" = "Meta";
+    "Meta (Facebook/Instagram)" = "Meta";
+    "Meta (Facebook)" = "Meta";
+    "Alibaba" = "Alibaba Group";
+    "Alibaba (Taobao/Tmall)" = "Alibaba Group";
+    "Alibaba.com" = "Alibaba Group";
+    "Alibaba Cloud" = "Alibaba Group";
+    "Tencent" = "Tencent";
+    "Tencent Cloud" = "Tencent";
+    "Tencent Video" = "Tencent";
+    "Tencent Video / iQIYI" = "Tencent";
+    "Samsung" = "Samsung";
+    "Samsung Electronics" = "Samsung";
+    "Samsung (Memory/LSI)" = "Samsung";
+    "Samsung (Memory)" = "Samsung";
+    "Nvidia" = "Nvidia";
+    "ByteDance" = "ByteDance";
+    "ByteDance (TikTok/Douyin)" = "ByteDance";
+    "Douyin E-commerce" = "ByteDance";
+    "PDD Holdings" = "PDD Holdings";
+    "PDD Holdings (Temu/Pinduoduo)" = "PDD Holdings";
+    "JD.com" = "JD.com";
+    "OpenAI" = "OpenAI";
+    "Anthropic" = "Anthropic";
+    "Sony" = "Sony";
+    "Sony (PlayStation)" = "Sony";
+    "Crunchyroll (Sony)" = "Sony";
+    "Netflix" = "Netflix";
+    "Lenovo" = "Lenovo";
+    "Motorola / Lenovo" = "Lenovo";
+    "HP Inc." = "HP Inc.";
+    "Dell" = "Dell";
+    "Xiaomi" = "Xiaomi";
+    "SK Hynix" = "SK Hynix";
+    "Broadcom" = "Broadcom";
+    "Broadcom (Custom AI XPUs)" = "Broadcom";
+    "Qualcomm" = "Qualcomm";
+    "Intel" = "Intel";
+    "Intel (Gaudi)" = "Intel";
+    "AMD" = "AMD";
+    "AMD (Instinct)" = "AMD";
+    "AMD (Client/Embedded)" = "AMD";
+    "Binance" = "Binance";
+    "Coinbase" = "Coinbase";
+    "Shopify" = "Shopify";
+    "Shopify (Merchant Ecosystem)" = "Shopify";
+    "Meituan" = "Meituan";
+    "Salesforce" = "Salesforce";
+    "Oracle" = "Oracle";
+    "Oracle Cloud (OCI)" = "Oracle";
+    "Oracle Cloud" = "Oracle";
+    "SAP" = "SAP";
+    "Adobe" = "Adobe";
+    "Intuit" = "Intuit";
+    "ServiceNow" = "ServiceNow";
+    "Workday" = "Workday";
+    "Huawei" = "Huawei";
+    "Huawei Cloud" = "Huawei";
+    "ASUS" = "ASUS";
+    "Acer" = "Acer";
+    "Oppo" = "Oppo";
+    "Vivo" = "Vivo";
+    "Honor" = "Honor";
+    "Transsion" = "Transsion";
+    "Warner Bros (Max)" = "Warner Bros. Discovery";
+    "Disney+ / Hulu" = "Disney";
+    "Disney+" = "Disney";
+    "Micron" = "Micron";
+    "MediaTek" = "MediaTek";
+    "Texas Instruments" = "Texas Instruments"
+}
+
 function Parse-Val($valStr) {
     if (-not $valStr -or $valStr -eq "-") { return 0.0 }
     $clean = $valStr -replace '~', '' -replace '\$', '' -replace ',', ''
@@ -39,7 +135,7 @@ function Parse-Pct($pctStr) {
 }
 
 function Bezier-Ribbon($x0, $y0_top, $y0_bot, $x1, $y1_top, $y1_bot) {
-    $dx = ($x1 - $x0) * 0.5
+    $dx = ($x1 - $x0) * 0.48
     $x0_s = "{0:F1}" -f $x0
     $x1_s = "{0:F1}" -f $x1
     $y0_t_s = "{0:F1}" -f $y0_top
@@ -51,7 +147,7 @@ function Bezier-Ribbon($x0, $y0_top, $y0_bot, $x1, $y1_top, $y1_bot) {
     return "M $x0_s $y0_t_s C $cx0 $y0_t_s, $cx1 $y1_t_s, $x1_s $y1_t_s L $x1_s $y1_b_s C $cx1 $y1_b_s, $cx0 $y0_b_s, $x0_s $y0_b_s Z"
 }
 
-$colors = @("#3b82f6", "#10b981", "#8b5cf6", "#f59e0b", "#ec4899", "#06b6d4", "#14b8a6", "#f97316", "#6366f1", "#84cc16", "#a855f7", "#eab308", "#64748b")
+$palette = @("#f97316", "#38bdf8", "#10b981", "#8b5cf6", "#f59e0b", "#ec4899", "#06b6d4", "#6366f1", "#84cc16", "#a855f7", "#eab308", "#14b8a6", "#64748b")
 
 $sectorData = @()
 $totalMarketRev = 0.0
@@ -63,8 +159,9 @@ foreach ($sec in $data.sectors) {
         $sectorData += [PSCustomObject]@{
             id = $sec.id
             name = $sec.name
+            subtitle = $sec.subtitle
             revenue = $rev
-            color = $colors[$idx % $colors.Count]
+            color = $palette[$idx % $palette.Count]
             leaders = $sec.leaders
         }
         $idx++
@@ -80,24 +177,25 @@ $s_idx = 0
 foreach ($sec in $sectorData) {
     $accountedPct = 0.0
     foreach ($leader in $sec.leaders) {
-        $cleanName = ($leader.name -split ' \(')[0].Trim()
+        $rawName = $leader.name
+        $mappedName = if ($CompanyMappings.ContainsKey($rawName)) { $CompanyMappings[$rawName] } else { ($rawName -split ' \(')[0].Trim() }
         $pct = Parse-Pct $leader.share
         $flowVal = $sec.revenue * $pct
         $accountedPct += $pct
 
-        if (-not $companyTotals.ContainsKey($cleanName)) { $companyTotals[$cleanName] = 0.0 }
-        $companyTotals[$cleanName] += $flowVal
+        if (-not $companyTotals.ContainsKey($mappedName)) { $companyTotals[$mappedName] = 0.0 }
+        $companyTotals[$mappedName] += $flowVal
 
         $flowsSecToComp += [PSCustomObject]@{
             sec_idx = $s_idx
-            comp_name = $cleanName
+            comp_name = $mappedName
             value = $flowVal
         }
     }
     $unaccountedPct = [Math]::Max(0.0, 1.0 - $accountedPct)
-    if ($unaccountedPct -gt 0.01) {
+    if ($unaccountedPct -gt 0.005) {
         $otherVal = $sec.revenue * $unaccountedPct
-        $otherLabel = "Other ($($sec.name))"
+        $otherLabel = "Other Industry Players"
         if (-not $companyTotals.ContainsKey($otherLabel)) { $companyTotals[$otherLabel] = 0.0 }
         $companyTotals[$otherLabel] += $otherVal
         $flowsSecToComp += [PSCustomObject]@{
@@ -111,15 +209,17 @@ foreach ($sec in $sectorData) {
 
 $sortedComps = $companyTotals.GetEnumerator() | Sort-Object Value -Descending
 $topComps = @()
-$longTailSum = 0.0
+$otherAcc = 0.0
 foreach ($item in $sortedComps) {
-    if ($item.Value -ge 50.0 -and -not $item.Key.StartsWith("Other (")) {
+    if ($item.Key -eq "Other Industry Players") {
+        $otherAcc += $item.Value
+    } elseif ($item.Value -ge 40.0) {
         $topComps += $item.Key
     } else {
-        $longTailSum += $item.Value
+        $otherAcc += $item.Value
     }
 }
-if ($longTailSum -gt 0) {
+if ($otherAcc -gt 0) {
     $topComps += "Other Industry Players"
 }
 
@@ -131,6 +231,13 @@ foreach ($f in $flowsSecToComp) {
     $mergedFlows[$key] += $f.value
 }
 
+$compColors = @(
+    "#f97316", "#38bdf8", "#8b5cf6", "#10b981", "#f59e0b",
+    "#ec4899", "#06b6d4", "#a855f7", "#84cc16", "#6366f1",
+    "#eab308", "#14b8a6", "#f43f5e", "#22d3ee", "#e11d48",
+    "#10b981", "#3b82f6", "#f97316", "#8b5cf6"
+)
+
 $compNodeData = @()
 $c_idx = 0
 foreach ($c_name in $topComps) {
@@ -139,7 +246,7 @@ foreach ($c_name in $topComps) {
         $k = "$($i):$c_name"
         if ($mergedFlows.ContainsKey($k)) { $val += $mergedFlows[$k] }
     }
-    $col = if ($c_name -eq "Other Industry Players") { "#475569" } else { $colors[$c_idx % $colors.Count] }
+    $col = if ($c_name -eq "Other Industry Players") { "#475569" } else { $compColors[$c_idx % $compColors.Count] }
     $compNodeData += [PSCustomObject]@{
         name = $c_name
         value = $val
@@ -148,23 +255,24 @@ foreach ($c_name in $topComps) {
     $c_idx++
 }
 
-$width = 1200
-$height = 850
-$marginTop = 80
-$marginBottom = 60
-$marginLeft = 40
-$marginRight = 160
+$width = 1440
+$height = 960
+$marginTop = 90
+$marginBottom = 50
+$marginLeft = 30
+$marginRight = 260
 $usableH = $height - $marginTop - $marginBottom
-$gapY = 12
+$gapYSec = 14
+$gapYComp = 10
 
-$totalGapsCol2 = $gapY * ($sectorData.Count - 1)
-$totalGapsCol3 = $gapY * ($compNodeData.Count - 1)
+$totalGapsCol2 = $gapYSec * ($sectorData.Count - 1)
+$totalGapsCol3 = $gapYComp * ($compNodeData.Count - 1)
 $maxFlowH = $usableH - [Math]::Max($totalGapsCol2, $totalGapsCol3)
 $scaleY = $maxFlowH / $totalMarketRev
 
-$wNode = 24
+$wNode = 20
 $xCol1 = $marginLeft
-$xCol2 = ($width - $marginLeft - $marginRight) * 0.44 + $marginLeft
+$xCol2 = 540
 $xCol3 = $width - $marginRight
 
 $totalNodeH = $totalMarketRev * $scaleY
@@ -180,7 +288,7 @@ foreach ($sec in $sectorData) {
         data = $sec
         curr_out_y = $currY2
     }
-    $currY2 += $h + $gapY
+    $currY2 += $h + $gapYSec
 }
 
 $col3Nodes = @{}
@@ -193,7 +301,7 @@ foreach ($comp in $compNodeData) {
         data = $comp
         curr_in_y = $currY3
     }
-    $currY3 += $h + $gapY
+    $currY3 += $h + $gapYComp
 }
 
 $ribbons = @()
@@ -204,7 +312,7 @@ foreach ($n2 in $col2Nodes) {
     $ribbons += [PSCustomObject]@{
         path = $pathD
         color = $n2.data.color
-        opacity = "0.35"
+        opacity = "0.32"
         tooltip = "$($n2.data.name): ~`$$("{0:N0}" -f $n2.data.revenue)B"
     }
     $currOutY1 += $flowH
@@ -213,7 +321,8 @@ foreach ($n2 in $col2Nodes) {
 for ($s = 0; $s -lt $sectorData.Count; $s++) {
     $n2 = $col2Nodes[$s]
     $sec = $sectorData[$s]
-    foreach ($compName in $topComps) {
+    foreach ($comp in $compNodeData) {
+        $compName = $comp.name
         $k = "$($s):$compName"
         if ($mergedFlows.ContainsKey($k) -and $mergedFlows[$k] -gt 0.1) {
             $val = $mergedFlows[$k]
@@ -223,7 +332,7 @@ for ($s = 0; $s -lt $sectorData.Count; $s++) {
             $ribbons += [PSCustomObject]@{
                 path = $pathD
                 color = $n2.data.color
-                opacity = "0.40"
+                opacity = "0.38"
                 tooltip = "$($sec.name) -> $($compName): ~`$$("{0:N1}" -f $val)B"
             }
             $n2.curr_out_y += $flowH
@@ -235,23 +344,25 @@ for ($s = 0; $s -lt $sectorData.Count; $s++) {
 $totalTStr = "{0:N2}" -f ($totalMarketRev / 1000.0)
 
 $sb = [System.Text.StringBuilder]::new()
-[void]$sb.AppendLine("<svg xmlns=`"http://www.w3.org/2000/svg`" viewBox=`"0 0 $width $height`" width=`"100%`" height=`"100%`" style=`"background:#090d16; border-radius:12px; font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;`">")
+[void]$sb.AppendLine("<svg xmlns=`"http://www.w3.org/2000/svg`" viewBox=`"0 0 $width $height`" width=`"100%`" height=`"100%`" style=`"background:#090d16; border-radius:14px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;`">")
 [void]$sb.AppendLine("<defs>")
 [void]$sb.AppendLine("  <style>")
-[void]$sb.AppendLine("    .title { fill: #f8fafc; font-size: 20px; font-weight: 700; }")
-[void]$sb.AppendLine("    .subtitle { fill: #94a3b8; font-size: 12px; }")
-[void]$sb.AppendLine("    .node-label { fill: #f1f5f9; font-size: 11.5px; font-weight: 600; }")
-[void]$sb.AppendLine("    .node-sub { fill: #94a3b8; font-size: 10px; }")
-[void]$sb.AppendLine("    .col-header { fill: #38bdf8; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }")
-[void]$sb.AppendLine("    .ribbon { transition: opacity 0.2s ease; }")
-[void]$sb.AppendLine("    .ribbon:hover { opacity: 0.8 !important; }")
+[void]$sb.AppendLine("    .title { fill: #f8fafc; font-size: 22px; font-weight: 700; }")
+[void]$sb.AppendLine("    .subtitle { fill: #94a3b8; font-size: 13px; }")
+[void]$sb.AppendLine("    .col-header { fill: #38bdf8; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }")
+[void]$sb.AppendLine("    .node-label { fill: #f8fafc; font-size: 12px; font-weight: 600; paint-order: stroke fill; stroke: #090d16; stroke-width: 3.5px; stroke-linejoin: round; }")
+[void]$sb.AppendLine("    .node-sub { fill: #94a3b8; font-size: 10.5px; paint-order: stroke fill; stroke: #090d16; stroke-width: 3px; stroke-linejoin: round; }")
+[void]$sb.AppendLine("    .ribbon { transition: opacity 0.15s ease; cursor: pointer; }")
+[void]$sb.AppendLine("    .ribbon:hover { opacity: 0.85 !important; }")
 [void]$sb.AppendLine("  </style>")
 [void]$sb.AppendLine("</defs>")
-[void]$sb.AppendLine("<text x=`"$marginLeft`" y=`"36`" class=`"title`">Global Tech Market Flow &amp; Revenue Distribution</text>")
-[void]$sb.AppendLine("<text x=`"$marginLeft`" y=`"54`" class=`"subtitle`">Estimated 2025–2026 Annualized Revenue Breakdown (~`$$totalTStr`T Total)</text>")
-[void]$sb.AppendLine("<text x=`"$xCol1`" y=`"$($marginTop - 16)`" class=`"col-header`">Total Market</text>")
-[void]$sb.AppendLine("<text x=`"$xCol2`" y=`"$($marginTop - 16)`" class=`"col-header`">Tech Sectors</text>")
-[void]$sb.AppendLine("<text x=`"$xCol3`" y=`"$($marginTop - 16)`" class=`"col-header`">Leaders &amp; Ecosystem</text>")
+
+[void]$sb.AppendLine("<text x=`"$marginLeft`" y=`"38`" class=`"title`">Global Tech Market Flow &amp; Revenue Distribution</text>")
+[void]$sb.AppendLine("<text x=`"$marginLeft`" y=`"58`" class=`"subtitle`">Estimated 2025–2026 Annualized Revenue Breakdown (~`$$totalTStr Trillion Total Market)</text>")
+
+[void]$sb.AppendLine("<text x=`"$xCol1`" y=`"$($marginTop - 18)`" class=`"col-header`">Global Market</text>")
+[void]$sb.AppendLine("<text x=`"$xCol2`" y=`"$($marginTop - 18)`" class=`"col-header`" text-anchor=`"end`">Tech Sectors</text>")
+[void]$sb.AppendLine("<text x=`"$($xCol3 + $wNode + 12)`" y=`"$($marginTop - 18)`" class=`"col-header`">Market Leaders &amp; Ecosystems</text>")
 
 [void]$sb.AppendLine("<g class=`"ribbons`">")
 foreach ($r in $ribbons) {
@@ -261,12 +372,12 @@ foreach ($r in $ribbons) {
 
 $yCol1_s = "{0:F1}" -f $yCol1Start
 $totH_s = "{0:F1}" -f $totalNodeH
-$midY1_t = "{0:F1}" -f ($totalNodeH / 2.0 - 6)
-$midY1_b = "{0:F1}" -f ($totalNodeH / 2.0 + 10)
+$midY1_t = "{0:F1}" -f ($totalNodeH / 2.0 - 7)
+$midY1_b = "{0:F1}" -f ($totalNodeH / 2.0 + 9)
 [void]$sb.AppendLine("<g transform=`"translate($xCol1, $yCol1_s)`">")
 [void]$sb.AppendLine("  <rect width=`"$wNode`" height=`"$totH_s`" rx=`"4`" fill=`"#38bdf8`" />")
-[void]$sb.AppendLine("  <text x=`"$($wNode + 8)`" y=`"$midY1_t`" class=`"node-label`">Global Tech Market</text>")
-[void]$sb.AppendLine("  <text x=`"$($wNode + 8)`" y=`"$midY1_b`" class=`"node-sub`">~`$$totalTStr Trillion</text>")
+[void]$sb.AppendLine("  <text x=`"$($wNode + 10)`" y=`"$midY1_t`" class=`"node-label`">All Sectors</text>")
+[void]$sb.AppendLine("  <text x=`"$($wNode + 10)`" y=`"$midY1_b`" class=`"node-sub`">~`$$totalTStr`T</text>")
 [void]$sb.AppendLine("</g>")
 
 foreach ($n2 in $col2Nodes) {
@@ -274,12 +385,19 @@ foreach ($n2 in $col2Nodes) {
     $vStr = if ($sec.revenue -ge 1000) { "~`$" + ("{0:N2}" -f ($sec.revenue / 1000.0)) + "T" } else { "~`$" + ("{0:N0}" -f $sec.revenue) + "B" }
     $y2_s = "{0:F1}" -f $n2.y
     $h2_s = "{0:F1}" -f $n2.h
-    $lblY_t = "{0:F1}" -f [Math]::Max(12.0, [Math]::Min($n2.h / 2.0 - 2, $n2.h - 14))
-    $lblY_b = "{0:F1}" -f [Math]::Max(24.0, [Math]::Min($n2.h / 2.0 + 10, $n2.h - 2))
+    $midY = $n2.h / 2.0
     [void]$sb.AppendLine("<g transform=`"translate($xCol2, $y2_s)`">")
     [void]$sb.AppendLine("  <rect width=`"$wNode`" height=`"$h2_s`" rx=`"3`" fill=`"$($sec.color)`" />")
-    [void]$sb.AppendLine("  <text x=`"$($wNode + 8)`" y=`"$lblY_t`" class=`"node-label`">$([System.Security.SecurityElement]::Escape($sec.name))</text>")
-    [void]$sb.AppendLine("  <text x=`"$($wNode + 8)`" y=`"$lblY_b`" class=`"node-sub`">$vStr</text>")
+    $secNameEsc = [System.Security.SecurityElement]::Escape($sec.name)
+    if ($n2.h -lt 18) {
+        $lblY = "{0:F1}" -f ($midY + 4)
+        [void]$sb.AppendLine("  <text x=`"-10`" y=`"$lblY`" text-anchor=`"end`" class=`"node-label`">$secNameEsc <tspan class=`"node-sub`">($vStr)</tspan></text>")
+    } else {
+        $lblY_t = "{0:F1}" -f ($midY - 3)
+        $lblY_b = "{0:F1}" -f ($midY + 11)
+        [void]$sb.AppendLine("  <text x=`"-10`" y=`"$lblY_t`" text-anchor=`"end`" class=`"node-label`">$secNameEsc</text>")
+        [void]$sb.AppendLine("  <text x=`"-10`" y=`"$lblY_b`" text-anchor=`"end`" class=`"node-sub`">$vStr</text>")
+    }
     [void]$sb.AppendLine("</g>")
 }
 
@@ -288,12 +406,19 @@ foreach ($comp in $compNodeData) {
     $vStr = if ($comp.value -ge 1000) { "~`$" + ("{0:N2}" -f ($comp.value / 1000.0)) + "T" } else { "~`$" + ("{0:N0}" -f $comp.value) + "B" }
     $y3_s = "{0:F1}" -f $n3.y
     $h3_s = "{0:F1}" -f $n3.h
-    $lblY_t = "{0:F1}" -f [Math]::Max(11.0, [Math]::Min($n3.h / 2.0 - 2, $n3.h - 12))
-    $lblY_b = "{0:F1}" -f [Math]::Max(22.0, [Math]::Min($n3.h / 2.0 + 9, $n3.h - 2))
+    $midY = $n3.h / 2.0
     [void]$sb.AppendLine("<g transform=`"translate($xCol3, $y3_s)`">")
     [void]$sb.AppendLine("  <rect width=`"$wNode`" height=`"$h3_s`" rx=`"3`" fill=`"$($comp.color)`" />")
-    [void]$sb.AppendLine("  <text x=`"$($wNode + 8)`" y=`"$lblY_t`" class=`"node-label`">$([System.Security.SecurityElement]::Escape($comp.name))</text>")
-    [void]$sb.AppendLine("  <text x=`"$($wNode + 8)`" y=`"$lblY_b`" class=`"node-sub`">$vStr</text>")
+    $compNameEsc = [System.Security.SecurityElement]::Escape($comp.name)
+    if ($n3.h -lt 18) {
+        $lblY = "{0:F1}" -f ($midY + 4)
+        [void]$sb.AppendLine("  <text x=`"$($wNode + 10)`" y=`"$lblY`" class=`"node-label`">$compNameEsc <tspan class=`"node-sub`">($vStr)</tspan></text>")
+    } else {
+        $lblY_t = "{0:F1}" -f ($midY - 2)
+        $lblY_b = "{0:F1}" -f ($midY + 11)
+        [void]$sb.AppendLine("  <text x=`"$($wNode + 10)`" y=`"$lblY_t`" class=`"node-label`">$compNameEsc</text>")
+        [void]$sb.AppendLine("  <text x=`"$($wNode + 10)`" y=`"$lblY_b`" class=`"node-sub`">$vStr</text>")
+    }
     [void]$sb.AppendLine("</g>")
 }
 
