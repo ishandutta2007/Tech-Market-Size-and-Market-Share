@@ -360,16 +360,16 @@ foreach ($cName in $topComps) {
     $c_idx++
 }
 
-$width = 1480
-$height = 1480
-$marginTop = 90
-$marginBottom = 45
-$marginLeft = 30
-$marginRight = 260
+$width = 1600
+$height = 2800
+$marginTop = 110
+$marginBottom = 60
+$marginLeft = 36
+$marginRight = 320
 
 $usableH = $height - $marginTop - $marginBottom
-$gapYSec = 8
-$gapYComp = 6
+$gapYSec = 18
+$gapYComp = 14
 
 $totalGapsCol2 = $gapYSec * ($sectorData.Count - 1)
 $totalGapsCol3 = $gapYComp * ($compNodeData.Count - 1)
@@ -377,9 +377,9 @@ $totalGapsCol3 = $gapYComp * ($compNodeData.Count - 1)
 $maxFlowH = $usableH - [Math]::Max($totalGapsCol2, $totalGapsCol3)
 $scaleY = $maxFlowH / $totalMarketRev
 
-$wNode = 20
+$wNode = 22
 $xCol1 = $marginLeft
-$xCol2 = 560
+$xCol2 = 600
 $xCol3 = $width - $marginRight
 
 $totalNodeH = $totalMarketRev * $scaleY
@@ -456,12 +456,12 @@ $totalTStr = "{0:N2}" -f ($totalMarketRev / 1000.0)
 $sb = [System.Text.StringBuilder]::new()
 [void]$sb.AppendLine('<?xml version="1.0" encoding="UTF-8"?>')
 [void]$sb.AppendLine("<svg xmlns=`"http://www.w3.org/2000/svg`" viewBox=`"0 0 $width $height`" width=`"100%`" height=`"100%`" font-family=`"system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`">")
-[void]$sb.AppendLine("  <rect width=`"$width`" height=`"$height`" fill=`"#090d16`" rx=`"14`" />")
-[void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"38`" fill=`"#f8fafc`" font-size=`"22`" font-weight=`"700`">Global Tech Market Flow &amp; Revenue Distribution</text>")
-[void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"58`" fill=`"#94a3b8`" font-size=`"13`">Estimated 2025-2026 Annualized Revenue Breakdown (~`$$totalTStr Trillion Total Market)</text>")
-[void]$sb.AppendLine("  <text x=`"$xCol1`" y=`"$($marginTop - 16)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`">GLOBAL MARKET</text>")
-[void]$sb.AppendLine("  <text x=`"$xCol2`" y=`"$($marginTop - 16)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`" text-anchor=`"end`">TECH SECTORS</text>")
-[void]$sb.AppendLine("  <text x=`"$($xCol3 + $wNode + 12)`" y=`"$($marginTop - 16)`" fill=`"#38bdf8`" font-size=`"12`" font-weight=`"700`" letter-spacing=`"1.2`">MARKET LEADERS &amp; ECOSYSTEMS</text>")
+[void]$sb.AppendLine("  <rect width=`"$width`" height=`"$height`" fill=`"#090d16`" rx=`"16`" />")
+[void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"44`" fill=`"#f8fafc`" font-size=`"26`" font-weight=`"700`">Global Tech Market Flow &amp; Revenue Distribution</text>")
+[void]$sb.AppendLine("  <text x=`"$marginLeft`" y=`"70`" fill=`"#94a3b8`" font-size=`"14`">Estimated 2025-2026 Annualized Revenue Breakdown (~`$$totalTStr Trillion Total Market)</text>")
+[void]$sb.AppendLine("  <text x=`"$xCol1`" y=`"$($marginTop - 18)`" fill=`"#38bdf8`" font-size=`"13`" font-weight=`"700`" letter-spacing=`"1.5`">GLOBAL MARKET</text>")
+[void]$sb.AppendLine("  <text x=`"$xCol2`" y=`"$($marginTop - 18)`" fill=`"#38bdf8`" font-size=`"13`" font-weight=`"700`" letter-spacing=`"1.5`" text-anchor=`"end`">TECH SECTORS</text>")
+[void]$sb.AppendLine("  <text x=`"$($xCol3 + $wNode + 14)`" y=`"$($marginTop - 18)`" fill=`"#38bdf8`" font-size=`"13`" font-weight=`"700`" letter-spacing=`"1.5`">MARKET LEADERS &amp; ECOSYSTEMS</text>")
 
 [void]$sb.AppendLine("  <g class=`"ribbons`">")
 foreach ($r in $ribbons) {
@@ -471,12 +471,12 @@ foreach ($r in $ribbons) {
 
 $yCol1_s = "{0:F1}" -f $yCol1Start
 $totH_s = "{0:F1}" -f $totalNodeH
-$midY1_t = "{0:F1}" -f ($totalNodeH / 2.0 - 7)
-$midY1_b = "{0:F1}" -f ($totalNodeH / 2.0 + 9)
+$midY1_t = "{0:F1}" -f ($totalNodeH / 2.0 - 8)
+$midY1_b = "{0:F1}" -f ($totalNodeH / 2.0 + 12)
 [void]$sb.AppendLine("  <g transform=`"translate($xCol1, $yCol1_s)`">")
-[void]$sb.AppendLine("    <rect width=`"$wNode`" height=`"$totH_s`" rx=`"4`" fill=`"#38bdf8`" />")
-[void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$midY1_t`" fill=`"#f8fafc`" font-size=`"12`" font-weight=`"600`">All Sectors</text>")
-[void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$midY1_b`" fill=`"#94a3b8`" font-size=`"10.5`">~`$$totalTStr`T</text>")
+[void]$sb.AppendLine("    <rect width=`"$wNode`" height=`"$totH_s`" rx=`"5`" fill=`"#38bdf8`" />")
+[void]$sb.AppendLine("    <text x=`"$($wNode + 12)`" y=`"$midY1_t`" fill=`"#f8fafc`" font-size=`"14`" font-weight=`"600`">All Sectors</text>")
+[void]$sb.AppendLine("    <text x=`"$($wNode + 12)`" y=`"$midY1_b`" fill=`"#94a3b8`" font-size=`"12`">~`$$totalTStr`T</text>")
 [void]$sb.AppendLine("  </g>")
 
 foreach ($n2 in $col2Nodes) {
@@ -487,15 +487,15 @@ foreach ($n2 in $col2Nodes) {
     $midY = $n2.h / 2.0
     $secNameEsc = Escape-Xml $sec.name
     [void]$sb.AppendLine("  <g transform=`"translate($xCol2, $y2_s)`">")
-    [void]$sb.AppendLine("    <rect width=`"$wNode`" height=`"$h2_s`" rx=`"3`" fill=`"$($sec.color)`" />")
-    if ($n2.h -lt 16) {
-        $lblY = "{0:F1}" -f ($midY + 4)
-        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY`" text-anchor=`"end`" fill=`"#f8fafc`" font-size=`"11.5`" font-weight=`"600`">$secNameEsc <tspan fill=`"#94a3b8`" font-size=`"10`">($vStr)</tspan></text>")
+    [void]$sb.AppendLine("    <rect width=`"$wNode`" height=`"$h2_s`" rx=`"4`" fill=`"$($sec.color)`" />")
+    if ($n2.h -lt 22) {
+        $lblY = "{0:F1}" -f ($midY + 4.5)
+        [void]$sb.AppendLine("    <text x=`"-12`" y=`"$lblY`" text-anchor=`"end`" fill=`"#f8fafc`" font-size=`"12.5`" font-weight=`"600`">$secNameEsc <tspan fill=`"#94a3b8`" font-size=`"11`">($vStr)</tspan></text>")
     } else {
-        $lblY1 = "{0:F1}" -f ($midY - 2)
-        $lblY2 = "{0:F1}" -f ($midY + 11)
-        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY1`" text-anchor=`"end`" fill=`"#f8fafc`" font-size=`"11.5`" font-weight=`"600`">$secNameEsc</text>")
-        [void]$sb.AppendLine("    <text x=`"-10`" y=`"$lblY2`" text-anchor=`"end`" fill=`"#94a3b8`" font-size=`"10`">$vStr</text>")
+        $lblY1 = "{0:F1}" -f ($midY - 3)
+        $lblY2 = "{0:F1}" -f ($midY + 12)
+        [void]$sb.AppendLine("    <text x=`"-12`" y=`"$lblY1`" text-anchor=`"end`" fill=`"#f8fafc`" font-size=`"12.5`" font-weight=`"600`">$secNameEsc</text>")
+        [void]$sb.AppendLine("    <text x=`"-12`" y=`"$lblY2`" text-anchor=`"end`" fill=`"#94a3b8`" font-size=`"11`">$vStr</text>")
     }
     [void]$sb.AppendLine("  </g>")
 }
@@ -508,15 +508,15 @@ foreach ($comp in $compNodeData) {
     $midY = $n3.h / 2.0
     $compNameEsc = Escape-Xml $comp.name
     [void]$sb.AppendLine("  <g transform=`"translate($xCol3, $y3_s)`">")
-    [void]$sb.AppendLine("    <rect width=`"$wNode`" height=`"$h3_s`" rx=`"3`" fill=`"$($comp.color)`" />")
-    if ($n3.h -lt 16) {
-        $lblY = "{0:F1}" -f ($midY + 4)
-        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY`" fill=`"#f8fafc`" font-size=`"11.5`" font-weight=`"600`">$compNameEsc <tspan fill=`"#94a3b8`" font-size=`"10`">($vStr)</tspan></text>")
+    [void]$sb.AppendLine("    <rect width=`"$wNode`" height=`"$h3_s`" rx=`"4`" fill=`"$($comp.color)`" />")
+    if ($n3.h -lt 22) {
+        $lblY = "{0:F1}" -f ($midY + 4.5)
+        [void]$sb.AppendLine("    <text x=`"$($wNode + 12)`" y=`"$lblY`" fill=`"#f8fafc`" font-size=`"12.5`" font-weight=`"600`">$compNameEsc <tspan fill=`"#94a3b8`" font-size=`"11`">($vStr)</tspan></text>")
     } else {
-        $lblY1 = "{0:F1}" -f ($midY - 2)
-        $lblY2 = "{0:F1}" -f ($midY + 11)
-        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY1`" fill=`"#f8fafc`" font-size=`"11.5`" font-weight=`"600`">$compNameEsc</text>")
-        [void]$sb.AppendLine("    <text x=`"$($wNode + 10)`" y=`"$lblY2`" fill=`"#94a3b8`" font-size=`"10`">$vStr</text>")
+        $lblY1 = "{0:F1}" -f ($midY - 3)
+        $lblY2 = "{0:F1}" -f ($midY + 12)
+        [void]$sb.AppendLine("    <text x=`"$($wNode + 12)`" y=`"$lblY1`" fill=`"#f8fafc`" font-size=`"12.5`" font-weight=`"600`">$compNameEsc</text>")
+        [void]$sb.AppendLine("    <text x=`"$($wNode + 12)`" y=`"$lblY2`" fill=`"#94a3b8`" font-size=`"11`">$vStr</text>")
     }
     [void]$sb.AppendLine("  </g>")
 }
@@ -528,5 +528,6 @@ if (-not (Test-Path $OutDir)) {
     New-Item -ItemType Directory -Path $OutDir -Force | Out-Null
 }
 
-[System.IO.File]::WriteAllText($OutputFile, $sb.ToString(), [System.Text.Encoding]::UTF8)
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText($OutputFile, $sb.ToString(), $utf8NoBom)
 Write-Host "Successfully generated Sankey Diagram: $OutputFile!"

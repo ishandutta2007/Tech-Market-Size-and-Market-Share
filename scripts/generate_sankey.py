@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate a beautiful, robust SVG Sankey Diagram for Tech Market Size and Market Share data.
+Generate a beautiful, spacious SVG Sankey Diagram for Tech Market Size and Market Share data.
 Pure Python standard library (zero external dependencies).
 Outputs 100% compliant XML with full entity escaping and zero external CSS reliance.
 
@@ -222,7 +222,7 @@ def bezier_ribbon(x0, y0_top, y0_bot, x1, y1_top, y1_bot) -> str:
         f"Z"
     )
 
-def generate_sankey_svg(data: dict, width=1480, height=1480) -> str:
+def generate_sankey_svg(data: dict, width=1600, height=2800) -> str:
     sectors = data.get("sectors", [])
     
     palette = [
@@ -336,15 +336,15 @@ def generate_sankey_svg(data: dict, width=1480, height=1480) -> str:
             "color": col
         })
 
-    # Layout coordinates
-    margin_top = 90
-    margin_bottom = 45
-    margin_left = 30
-    margin_right = 260
+    # Layout coordinates - spacious, doubled-height styling
+    margin_top = 110
+    margin_bottom = 60
+    margin_left = 36
+    margin_right = 320
     
     usable_h = height - margin_top - margin_bottom
-    gap_y_sec = 8
-    gap_y_comp = 6
+    gap_y_sec = 18
+    gap_y_comp = 14
     
     total_gaps_col2 = gap_y_sec * (len(sector_data) - 1)
     total_gaps_col3 = gap_y_comp * (len(comp_node_data) - 1)
@@ -353,9 +353,9 @@ def generate_sankey_svg(data: dict, width=1480, height=1480) -> str:
     scale_y = max_flow_h / total_market_rev
 
     # Node positions
-    w_node = 20
+    w_node = 22
     x_col1 = margin_left
-    x_col2 = 560
+    x_col2 = 600
     x_col3 = width - margin_right
 
     # 1. Total Market Node (Col 1)
@@ -436,16 +436,16 @@ def generate_sankey_svg(data: dict, width=1480, height=1480) -> str:
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="100%" font-family="system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif">')
     
     # Background rect
-    svg.append(f'  <rect width="{width}" height="{height}" fill="#090d16" rx="14" />')
+    svg.append(f'  <rect width="{width}" height="{height}" fill="#090d16" rx="16" />')
     
     # Header text
-    svg.append(f'  <text x="{margin_left}" y="38" fill="#f8fafc" font-size="22" font-weight="700">Global Tech Market Flow &amp; Revenue Distribution</text>')
-    svg.append(f'  <text x="{margin_left}" y="58" fill="#94a3b8" font-size="13">Estimated 2025–2026 Annualized Revenue Breakdown (~${total_market_rev/1000.0:.2f} Trillion Total Market)</text>')
+    svg.append(f'  <text x="{margin_left}" y="44" fill="#f8fafc" font-size="26" font-weight="700">Global Tech Market Flow &amp; Revenue Distribution</text>')
+    svg.append(f'  <text x="{margin_left}" y="70" fill="#94a3b8" font-size="14">Estimated 2025–2026 Annualized Revenue Breakdown (~${total_market_rev/1000.0:.2f} Trillion Total Market)</text>')
 
     # Column Headers
-    svg.append(f'  <text x="{x_col1}" y="{margin_top - 16}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">GLOBAL MARKET</text>')
-    svg.append(f'  <text x="{x_col2}" y="{margin_top - 16}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2" text-anchor="end">TECH SECTORS</text>')
-    svg.append(f'  <text x="{x_col3 + w_node + 12}" y="{margin_top - 16}" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">MARKET LEADERS &amp; ECOSYSTEMS</text>')
+    svg.append(f'  <text x="{x_col1}" y="{margin_top - 18}" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1.5">GLOBAL MARKET</text>')
+    svg.append(f'  <text x="{x_col2}" y="{margin_top - 18}" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1.5" text-anchor="end">TECH SECTORS</text>')
+    svg.append(f'  <text x="{x_col3 + w_node + 14}" y="{margin_top - 18}" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1.5">MARKET LEADERS &amp; ECOSYSTEMS</text>')
 
     # Ribbons
     svg.append('  <g class="ribbons">')
@@ -455,9 +455,9 @@ def generate_sankey_svg(data: dict, width=1480, height=1480) -> str:
 
     # Col 1: Total Market Node
     svg.append(f'  <g transform="translate({x_col1}, {y_col1_start:.1f})">')
-    svg.append(f'    <rect width="{w_node}" height="{total_node_h:.1f}" rx="4" fill="#38bdf8" />')
-    svg.append(f'    <text x="{w_node + 10}" y="{total_node_h / 2.0 - 7:.1f}" fill="#f8fafc" font-size="12" font-weight="600">All Sectors</text>')
-    svg.append(f'    <text x="{w_node + 10}" y="{total_node_h / 2.0 + 9:.1f}" fill="#94a3b8" font-size="10.5">~${total_market_rev/1000.0:.2f}T</text>')
+    svg.append(f'    <rect width="{w_node}" height="{total_node_h:.1f}" rx="5" fill="#38bdf8" />')
+    svg.append(f'    <text x="{w_node + 12}" y="{total_node_h / 2.0 - 8:.1f}" fill="#f8fafc" font-size="14" font-weight="600">All Sectors</text>')
+    svg.append(f'    <text x="{w_node + 12}" y="{total_node_h / 2.0 + 12:.1f}" fill="#94a3b8" font-size="12">~${total_market_rev/1000.0:.2f}T</text>')
     svg.append('  </g>')
 
     # Col 2: Sectors (Labels placed to the left of the node at text-anchor="end")
@@ -467,13 +467,13 @@ def generate_sankey_svg(data: dict, width=1480, height=1480) -> str:
         mid_y = n2["h"] / 2.0
         sec_name_esc = html.escape(sec["name"])
         svg.append(f'  <g transform="translate({x_col2}, {n2["y"]:.1f})">')
-        svg.append(f'    <rect width="{w_node}" height="{n2["h"]:.1f}" rx="3" fill="{sec["color"]}" />')
+        svg.append(f'    <rect width="{w_node}" height="{n2["h"]:.1f}" rx="4" fill="{sec["color"]}" />')
         
-        if n2["h"] < 16:
-            svg.append(f'    <text x="-10" y="{mid_y + 4:.1f}" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">{sec_name_esc} <tspan fill="#94a3b8" font-size="10">({val_str})</tspan></text>')
+        if n2["h"] < 22:
+            svg.append(f'    <text x="-12" y="{mid_y + 4.5:.1f}" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">{sec_name_esc} <tspan fill="#94a3b8" font-size="11">({val_str})</tspan></text>')
         else:
-            svg.append(f'    <text x="-10" y="{mid_y - 2:.1f}" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">{sec_name_esc}</text>')
-            svg.append(f'    <text x="-10" y="{mid_y + 11:.1f}" text-anchor="end" fill="#94a3b8" font-size="10">{val_str}</text>')
+            svg.append(f'    <text x="-12" y="{mid_y - 3:.1f}" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">{sec_name_esc}</text>')
+            svg.append(f'    <text x="-12" y="{mid_y + 12:.1f}" text-anchor="end" fill="#94a3b8" font-size="11">{val_str}</text>')
         svg.append('  </g>')
 
     # Col 3: Companies (Labels placed to the right of node at text-anchor="start")
@@ -483,13 +483,13 @@ def generate_sankey_svg(data: dict, width=1480, height=1480) -> str:
         mid_y = n3["h"] / 2.0
         comp_name_esc = html.escape(comp["name"])
         svg.append(f'  <g transform="translate({x_col3}, {n3["y"]:.1f})">')
-        svg.append(f'    <rect width="{w_node}" height="{n3["h"]:.1f}" rx="3" fill="{comp["color"]}" />')
+        svg.append(f'    <rect width="{w_node}" height="{n3["h"]:.1f}" rx="4" fill="{comp["color"]}" />')
         
-        if n3["h"] < 16:
-            svg.append(f'    <text x="{w_node + 10}" y="{mid_y + 4:.1f}" fill="#f8fafc" font-size="11.5" font-weight="600">{comp_name_esc} <tspan fill="#94a3b8" font-size="10">({val_str})</tspan></text>')
+        if n3["h"] < 22:
+            svg.append(f'    <text x="{w_node + 12}" y="{mid_y + 4.5:.1f}" fill="#f8fafc" font-size="12.5" font-weight="600">{comp_name_esc} <tspan fill="#94a3b8" font-size="11">({val_str})</tspan></text>')
         else:
-            svg.append(f'    <text x="{w_node + 10}" y="{mid_y - 2:.1f}" fill="#f8fafc" font-size="11.5" font-weight="600">{comp_name_esc}</text>')
-            svg.append(f'    <text x="{w_node + 10}" y="{mid_y + 11:.1f}" fill="#94a3b8" font-size="10">{val_str}</text>')
+            svg.append(f'    <text x="{w_node + 12}" y="{mid_y - 3:.1f}" fill="#f8fafc" font-size="12.5" font-weight="600">{comp_name_esc}</text>')
+            svg.append(f'    <text x="{w_node + 12}" y="{mid_y + 12:.1f}" fill="#94a3b8" font-size="11">{val_str}</text>')
         svg.append('  </g>')
 
     svg.append('</svg>')

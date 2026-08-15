@@ -1,455 +1,459 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 1480" width="100%" height="100%" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
-  <rect width="1480" height="1480" fill="#090d16" rx="14" />
-  <text x="30" y="38" fill="#f8fafc" font-size="22" font-weight="700">Global Tech Market Flow &amp; Revenue Distribution</text>
-  <text x="30" y="58" fill="#94a3b8" font-size="13">Estimated 2025-2026 Annualized Revenue Breakdown (~$6.47 Trillion Total Market)</text>
-  <text x="30" y="74" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">GLOBAL MARKET</text>
-  <text x="560" y="74" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2" text-anchor="end">TECH SECTORS</text>
-  <text x="1252" y="74" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">MARKET LEADERS &amp; ECOSYSTEMS</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2800" width="100%" height="100%" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <rect width="1600" height="2800" fill="#090d16" rx="16" />
+  <text x="36" y="44" fill="#f8fafc" font-size="26" font-weight="700">Global Tech Market Flow &amp; Revenue Distribution</text>
+  <text x="36" y="70" fill="#94a3b8" font-size="14">Estimated 2025-2026 Annualized Revenue Breakdown (~$6.47 Trillion Total Market)</text>
+  <text x="36" y="92" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1.5">GLOBAL MARKET</text>
+  <text x="600" y="92" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1.5" text-anchor="end">TECH SECTORS</text>
+  <text x="1316" y="92" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1.5">MARKET LEADERS &amp; ECOSYSTEMS</text>
   <g class="ribbons">
-    <path d="M 50.0 249.0 C 294.8 249.0, 315.2 90.0, 560.0 90.0 L 560.0 407.5 C 315.2 407.5, 294.8 566.5, 50.0 566.5 Z" fill="#6366f1" opacity="0.32"><title>B2C E-commerce: ~$2.00T</title></path>
-    <path d="M 50.0 566.5 C 294.8 566.5, 315.2 415.5, 560.0 415.5 L 560.0 520.6 C 315.2 520.6, 294.8 671.6, 50.0 671.6 Z" fill="#8b5cf6" opacity="0.32"><title>Digital Advertising: ~$662.0B</title></path>
-    <path d="M 50.0 671.6 C 294.8 671.6, 315.2 528.6, 560.0 528.6 L 560.0 611.1 C 315.2 611.1, 294.8 754.1, 50.0 754.1 Z" fill="#06b6d4" opacity="0.32"><title>Smartphones: ~$520.0B</title></path>
-    <path d="M 50.0 754.1 C 294.8 754.1, 315.2 619.1, 560.0 619.1 L 560.0 698.5 C 315.2 698.5, 294.8 833.5, 50.0 833.5 Z" fill="#84cc16" opacity="0.32"><title>B2B E-commerce: ~$500.0B</title></path>
-    <path d="M 50.0 833.5 C 294.8 833.5, 315.2 706.5, 560.0 706.5 L 560.0 783.9 C 315.2 783.9, 294.8 910.9, 50.0 910.9 Z" fill="#f97316" opacity="0.32"><title>SaaS: ~$488.0B</title></path>
-    <path d="M 50.0 910.9 C 294.8 910.9, 315.2 791.9, 560.0 791.9 L 560.0 866.5 C 315.2 866.5, 294.8 985.5, 50.0 985.5 Z" fill="#d946ef" opacity="0.32"><title>General Semiconductors: ~$470.0B</title></path>
-    <path d="M 50.0 985.5 C 294.8 985.5, 315.2 874.5, 560.0 874.5 L 560.0 939.6 C 315.2 939.6, 294.8 1050.6, 50.0 1050.6 Z" fill="#10b981" opacity="0.32"><title>Cloud Infrastructure: ~$410.0B</title></path>
-    <path d="M 50.0 1050.6 C 294.8 1050.6, 315.2 947.6, 560.0 947.6 L 560.0 983.3 C 315.2 983.3, 294.8 1086.3, 50.0 1086.3 Z" fill="#f59e0b" opacity="0.32"><title>Gaming: ~$225.0B</title></path>
-    <path d="M 50.0 1086.3 C 294.8 1086.3, 315.2 991.3, 560.0 991.3 L 560.0 1026.3 C 315.2 1026.3, 294.8 1121.3, 50.0 1121.3 Z" fill="#ec4899" opacity="0.32"><title>PC Hardware: ~$220.0B</title></path>
-    <path d="M 50.0 1121.3 C 294.8 1121.3, 315.2 1034.3, 560.0 1034.3 L 560.0 1068.4 C 315.2 1068.4, 294.8 1155.4, 50.0 1155.4 Z" fill="#a855f7" opacity="0.32"><title>Enterprise Networking &amp; Telecom Equipment: ~$215.0B</title></path>
-    <path d="M 50.0 1155.4 C 294.8 1155.4, 315.2 1076.4, 560.0 1076.4 L 560.0 1109.7 C 315.2 1109.7, 294.8 1188.7, 50.0 1188.7 Z" fill="#eab308" opacity="0.32"><title>Cybersecurity: ~$210.0B</title></path>
-    <path d="M 50.0 1188.7 C 294.8 1188.7, 315.2 1117.7, 560.0 1117.7 L 560.0 1139.2 C 315.2 1139.2, 294.8 1210.2, 50.0 1210.2 Z" fill="#14b8a6" opacity="0.32"><title>Semiconductor Capital Equipment: ~$135.0B</title></path>
-    <path d="M 50.0 1210.2 C 294.8 1210.2, 315.2 1147.2, 560.0 1147.2 L 560.0 1167.8 C 315.2 1167.8, 294.8 1230.8, 50.0 1230.8 Z" fill="#0ea5e9" opacity="0.32"><title>AI Chips &amp; GPUs: ~$130.0B</title></path>
-    <path d="M 50.0 1230.8 C 294.8 1230.8, 315.2 1175.8, 560.0 1175.8 L 560.0 1194.8 C 315.2 1194.8, 294.8 1249.8, 50.0 1249.8 Z" fill="#64748b" opacity="0.32"><title>Streaming Video: ~$120.0B</title></path>
-    <path d="M 50.0 1249.8 C 294.8 1249.8, 315.2 1202.8, 560.0 1202.8 L 560.0 1213.2 C 315.2 1213.2, 294.8 1260.2, 50.0 1260.2 Z" fill="#f43f5e" opacity="0.32"><title>Physical AI &amp; Robotics: ~$65.0B</title></path>
-    <path d="M 50.0 1260.2 C 294.8 1260.2, 315.2 1221.2, 560.0 1221.2 L 560.0 1230.7 C 315.2 1230.7, 294.8 1269.7, 50.0 1269.7 Z" fill="#38bdf8" opacity="0.32"><title>Generative AI &amp; Foundation Models: ~$60.0B</title></path>
-    <path d="M 50.0 1269.7 C 294.8 1269.7, 315.2 1238.7, 560.0 1238.7 L 560.0 1244.7 C 315.2 1244.7, 294.8 1275.7, 50.0 1275.7 Z" fill="#e11d48" opacity="0.32"><title>Web3 &amp; Blockchain Infrastructure: ~$38.0B</title></path>
-    <path d="M 50.0 1275.7 C 294.8 1275.7, 315.2 1252.7, 560.0 1252.7 L 560.0 1253.0 C 315.2 1253.0, 294.8 1276.0, 50.0 1276.0 Z" fill="#22d3ee" opacity="0.32"><title>Quantum Computing: ~$1.8B</title></path>
-    <path d="M 580.0 90.0 C 887.2 90.0, 912.8 90.0, 1220.0 90.0 L 1220.0 150.3 C 912.8 150.3, 887.2 150.3, 580.0 150.3 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Amazon: ~$380.0B</title></path>
-    <path d="M 580.0 150.3 C 887.2 150.3, 912.8 280.8, 1220.0 280.8 L 1220.0 303.0 C 912.8 303.0, 887.2 172.5, 580.0 172.5 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Alibaba Group: ~$140.0B</title></path>
-    <path d="M 580.0 172.5 C 887.2 172.5, 912.8 383.9, 1220.0 383.9 L 1220.0 409.3 C 912.8 409.3, 887.2 197.9, 580.0 197.9 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; JD.com: ~$160.0B</title></path>
-    <path d="M 580.0 197.9 C 887.2 197.9, 912.8 468.8, 1220.0 468.8 L 1220.0 484.7 C 912.8 484.7, 887.2 213.8, 580.0 213.8 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Walmart Online: ~$100.0B</title></path>
-    <path d="M 580.0 213.8 C 887.2 213.8, 912.8 530.8, 1220.0 530.8 L 1220.0 535.5 C 912.8 535.5, 887.2 218.6, 580.0 218.6 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; ByteDance: ~$30.0B</title></path>
-    <path d="M 580.0 218.6 C 887.2 218.6, 912.8 600.9, 1220.0 600.9 L 1220.0 608.8 C 912.8 608.8, 887.2 226.5, 580.0 226.5 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; PDD Holdings: ~$50.0B</title></path>
-    <path d="M 580.0 226.5 C 887.2 226.5, 912.8 655.7, 1220.0 655.7 L 1220.0 663.0 C 912.8 663.0, 887.2 233.8, 580.0 233.8 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Meituan: ~$46.0B</title></path>
-    <path d="M 580.0 233.8 C 887.2 233.8, 912.8 854.1, 1220.0 854.1 L 1220.0 857.3 C 912.8 857.3, 887.2 237.0, 580.0 237.0 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Mercado Libre: ~$20.0B</title></path>
-    <path d="M 580.0 237.0 C 887.2 237.0, 912.8 994.8, 1220.0 994.8 L 1220.0 1165.3 C 912.8 1165.3, 887.2 407.5, 580.0 407.5 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Other Industry Players: ~$1,074.0B</title></path>
-    <path d="M 580.0 415.5 C 887.2 415.5, 912.8 150.3, 1220.0 150.3 L 1220.0 159.8 C 912.8 159.8, 887.2 424.9, 580.0 424.9 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Amazon: ~$59.6B</title></path>
-    <path d="M 580.0 424.9 C 887.2 424.9, 912.8 189.2, 1220.0 189.2 L 1220.0 216.9 C 912.8 216.9, 887.2 452.7, 580.0 452.7 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Alphabet (Google): ~$174.8B</title></path>
-    <path d="M 580.0 452.7 C 887.2 452.7, 912.8 237.3, 1220.0 237.3 L 1220.0 239.5 C 912.8 239.5, 887.2 454.9, 580.0 454.9 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Microsoft: ~$13.9B</title></path>
-    <path d="M 580.0 454.9 C 887.2 454.9, 912.8 303.0, 1220.0 303.0 L 1220.0 307.7 C 912.8 307.7, 887.2 459.6, 580.0 459.6 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Alibaba Group: ~$29.8B</title></path>
-    <path d="M 580.0 459.6 C 887.2 459.6, 912.8 317.5, 1220.0 317.5 L 1220.0 345.7 C 912.8 345.7, 887.2 487.8, 580.0 487.8 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Meta: ~$177.4B</title></path>
-    <path d="M 580.0 487.8 C 887.2 487.8, 912.8 415.3, 1220.0 415.3 L 1220.0 417.0 C 912.8 417.0, 887.2 489.5, 580.0 489.5 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Apple: ~$10.6B</title></path>
-    <path d="M 580.0 489.5 C 887.2 489.5, 912.8 535.5, 1220.0 535.5 L 1220.0 543.8 C 912.8 543.8, 887.2 497.8, 580.0 497.8 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; ByteDance: ~$52.3B</title></path>
-    <path d="M 580.0 497.8 C 887.2 497.8, 912.8 584.2, 1220.0 584.2 L 1220.0 586.9 C 912.8 586.9, 887.2 500.4, 580.0 500.4 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Tencent: ~$16.6B</title></path>
-    <path d="M 580.0 500.4 C 887.2 500.4, 912.8 1165.3, 1220.0 1165.3 L 1220.0 1185.4 C 912.8 1185.4, 887.2 520.6, 580.0 520.6 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Other Industry Players: ~$127.1B</title></path>
-    <path d="M 580.0 528.6 C 887.2 528.6, 912.8 351.7, 1220.0 351.7 L 1220.0 367.3 C 912.8 367.3, 887.2 544.2, 580.0 544.2 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Samsung: ~$98.8B</title></path>
-    <path d="M 580.0 544.2 C 887.2 544.2, 912.8 417.0, 1220.0 417.0 L 1220.0 433.5 C 912.8 433.5, 887.2 560.8, 580.0 560.8 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Apple: ~$104.0B</title></path>
-    <path d="M 580.0 560.8 C 887.2 560.8, 912.8 510.8, 1220.0 510.8 L 1220.0 514.9 C 912.8 514.9, 887.2 564.9, 580.0 564.9 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Huawei: ~$26.0B</title></path>
-    <path d="M 580.0 564.9 C 887.2 564.9, 912.8 549.8, 1220.0 549.8 L 1220.0 561.4 C 912.8 561.4, 887.2 576.4, 580.0 576.4 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Xiaomi: ~$72.8B</title></path>
-    <path d="M 580.0 576.4 C 887.2 576.4, 912.8 567.4, 1220.0 567.4 L 1220.0 569.9 C 912.8 569.9, 887.2 578.9, 580.0 578.9 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Lenovo: ~$15.6B</title></path>
-    <path d="M 580.0 578.9 C 887.2 578.9, 912.8 642.2, 1220.0 642.2 L 1220.0 649.7 C 912.8 649.7, 887.2 586.3, 580.0 586.3 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Transsion: ~$46.8B</title></path>
-    <path d="M 580.0 586.3 C 887.2 586.3, 912.8 682.1, 1220.0 682.1 L 1220.0 689.1 C 912.8 689.1, 887.2 593.4, 580.0 593.4 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Oppo: ~$44.2B</title></path>
-    <path d="M 580.0 593.4 C 887.2 593.4, 912.8 732.2, 1220.0 732.2 L 1220.0 738.4 C 912.8 738.4, 887.2 599.5, 580.0 599.5 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Vivo: ~$39.0B</title></path>
-    <path d="M 580.0 599.5 C 887.2 599.5, 912.8 802.0, 1220.0 802.0 L 1220.0 806.9 C 912.8 806.9, 887.2 604.5, 580.0 604.5 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Honor: ~$31.2B</title></path>
-    <path d="M 580.0 604.5 C 887.2 604.5, 912.8 908.5, 1220.0 908.5 L 1220.0 911.4 C 912.8 911.4, 887.2 607.4, 580.0 607.4 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Realme: ~$18.2B</title></path>
-    <path d="M 580.0 607.4 C 887.2 607.4, 912.8 1185.4, 1220.0 1185.4 L 1220.0 1189.2 C 912.8 1189.2, 887.2 611.1, 580.0 611.1 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Other Industry Players: ~$23.4B</title></path>
-    <path d="M 580.0 619.1 C 887.2 619.1, 912.8 159.8, 1220.0 159.8 L 1220.0 161.4 C 912.8 161.4, 887.2 620.7, 580.0 620.7 Z" fill="#84cc16" opacity="0.38"><title>B2B E-commerce -&gt; Amazon: ~$10.0B</title></path>
-    <path d="M 580.0 620.7 C 887.2 620.7, 912.8 307.7, 1220.0 307.7 L 1220.0 308.9 C 912.8 308.9, 887.2 621.9, 580.0 621.9 Z" fill="#84cc16" opacity="0.38"><title>B2B E-commerce -&gt; Alibaba Group: ~$7.5B</title></path>
-    <path d="M 580.0 621.9 C 887.2 621.9, 912.8 961.0, 1220.0 961.0 L 1220.0 963.6 C 912.8 963.6, 887.2 624.4, 580.0 624.4 Z" fill="#84cc16" opacity="0.38"><title>B2B E-commerce -&gt; W.W. Grainger: ~$16.0B</title></path>
-    <path d="M 580.0 624.4 C 887.2 624.4, 912.8 1189.2, 1220.0 1189.2 L 1220.0 1263.2 C 912.8 1263.2, 887.2 698.5, 580.0 698.5 Z" fill="#84cc16" opacity="0.38"><title>B2B E-commerce -&gt; Other Industry Players: ~$466.5B</title></path>
-    <path d="M 580.0 706.5 C 887.2 706.5, 912.8 216.9, 1220.0 216.9 L 1220.0 219.2 C 912.8 219.2, 887.2 708.8, 580.0 708.8 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Alphabet (Google): ~$14.6B</title></path>
-    <path d="M 580.0 708.8 C 887.2 708.8, 912.8 239.5, 1220.0 239.5 L 1220.0 253.4 C 912.8 253.4, 887.2 722.7, 580.0 722.7 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Microsoft: ~$87.8B</title></path>
-    <path d="M 580.0 722.7 C 887.2 722.7, 912.8 614.8, 1220.0 614.8 L 1220.0 622.6 C 912.8 622.6, 887.2 730.5, 580.0 730.5 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Salesforce: ~$48.8B</title></path>
-    <path d="M 580.0 730.5 C 887.2 730.5, 912.8 779.1, 1220.0 779.1 L 1220.0 782.6 C 912.8 782.6, 887.2 734.0, 580.0 734.0 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Oracle: ~$22.0B</title></path>
-    <path d="M 580.0 734.0 C 887.2 734.0, 912.8 834.1, 1220.0 834.1 L 1220.0 838.3 C 912.8 838.3, 887.2 738.2, 580.0 738.2 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; SAP: ~$26.8B</title></path>
-    <path d="M 580.0 738.2 C 887.2 738.2, 912.8 881.5, 1220.0 881.5 L 1220.0 884.6 C 912.8 884.6, 887.2 741.3, 580.0 741.3 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Adobe: ~$19.5B</title></path>
-    <path d="M 580.0 741.3 C 887.2 741.3, 912.8 935.1, 1220.0 935.1 L 1220.0 937.8 C 912.8 937.8, 887.2 744.0, 580.0 744.0 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Intuit: ~$17.1B</title></path>
-    <path d="M 580.0 744.0 C 887.2 744.0, 912.8 1263.2, 1220.0 1263.2 L 1220.0 1303.1 C 912.8 1303.1, 887.2 783.9, 580.0 783.9 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Other Industry Players: ~$251.3B</title></path>
-    <path d="M 580.0 791.9 C 887.2 791.9, 912.8 367.3, 1220.0 367.3 L 1220.0 377.0 C 912.8 377.0, 887.2 801.6, 580.0 801.6 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Samsung: ~$61.1B</title></path>
-    <path d="M 580.0 801.6 C 887.2 801.6, 912.8 628.6, 1220.0 628.6 L 1220.0 636.0 C 912.8 636.0, 887.2 809.1, 580.0 809.1 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Intel: ~$47.0B</title></path>
-    <path d="M 580.0 809.1 C 887.2 809.1, 912.8 707.6, 1220.0 707.6 L 1220.0 714.0 C 912.8 714.0, 887.2 815.4, 580.0 815.4 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; SK Hynix: ~$40.0B</title></path>
-    <path d="M 580.0 815.4 C 887.2 815.4, 912.8 720.0, 1220.0 720.0 L 1220.0 725.2 C 912.8 725.2, 887.2 820.7, 580.0 820.7 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Broadcom: ~$32.9B</title></path>
-    <path d="M 580.0 820.7 C 887.2 820.7, 912.8 756.1, 1220.0 756.1 L 1220.0 761.7 C 912.8 761.7, 887.2 826.3, 580.0 826.3 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Qualcomm: ~$35.3B</title></path>
-    <path d="M 580.0 826.3 C 887.2 826.3, 912.8 823.6, 1220.0 823.6 L 1220.0 826.5 C 912.8 826.5, 887.2 829.2, 580.0 829.2 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; AMD: ~$18.8B</title></path>
-    <path d="M 580.0 829.2 C 887.2 829.2, 912.8 844.3, 1220.0 844.3 L 1220.0 848.1 C 912.8 848.1, 887.2 833.0, 580.0 833.0 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Micron: ~$23.5B</title></path>
-    <path d="M 580.0 833.0 C 887.2 833.0, 912.8 952.4, 1220.0 952.4 L 1220.0 955.0 C 912.8 955.0, 887.2 835.6, 580.0 835.6 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; MediaTek: ~$16.5B</title></path>
-    <path d="M 580.0 835.6 C 887.2 835.6, 912.8 1303.1, 1220.0 1303.1 L 1220.0 1334.1 C 912.8 1334.1, 887.2 866.5, 580.0 866.5 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Other Industry Players: ~$195.1B</title></path>
-    <path d="M 580.0 874.5 C 887.2 874.5, 912.8 161.4, 1220.0 161.4 L 1220.0 180.2 C 912.8 180.2, 887.2 893.4, 580.0 893.4 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Amazon: ~$118.9B</title></path>
-    <path d="M 580.0 893.4 C 887.2 893.4, 912.8 219.2, 1220.0 219.2 L 1220.0 227.7 C 912.8 227.7, 887.2 901.9, 580.0 901.9 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Alphabet (Google): ~$53.3B</title></path>
-    <path d="M 580.0 901.9 C 887.2 901.9, 912.8 253.4, 1220.0 253.4 L 1220.0 266.4 C 912.8 266.4, 887.2 914.9, 580.0 914.9 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Microsoft: ~$82.0B</title></path>
-    <path d="M 580.0 914.9 C 887.2 914.9, 912.8 308.9, 1220.0 308.9 L 1220.0 311.5 C 912.8 311.5, 887.2 917.5, 580.0 917.5 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Alibaba Group: ~$16.4B</title></path>
-    <path d="M 580.0 917.5 C 887.2 917.5, 912.8 514.9, 1220.0 514.9 L 1220.0 516.6 C 912.8 516.6, 887.2 919.1, 580.0 919.1 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Huawei: ~$10.3B</title></path>
-    <path d="M 580.0 919.1 C 887.2 919.1, 912.8 586.9, 1220.0 586.9 L 1220.0 588.5 C 912.8 588.5, 887.2 920.8, 580.0 920.8 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Tencent: ~$10.3B</title></path>
-    <path d="M 580.0 920.8 C 887.2 920.8, 912.8 782.6, 1220.0 782.6 L 1220.0 784.6 C 912.8 784.6, 887.2 922.7, 580.0 922.7 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Oracle: ~$12.3B</title></path>
-    <path d="M 580.0 922.7 C 887.2 922.7, 912.8 1334.1, 1220.0 1334.1 L 1220.0 1351.0 C 912.8 1351.0, 887.2 939.6, 580.0 939.6 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Other Industry Players: ~$106.6B</title></path>
-    <path d="M 580.0 947.6 C 887.2 947.6, 912.8 227.7, 1220.0 227.7 L 1220.0 229.5 C 912.8 229.5, 887.2 949.4, 580.0 949.4 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Alphabet (Google): ~$11.3B</title></path>
-    <path d="M 580.0 949.4 C 887.2 949.4, 912.8 266.4, 1220.0 266.4 L 1220.0 270.9 C 912.8 270.9, 887.2 953.9, 580.0 953.9 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Microsoft: ~$28.1B</title></path>
-    <path d="M 580.0 953.9 C 887.2 953.9, 912.8 433.5, 1220.0 433.5 L 1220.0 436.2 C 912.8 436.2, 887.2 956.6, 580.0 956.6 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Apple: ~$16.9B</title></path>
-    <path d="M 580.0 956.6 C 887.2 956.6, 912.8 588.5, 1220.0 588.5 L 1220.0 594.2 C 912.8 594.2, 887.2 962.3, 580.0 962.3 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Tencent: ~$36.0B</title></path>
-    <path d="M 580.0 962.3 C 887.2 962.3, 912.8 767.7, 1220.0 767.7 L 1220.0 772.9 C 912.8 772.9, 887.2 967.4, 580.0 967.4 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Sony: ~$32.6B</title></path>
-    <path d="M 580.0 967.4 C 887.2 967.4, 912.8 1351.0, 1220.0 1351.0 L 1220.0 1366.9 C 912.8 1366.9, 887.2 983.3, 580.0 983.3 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Other Industry Players: ~$100.1B</title></path>
-    <path d="M 580.0 991.3 C 887.2 991.3, 912.8 270.9, 1220.0 270.9 L 1220.0 271.2 C 912.8 271.2, 887.2 991.7, 580.0 991.7 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Microsoft: ~$2.2B</title></path>
-    <path d="M 580.0 991.7 C 887.2 991.7, 912.8 377.0, 1220.0 377.0 L 1220.0 377.9 C 912.8 377.9, 887.2 992.6, 580.0 992.6 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Samsung: ~$5.5B</title></path>
-    <path d="M 580.0 992.6 C 887.2 992.6, 912.8 436.2, 1220.0 436.2 L 1220.0 439.3 C 912.8 439.3, 887.2 995.7, 580.0 995.7 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Apple: ~$19.8B</title></path>
-    <path d="M 580.0 995.7 C 887.2 995.7, 912.8 516.6, 1220.0 516.6 L 1220.0 517.3 C 912.8 517.3, 887.2 996.4, 580.0 996.4 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Huawei: ~$4.4B</title></path>
-    <path d="M 580.0 996.4 C 887.2 996.4, 912.8 569.9, 1220.0 569.9 L 1220.0 578.2 C 912.8 578.2, 887.2 1004.8, 580.0 1004.8 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Lenovo: ~$52.8B</title></path>
-    <path d="M 580.0 1004.8 C 887.2 1004.8, 912.8 669.0, 1220.0 669.0 L 1220.0 676.1 C 912.8 676.1, 887.2 1011.9, 580.0 1011.9 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; HP Inc.: ~$45.1B</title></path>
-    <path d="M 580.0 1011.9 C 887.2 1011.9, 912.8 790.6, 1220.0 790.6 L 1220.0 796.0 C 912.8 796.0, 887.2 1017.4, 580.0 1017.4 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Dell: ~$34.1B</title></path>
-    <path d="M 580.0 1017.4 C 887.2 1017.4, 912.8 969.6, 1220.0 969.6 L 1220.0 972.0 C 912.8 972.0, 887.2 1019.8, 580.0 1019.8 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; ASUS: ~$15.4B</title></path>
-    <path d="M 580.0 1019.8 C 887.2 1019.8, 912.8 1366.9, 1220.0 1366.9 L 1220.0 1373.3 C 912.8 1373.3, 887.2 1026.3, 580.0 1026.3 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Other Industry Players: ~$40.7B</title></path>
-    <path d="M 580.0 1034.3 C 887.2 1034.3, 912.8 490.7, 1220.0 490.7 L 1220.0 503.0 C 912.8 503.0, 887.2 1046.5, 580.0 1046.5 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Cisco: ~$77.4B</title></path>
-    <path d="M 580.0 1046.5 C 887.2 1046.5, 912.8 517.3, 1220.0 517.3 L 1220.0 524.8 C 912.8 524.8, 887.2 1054.1, 580.0 1054.1 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Huawei: ~$47.3B</title></path>
-    <path d="M 580.0 1054.1 C 887.2 1054.1, 912.8 899.6, 1220.0 899.6 L 1220.0 902.5 C 912.8 902.5, 887.2 1057.0, 580.0 1057.0 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Arista Networks: ~$18.3B</title></path>
-    <path d="M 580.0 1057.0 C 887.2 1057.0, 912.8 978.0, 1220.0 978.0 L 1220.0 980.4 C 912.8 980.4, 887.2 1059.3, 580.0 1059.3 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Nokia: ~$15.1B</title></path>
-    <path d="M 580.0 1059.3 C 887.2 1059.3, 912.8 1373.3, 1220.0 1373.3 L 1220.0 1382.4 C 912.8 1382.4, 887.2 1068.4, 580.0 1068.4 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Other Industry Players: ~$57.0B</title></path>
-    <path d="M 580.0 1076.4 C 887.2 1076.4, 912.8 271.2, 1220.0 271.2 L 1220.0 274.7 C 912.8 274.7, 887.2 1079.9, 580.0 1079.9 Z" fill="#eab308" opacity="0.38"><title>Cybersecurity -&gt; Microsoft: ~$22.1B</title></path>
-    <path d="M 580.0 1079.9 C 887.2 1079.9, 912.8 503.0, 1220.0 503.0 L 1220.0 504.8 C 912.8 504.8, 887.2 1081.7, 580.0 1081.7 Z" fill="#eab308" opacity="0.38"><title>Cybersecurity -&gt; Cisco: ~$11.6B</title></path>
-    <path d="M 580.0 1081.7 C 887.2 1081.7, 912.8 917.4, 1220.0 917.4 L 1220.0 920.3 C 912.8 920.3, 887.2 1084.6, 580.0 1084.6 Z" fill="#eab308" opacity="0.38"><title>Cybersecurity -&gt; Palo Alto Networks: ~$17.9B</title></path>
-    <path d="M 580.0 1084.6 C 887.2 1084.6, 912.8 1382.4, 1220.0 1382.4 L 1220.0 1407.6 C 912.8 1407.6, 887.2 1109.7, 580.0 1109.7 Z" fill="#eab308" opacity="0.38"><title>Cybersecurity -&gt; Other Industry Players: ~$158.6B</title></path>
-    <path d="M 580.0 1117.7 C 887.2 1117.7, 912.8 744.4, 1220.0 744.4 L 1220.0 750.1 C 912.8 750.1, 887.2 1123.4, 580.0 1123.4 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; ASML: ~$35.8B</title></path>
-    <path d="M 580.0 1123.4 C 887.2 1123.4, 912.8 812.9, 1220.0 812.9 L 1220.0 817.6 C 912.8 817.6, 887.2 1128.0, 580.0 1128.0 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; Applied Materials: ~$29.0B</title></path>
-    <path d="M 580.0 1128.0 C 887.2 1128.0, 912.8 872.4, 1220.0 872.4 L 1220.0 875.5 C 912.8 875.5, 887.2 1131.1, 580.0 1131.1 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; Lam Research: ~$19.6B</title></path>
-    <path d="M 580.0 1131.1 C 887.2 1131.1, 912.8 926.3, 1220.0 926.3 L 1220.0 929.1 C 912.8 929.1, 887.2 1133.9, 580.0 1133.9 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; Tokyo Electron: ~$17.6B</title></path>
-    <path d="M 580.0 1133.9 C 887.2 1133.9, 912.8 1407.6, 1220.0 1407.6 L 1220.0 1412.8 C 912.8 1412.8, 887.2 1139.2, 580.0 1139.2 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; Other Industry Players: ~$33.1B</title></path>
-    <path d="M 580.0 1147.2 C 887.2 1147.2, 912.8 445.9, 1220.0 445.9 L 1220.0 462.8 C 912.8 462.8, 887.2 1164.1, 580.0 1164.1 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; Nvidia: ~$106.6B</title></path>
-    <path d="M 580.0 1164.1 C 887.2 1164.1, 912.8 636.0, 1220.0 636.0 L 1220.0 636.2 C 912.8 636.2, 887.2 1164.3, 580.0 1164.3 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; Intel: ~$1.3B</title></path>
-    <path d="M 580.0 1164.3 C 887.2 1164.3, 912.8 725.2, 1220.0 725.2 L 1220.0 726.2 C 912.8 726.2, 887.2 1165.3, 580.0 1165.3 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; Broadcom: ~$6.5B</title></path>
-    <path d="M 580.0 1165.3 C 887.2 1165.3, 912.8 826.5, 1220.0 826.5 L 1220.0 828.1 C 912.8 828.1, 887.2 1166.9, 580.0 1166.9 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; AMD: ~$9.8B</title></path>
-    <path d="M 580.0 1166.9 C 887.2 1166.9, 912.8 1412.8, 1220.0 1412.8 L 1220.0 1413.7 C 912.8 1413.7, 887.2 1167.8, 580.0 1167.8 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; Other Industry Players: ~$5.9B</title></path>
-    <path d="M 580.0 1175.8 C 887.2 1175.8, 912.8 180.2, 1220.0 180.2 L 1220.0 182.4 C 912.8 182.4, 887.2 1178.0, 580.0 1178.0 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Amazon: ~$13.8B</title></path>
-    <path d="M 580.0 1178.0 C 887.2 1178.0, 912.8 439.3, 1220.0 439.3 L 1220.0 439.9 C 912.8 439.9, 887.2 1178.6, 580.0 1178.6 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Apple: ~$3.6B</title></path>
-    <path d="M 580.0 1178.6 C 887.2 1178.6, 912.8 594.2, 1220.0 594.2 L 1220.0 594.9 C 912.8 594.9, 887.2 1179.2, 580.0 1179.2 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Tencent: ~$4.2B</title></path>
-    <path d="M 580.0 1179.2 C 887.2 1179.2, 912.8 695.1, 1220.0 695.1 L 1220.0 701.6 C 912.8 701.6, 887.2 1185.7, 580.0 1185.7 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Netflix: ~$40.8B</title></path>
-    <path d="M 580.0 1185.7 C 887.2 1185.7, 912.8 772.9, 1220.0 772.9 L 1220.0 773.1 C 912.8 773.1, 887.2 1186.0, 580.0 1186.0 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Sony: ~$1.8B</title></path>
-    <path d="M 580.0 1186.0 C 887.2 1186.0, 912.8 890.6, 1220.0 890.6 L 1220.0 893.6 C 912.8 893.6, 887.2 1189.0, 580.0 1189.0 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Disney: ~$19.2B</title></path>
-    <path d="M 580.0 1189.0 C 887.2 1189.0, 912.8 1413.7, 1220.0 1413.7 L 1220.0 1419.5 C 912.8 1419.5, 887.2 1194.8, 580.0 1194.8 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Other Industry Players: ~$36.6B</title></path>
-    <path d="M 580.0 1202.8 C 887.2 1202.8, 912.8 182.4, 1220.0 182.4 L 1220.0 183.2 C 912.8 183.2, 887.2 1203.6, 580.0 1203.6 Z" fill="#f43f5e" opacity="0.38"><title>Physical AI &amp; Robotics -&gt; Amazon: ~$4.6B</title></path>
-    <path d="M 580.0 1203.6 C 887.2 1203.6, 912.8 1419.5, 1220.0 1419.5 L 1220.0 1429.1 C 912.8 1429.1, 887.2 1213.2, 580.0 1213.2 Z" fill="#f43f5e" opacity="0.38"><title>Physical AI &amp; Robotics -&gt; Other Industry Players: ~$60.5B</title></path>
-    <path d="M 580.0 1221.2 C 887.2 1221.2, 912.8 229.5, 1220.0 229.5 L 1220.0 231.2 C 912.8 231.2, 887.2 1222.9, 580.0 1222.9 Z" fill="#38bdf8" opacity="0.38"><title>Generative AI &amp; Foundation Models -&gt; Alphabet (Google): ~$11.1B</title></path>
-    <path d="M 580.0 1222.9 C 887.2 1222.9, 912.8 863.3, 1220.0 863.3 L 1220.0 866.4 C 912.8 866.4, 887.2 1226.1, 580.0 1226.1 Z" fill="#38bdf8" opacity="0.38"><title>Generative AI &amp; Foundation Models -&gt; OpenAI: ~$19.8B</title></path>
-    <path d="M 580.0 1226.1 C 887.2 1226.1, 912.8 986.4, 1220.0 986.4 L 1220.0 988.8 C 912.8 988.8, 887.2 1228.4, 580.0 1228.4 Z" fill="#38bdf8" opacity="0.38"><title>Generative AI &amp; Foundation Models -&gt; Anthropic: ~$15.0B</title></path>
-    <path d="M 580.0 1228.4 C 887.2 1228.4, 912.8 1429.1, 1220.0 1429.1 L 1220.0 1431.4 C 912.8 1431.4, 887.2 1230.7, 580.0 1230.7 Z" fill="#38bdf8" opacity="0.38"><title>Generative AI &amp; Foundation Models -&gt; Other Industry Players: ~$14.1B</title></path>
-    <path d="M 580.0 1238.7 C 887.2 1238.7, 912.8 943.8, 1220.0 943.8 L 1220.0 946.4 C 912.8 946.4, 887.2 1241.3, 580.0 1241.3 Z" fill="#e11d48" opacity="0.38"><title>Web3 &amp; Blockchain Infrastructure -&gt; Binance: ~$16.7B</title></path>
-    <path d="M 580.0 1241.3 C 887.2 1241.3, 912.8 1431.4, 1220.0 1431.4 L 1220.0 1434.8 C 912.8 1434.8, 887.2 1244.7, 580.0 1244.7 Z" fill="#e11d48" opacity="0.38"><title>Web3 &amp; Blockchain Infrastructure -&gt; Other Industry Players: ~$21.3B</title></path>
-    <path d="M 580.0 1252.7 C 887.2 1252.7, 912.8 231.2, 1220.0 231.2 L 1220.0 231.3 C 912.8 231.3, 887.2 1252.7, 580.0 1252.7 Z" fill="#22d3ee" opacity="0.38"><title>Quantum Computing -&gt; Alphabet (Google): ~$0.1B</title></path>
-    <path d="M 580.0 1252.7 C 887.2 1252.7, 912.8 1434.8, 1220.0 1434.8 L 1220.0 1435.0 C 912.8 1435.0, 887.2 1253.0, 580.0 1253.0 Z" fill="#22d3ee" opacity="0.38"><title>Quantum Computing -&gt; Other Industry Players: ~$1.5B</title></path>
-  </g>
-  <g transform="translate(30, 249.0)">
-    <rect width="20" height="1027.0" rx="4" fill="#38bdf8" />
-    <text x="30" y="506.5" fill="#f8fafc" font-size="12" font-weight="600">All Sectors</text>
-    <text x="30" y="522.5" fill="#94a3b8" font-size="10.5">~$6.47T</text>
-  </g>
-  <g transform="translate(560, 90.0)">
-    <rect width="20" height="317.5" rx="3" fill="#6366f1" />
-    <text x="-10" y="156.7" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">B2C E-commerce</text>
-    <text x="-10" y="169.7" text-anchor="end" fill="#94a3b8" font-size="10">~$2.00T</text>
-  </g>
-  <g transform="translate(560, 415.5)">
-    <rect width="20" height="105.1" rx="3" fill="#8b5cf6" />
-    <text x="-10" y="50.5" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Digital Advertising</text>
-    <text x="-10" y="63.5" text-anchor="end" fill="#94a3b8" font-size="10">~$662B</text>
-  </g>
-  <g transform="translate(560, 528.6)">
-    <rect width="20" height="82.5" rx="3" fill="#06b6d4" />
-    <text x="-10" y="39.3" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Smartphones</text>
-    <text x="-10" y="52.3" text-anchor="end" fill="#94a3b8" font-size="10">~$520B</text>
-  </g>
-  <g transform="translate(560, 619.1)">
-    <rect width="20" height="79.4" rx="3" fill="#84cc16" />
-    <text x="-10" y="37.7" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">B2B E-commerce</text>
-    <text x="-10" y="50.7" text-anchor="end" fill="#94a3b8" font-size="10">~$500B</text>
-  </g>
-  <g transform="translate(560, 706.5)">
-    <rect width="20" height="77.5" rx="3" fill="#f97316" />
-    <text x="-10" y="36.7" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">SaaS</text>
-    <text x="-10" y="49.7" text-anchor="end" fill="#94a3b8" font-size="10">~$488B</text>
-  </g>
-  <g transform="translate(560, 791.9)">
-    <rect width="20" height="74.6" rx="3" fill="#d946ef" />
-    <text x="-10" y="35.3" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">General Semiconductors</text>
-    <text x="-10" y="48.3" text-anchor="end" fill="#94a3b8" font-size="10">~$470B</text>
-  </g>
-  <g transform="translate(560, 874.5)">
-    <rect width="20" height="65.1" rx="3" fill="#10b981" />
-    <text x="-10" y="30.5" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Cloud Infrastructure</text>
-    <text x="-10" y="43.5" text-anchor="end" fill="#94a3b8" font-size="10">~$410B</text>
-  </g>
-  <g transform="translate(560, 947.6)">
-    <rect width="20" height="35.7" rx="3" fill="#f59e0b" />
-    <text x="-10" y="15.9" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Gaming</text>
-    <text x="-10" y="28.9" text-anchor="end" fill="#94a3b8" font-size="10">~$225B</text>
-  </g>
-  <g transform="translate(560, 991.3)">
-    <rect width="20" height="34.9" rx="3" fill="#ec4899" />
-    <text x="-10" y="15.5" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">PC Hardware</text>
-    <text x="-10" y="28.5" text-anchor="end" fill="#94a3b8" font-size="10">~$220B</text>
-  </g>
-  <g transform="translate(560, 1034.3)">
-    <rect width="20" height="34.1" rx="3" fill="#a855f7" />
-    <text x="-10" y="15.1" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Enterprise Networking &amp; Telecom Equipment</text>
-    <text x="-10" y="28.1" text-anchor="end" fill="#94a3b8" font-size="10">~$215B</text>
-  </g>
-  <g transform="translate(560, 1076.4)">
-    <rect width="20" height="33.3" rx="3" fill="#eab308" />
-    <text x="-10" y="14.7" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Cybersecurity</text>
-    <text x="-10" y="27.7" text-anchor="end" fill="#94a3b8" font-size="10">~$210B</text>
-  </g>
-  <g transform="translate(560, 1117.7)">
-    <rect width="20" height="21.4" rx="3" fill="#14b8a6" />
-    <text x="-10" y="8.7" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Semiconductor Capital Equipment</text>
-    <text x="-10" y="21.7" text-anchor="end" fill="#94a3b8" font-size="10">~$135B</text>
-  </g>
-  <g transform="translate(560, 1147.2)">
-    <rect width="20" height="20.6" rx="3" fill="#0ea5e9" />
-    <text x="-10" y="8.3" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">AI Chips &amp; GPUs</text>
-    <text x="-10" y="21.3" text-anchor="end" fill="#94a3b8" font-size="10">~$130B</text>
-  </g>
-  <g transform="translate(560, 1175.8)">
-    <rect width="20" height="19.0" rx="3" fill="#64748b" />
-    <text x="-10" y="7.5" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Streaming Video</text>
-    <text x="-10" y="20.5" text-anchor="end" fill="#94a3b8" font-size="10">~$120B</text>
-  </g>
-  <g transform="translate(560, 1202.8)">
-    <rect width="20" height="10.3" rx="3" fill="#f43f5e" />
-    <text x="-10" y="9.2" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Physical AI &amp; Robotics <tspan fill="#94a3b8" font-size="10">(~$65B)</tspan></text>
-  </g>
-  <g transform="translate(560, 1221.2)">
-    <rect width="20" height="9.5" rx="3" fill="#38bdf8" />
-    <text x="-10" y="8.8" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Generative AI &amp; Foundation Models <tspan fill="#94a3b8" font-size="10">(~$60B)</tspan></text>
-  </g>
-  <g transform="translate(560, 1238.7)">
-    <rect width="20" height="6.0" rx="3" fill="#e11d48" />
-    <text x="-10" y="7.0" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Web3 &amp; Blockchain Infrastructure <tspan fill="#94a3b8" font-size="10">(~$38B)</tspan></text>
-  </g>
-  <g transform="translate(560, 1252.7)">
-    <rect width="20" height="0.3" rx="3" fill="#22d3ee" />
-    <text x="-10" y="4.1" text-anchor="end" fill="#f8fafc" font-size="11.5" font-weight="600">Quantum Computing <tspan fill="#94a3b8" font-size="10">(~$1.8B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 90.0)">
-    <rect width="20" height="93.2" rx="3" fill="#f97316" />
-    <text x="30" y="44.6" fill="#f8fafc" font-size="11.5" font-weight="600">Amazon</text>
-    <text x="30" y="57.6" fill="#94a3b8" font-size="10">~$587B</text>
-  </g>
-  <g transform="translate(1220, 189.2)">
-    <rect width="20" height="42.1" rx="3" fill="#38bdf8" />
-    <text x="30" y="19.0" fill="#f8fafc" font-size="11.5" font-weight="600">Alphabet (Google)</text>
-    <text x="30" y="32.0" fill="#94a3b8" font-size="10">~$265B</text>
-  </g>
-  <g transform="translate(1220, 237.3)">
-    <rect width="20" height="37.5" rx="3" fill="#8b5cf6" />
-    <text x="30" y="16.7" fill="#f8fafc" font-size="11.5" font-weight="600">Microsoft</text>
-    <text x="30" y="29.7" fill="#94a3b8" font-size="10">~$236B</text>
-  </g>
-  <g transform="translate(1220, 280.8)">
-    <rect width="20" height="30.7" rx="3" fill="#10b981" />
-    <text x="30" y="13.4" fill="#f8fafc" font-size="11.5" font-weight="600">Alibaba Group</text>
-    <text x="30" y="26.4" fill="#94a3b8" font-size="10">~$194B</text>
-  </g>
-  <g transform="translate(1220, 317.5)">
-    <rect width="20" height="28.2" rx="3" fill="#f59e0b" />
-    <text x="30" y="12.1" fill="#f8fafc" font-size="11.5" font-weight="600">Meta</text>
-    <text x="30" y="25.1" fill="#94a3b8" font-size="10">~$177B</text>
-  </g>
-  <g transform="translate(1220, 351.7)">
-    <rect width="20" height="26.3" rx="3" fill="#ec4899" />
-    <text x="30" y="11.1" fill="#f8fafc" font-size="11.5" font-weight="600">Samsung</text>
-    <text x="30" y="24.1" fill="#94a3b8" font-size="10">~$165B</text>
-  </g>
-  <g transform="translate(1220, 383.9)">
-    <rect width="20" height="25.4" rx="3" fill="#06b6d4" />
-    <text x="30" y="10.7" fill="#f8fafc" font-size="11.5" font-weight="600">JD.com</text>
-    <text x="30" y="23.7" fill="#94a3b8" font-size="10">~$160B</text>
-  </g>
-  <g transform="translate(1220, 415.3)">
-    <rect width="20" height="24.6" rx="3" fill="#a855f7" />
-    <text x="30" y="10.3" fill="#f8fafc" font-size="11.5" font-weight="600">Apple</text>
-    <text x="30" y="23.3" fill="#94a3b8" font-size="10">~$155B</text>
-  </g>
-  <g transform="translate(1220, 445.9)">
-    <rect width="20" height="16.9" rx="3" fill="#84cc16" />
-    <text x="30" y="6.5" fill="#f8fafc" font-size="11.5" font-weight="600">Nvidia</text>
-    <text x="30" y="19.5" fill="#94a3b8" font-size="10">~$107B</text>
-  </g>
-  <g transform="translate(1220, 468.8)">
-    <rect width="20" height="15.9" rx="3" fill="#6366f1" />
-    <text x="30" y="11.9" fill="#f8fafc" font-size="11.5" font-weight="600">Walmart Online <tspan fill="#94a3b8" font-size="10">(~$100B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 490.7)">
-    <rect width="20" height="14.1" rx="3" fill="#eab308" />
-    <text x="30" y="11.1" fill="#f8fafc" font-size="11.5" font-weight="600">Cisco <tspan fill="#94a3b8" font-size="10">(~$89B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 510.8)">
-    <rect width="20" height="14.0" rx="3" fill="#14b8a6" />
-    <text x="30" y="11.0" fill="#f8fafc" font-size="11.5" font-weight="600">Huawei <tspan fill="#94a3b8" font-size="10">(~$88B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 530.8)">
-    <rect width="20" height="13.1" rx="3" fill="#f43f5e" />
-    <text x="30" y="10.5" fill="#f8fafc" font-size="11.5" font-weight="600">ByteDance <tspan fill="#94a3b8" font-size="10">(~$82B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 549.8)">
-    <rect width="20" height="11.6" rx="3" fill="#22d3ee" />
-    <text x="30" y="9.8" fill="#f8fafc" font-size="11.5" font-weight="600">Xiaomi <tspan fill="#94a3b8" font-size="10">(~$73B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 567.4)">
-    <rect width="20" height="10.9" rx="3" fill="#e11d48" />
-    <text x="30" y="9.4" fill="#f8fafc" font-size="11.5" font-weight="600">Lenovo <tspan fill="#94a3b8" font-size="10">(~$68B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 584.2)">
-    <rect width="20" height="10.6" rx="3" fill="#10b981" />
-    <text x="30" y="9.3" fill="#f8fafc" font-size="11.5" font-weight="600">Tencent <tspan fill="#94a3b8" font-size="10">(~$67B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 600.9)">
-    <rect width="20" height="7.9" rx="3" fill="#3b82f6" />
-    <text x="30" y="8.0" fill="#f8fafc" font-size="11.5" font-weight="600">PDD Holdings <tspan fill="#94a3b8" font-size="10">(~$50B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 614.8)">
-    <rect width="20" height="7.7" rx="3" fill="#f97316" />
-    <text x="30" y="7.9" fill="#f8fafc" font-size="11.5" font-weight="600">Salesforce <tspan fill="#94a3b8" font-size="10">(~$49B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 628.6)">
-    <rect width="20" height="7.7" rx="3" fill="#8b5cf6" />
-    <text x="30" y="7.8" fill="#f8fafc" font-size="11.5" font-weight="600">Intel <tspan fill="#94a3b8" font-size="10">(~$48B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 642.2)">
-    <rect width="20" height="7.4" rx="3" fill="#0ea5e9" />
-    <text x="30" y="7.7" fill="#f8fafc" font-size="11.5" font-weight="600">Transsion <tspan fill="#94a3b8" font-size="10">(~$47B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 655.7)">
-    <rect width="20" height="7.3" rx="3" fill="#14b8a6" />
-    <text x="30" y="7.7" fill="#f8fafc" font-size="11.5" font-weight="600">Meituan <tspan fill="#94a3b8" font-size="10">(~$46B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 669.0)">
-    <rect width="20" height="7.2" rx="3" fill="#f59e0b" />
-    <text x="30" y="7.6" fill="#f8fafc" font-size="11.5" font-weight="600">HP Inc. <tspan fill="#94a3b8" font-size="10">(~$45B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 682.1)">
-    <rect width="20" height="7.0" rx="3" fill="#ec4899" />
-    <text x="30" y="7.5" fill="#f8fafc" font-size="11.5" font-weight="600">Oppo <tspan fill="#94a3b8" font-size="10">(~$44B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 695.1)">
-    <rect width="20" height="6.5" rx="3" fill="#a855f7" />
-    <text x="30" y="7.2" fill="#f8fafc" font-size="11.5" font-weight="600">Netflix <tspan fill="#94a3b8" font-size="10">(~$41B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 707.6)">
-    <rect width="20" height="6.3" rx="3" fill="#84cc16" />
-    <text x="30" y="7.2" fill="#f8fafc" font-size="11.5" font-weight="600">SK Hynix <tspan fill="#94a3b8" font-size="10">(~$40B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 720.0)">
-    <rect width="20" height="6.3" rx="3" fill="#6366f1" />
-    <text x="30" y="7.1" fill="#f8fafc" font-size="11.5" font-weight="600">Broadcom <tspan fill="#94a3b8" font-size="10">(~$39B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 732.2)">
-    <rect width="20" height="6.2" rx="3" fill="#eab308" />
-    <text x="30" y="7.1" fill="#f8fafc" font-size="11.5" font-weight="600">Vivo <tspan fill="#94a3b8" font-size="10">(~$39B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 744.4)">
-    <rect width="20" height="5.7" rx="3" fill="#38bdf8" />
-    <text x="30" y="6.8" fill="#f8fafc" font-size="11.5" font-weight="600">ASML <tspan fill="#94a3b8" font-size="10">(~$36B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 756.1)">
-    <rect width="20" height="5.6" rx="3" fill="#f43f5e" />
-    <text x="30" y="6.8" fill="#f8fafc" font-size="11.5" font-weight="600">Qualcomm <tspan fill="#94a3b8" font-size="10">(~$35B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 767.7)">
-    <rect width="20" height="5.5" rx="3" fill="#22d3ee" />
-    <text x="30" y="6.7" fill="#f8fafc" font-size="11.5" font-weight="600">Sony <tspan fill="#94a3b8" font-size="10">(~$34B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 779.1)">
-    <rect width="20" height="5.4" rx="3" fill="#f97316" />
-    <text x="30" y="6.7" fill="#f8fafc" font-size="11.5" font-weight="600">Oracle <tspan fill="#94a3b8" font-size="10">(~$34B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 790.6)">
-    <rect width="20" height="5.4" rx="3" fill="#38bdf8" />
-    <text x="30" y="6.7" fill="#f8fafc" font-size="11.5" font-weight="600">Dell <tspan fill="#94a3b8" font-size="10">(~$34B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 802.0)">
-    <rect width="20" height="5.0" rx="3" fill="#8b5cf6" />
-    <text x="30" y="6.5" fill="#f8fafc" font-size="11.5" font-weight="600">Honor <tspan fill="#94a3b8" font-size="10">(~$31B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 812.9)">
-    <rect width="20" height="4.6" rx="3" fill="#10b981" />
-    <text x="30" y="6.3" fill="#f8fafc" font-size="11.5" font-weight="600">Applied Materials <tspan fill="#94a3b8" font-size="10">(~$29B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 823.6)">
-    <rect width="20" height="4.5" rx="3" fill="#f59e0b" />
-    <text x="30" y="6.3" fill="#f8fafc" font-size="11.5" font-weight="600">AMD <tspan fill="#94a3b8" font-size="10">(~$29B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 834.1)">
-    <rect width="20" height="4.3" rx="3" fill="#ec4899" />
-    <text x="30" y="6.1" fill="#f8fafc" font-size="11.5" font-weight="600">SAP <tspan fill="#94a3b8" font-size="10">(~$27B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 844.3)">
-    <rect width="20" height="3.7" rx="3" fill="#06b6d4" />
-    <text x="30" y="5.9" fill="#f8fafc" font-size="11.5" font-weight="600">Micron <tspan fill="#94a3b8" font-size="10">(~$24B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 854.1)">
-    <rect width="20" height="3.2" rx="3" fill="#a855f7" />
-    <text x="30" y="5.6" fill="#f8fafc" font-size="11.5" font-weight="600">Mercado Libre <tspan fill="#94a3b8" font-size="10">(~$20B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 863.3)">
-    <rect width="20" height="3.1" rx="3" fill="#84cc16" />
-    <text x="30" y="5.6" fill="#f8fafc" font-size="11.5" font-weight="600">OpenAI <tspan fill="#94a3b8" font-size="10">(~$20B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 872.4)">
-    <rect width="20" height="3.1" rx="3" fill="#6366f1" />
-    <text x="30" y="5.6" fill="#f8fafc" font-size="11.5" font-weight="600">Lam Research <tspan fill="#94a3b8" font-size="10">(~$20B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 881.5)">
-    <rect width="20" height="3.1" rx="3" fill="#eab308" />
-    <text x="30" y="5.5" fill="#f8fafc" font-size="11.5" font-weight="600">Adobe <tspan fill="#94a3b8" font-size="10">(~$20B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 890.6)">
-    <rect width="20" height="3.0" rx="3" fill="#14b8a6" />
-    <text x="30" y="5.5" fill="#f8fafc" font-size="11.5" font-weight="600">Disney <tspan fill="#94a3b8" font-size="10">(~$19B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 899.6)">
-    <rect width="20" height="2.9" rx="3" fill="#f43f5e" />
-    <text x="30" y="5.5" fill="#f8fafc" font-size="11.5" font-weight="600">Arista Networks <tspan fill="#94a3b8" font-size="10">(~$18B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 908.5)">
-    <rect width="20" height="2.9" rx="3" fill="#22d3ee" />
-    <text x="30" y="5.4" fill="#f8fafc" font-size="11.5" font-weight="600">Realme <tspan fill="#94a3b8" font-size="10">(~$18B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 917.4)">
-    <rect width="20" height="2.8" rx="3" fill="#e11d48" />
-    <text x="30" y="5.4" fill="#f8fafc" font-size="11.5" font-weight="600">Palo Alto Networks <tspan fill="#94a3b8" font-size="10">(~$18B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 926.3)">
-    <rect width="20" height="2.8" rx="3" fill="#10b981" />
-    <text x="30" y="5.4" fill="#f8fafc" font-size="11.5" font-weight="600">Tokyo Electron <tspan fill="#94a3b8" font-size="10">(~$18B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 935.1)">
-    <rect width="20" height="2.7" rx="3" fill="#3b82f6" />
-    <text x="30" y="5.4" fill="#f8fafc" font-size="11.5" font-weight="600">Intuit <tspan fill="#94a3b8" font-size="10">(~$17B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 943.8)">
-    <rect width="20" height="2.7" rx="3" fill="#f97316" />
-    <text x="30" y="5.3" fill="#f8fafc" font-size="11.5" font-weight="600">Binance <tspan fill="#94a3b8" font-size="10">(~$17B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 952.4)">
-    <rect width="20" height="2.6" rx="3" fill="#8b5cf6" />
-    <text x="30" y="5.3" fill="#f8fafc" font-size="11.5" font-weight="600">MediaTek <tspan fill="#94a3b8" font-size="10">(~$16B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 961.0)">
-    <rect width="20" height="2.5" rx="3" fill="#0ea5e9" />
-    <text x="30" y="5.3" fill="#f8fafc" font-size="11.5" font-weight="600">W.W. Grainger <tspan fill="#94a3b8" font-size="10">(~$16B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 969.6)">
-    <rect width="20" height="2.4" rx="3" fill="#14b8a6" />
-    <text x="30" y="5.2" fill="#f8fafc" font-size="11.5" font-weight="600">ASUS <tspan fill="#94a3b8" font-size="10">(~$15B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 978.0)">
-    <rect width="20" height="2.4" rx="3" fill="#f59e0b" />
-    <text x="30" y="5.2" fill="#f8fafc" font-size="11.5" font-weight="600">Nokia <tspan fill="#94a3b8" font-size="10">(~$15B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 986.4)">
-    <rect width="20" height="2.4" rx="3" fill="#ec4899" />
-    <text x="30" y="5.2" fill="#f8fafc" font-size="11.5" font-weight="600">Anthropic <tspan fill="#94a3b8" font-size="10">(~$15B)</tspan></text>
-  </g>
-  <g transform="translate(1220, 994.8)">
-    <rect width="20" height="440.2" rx="3" fill="#475569" />
-    <text x="30" y="218.1" fill="#f8fafc" font-size="11.5" font-weight="600">Other Industry Players</text>
-    <text x="30" y="231.1" fill="#94a3b8" font-size="10">~$2.77T</text>
+    <path d="M 58.0 481.0 C 318.2 481.0, 339.8 110.0, 600.0 110.0 L 600.0 693.6 C 339.8 693.6, 318.2 1064.6, 58.0 1064.6 Z" fill="#6366f1" opacity="0.32"><title>B2C E-commerce: ~$2.00T</title></path>
+    <path d="M 58.0 1064.6 C 318.2 1064.6, 339.8 711.6, 600.0 711.6 L 600.0 904.8 C 339.8 904.8, 318.2 1257.8, 58.0 1257.8 Z" fill="#8b5cf6" opacity="0.32"><title>Digital Advertising: ~$662.0B</title></path>
+    <path d="M 58.0 1257.8 C 318.2 1257.8, 339.8 922.8, 600.0 922.8 L 600.0 1074.6 C 339.8 1074.6, 318.2 1409.6, 58.0 1409.6 Z" fill="#06b6d4" opacity="0.32"><title>Smartphones: ~$520.0B</title></path>
+    <path d="M 58.0 1409.6 C 318.2 1409.6, 339.8 1092.6, 600.0 1092.6 L 600.0 1238.5 C 339.8 1238.5, 318.2 1555.5, 58.0 1555.5 Z" fill="#84cc16" opacity="0.32"><title>B2B E-commerce: ~$500.0B</title></path>
+    <path d="M 58.0 1555.5 C 318.2 1555.5, 339.8 1256.5, 600.0 1256.5 L 600.0 1398.9 C 339.8 1398.9, 318.2 1697.9, 58.0 1697.9 Z" fill="#f97316" opacity="0.32"><title>SaaS: ~$488.0B</title></path>
+    <path d="M 58.0 1697.9 C 318.2 1697.9, 339.8 1416.9, 600.0 1416.9 L 600.0 1554.0 C 339.8 1554.0, 318.2 1835.0, 58.0 1835.0 Z" fill="#d946ef" opacity="0.32"><title>General Semiconductors: ~$470.0B</title></path>
+    <path d="M 58.0 1835.0 C 318.2 1835.0, 339.8 1572.0, 600.0 1572.0 L 600.0 1691.7 C 339.8 1691.7, 318.2 1954.7, 58.0 1954.7 Z" fill="#10b981" opacity="0.32"><title>Cloud Infrastructure: ~$410.0B</title></path>
+    <path d="M 58.0 1954.7 C 318.2 1954.7, 339.8 1709.7, 600.0 1709.7 L 600.0 1775.3 C 339.8 1775.3, 318.2 2020.3, 58.0 2020.3 Z" fill="#f59e0b" opacity="0.32"><title>Gaming: ~$225.0B</title></path>
+    <path d="M 58.0 2020.3 C 318.2 2020.3, 339.8 1793.3, 600.0 1793.3 L 600.0 1857.5 C 339.8 1857.5, 318.2 2084.5, 58.0 2084.5 Z" fill="#ec4899" opacity="0.32"><title>PC Hardware: ~$220.0B</title></path>
+    <path d="M 58.0 2084.5 C 318.2 2084.5, 339.8 1875.5, 600.0 1875.5 L 600.0 1938.3 C 339.8 1938.3, 318.2 2147.3, 58.0 2147.3 Z" fill="#a855f7" opacity="0.32"><title>Enterprise Networking &amp; Telecom Equipment: ~$215.0B</title></path>
+    <path d="M 58.0 2147.3 C 318.2 2147.3, 339.8 1956.3, 600.0 1956.3 L 600.0 2017.6 C 339.8 2017.6, 318.2 2208.6, 58.0 2208.6 Z" fill="#eab308" opacity="0.32"><title>Cybersecurity: ~$210.0B</title></path>
+    <path d="M 58.0 2208.6 C 318.2 2208.6, 339.8 2035.6, 600.0 2035.6 L 600.0 2075.0 C 339.8 2075.0, 318.2 2248.0, 58.0 2248.0 Z" fill="#14b8a6" opacity="0.32"><title>Semiconductor Capital Equipment: ~$135.0B</title></path>
+    <path d="M 58.0 2248.0 C 318.2 2248.0, 339.8 2093.0, 600.0 2093.0 L 600.0 2130.9 C 339.8 2130.9, 318.2 2285.9, 58.0 2285.9 Z" fill="#0ea5e9" opacity="0.32"><title>AI Chips &amp; GPUs: ~$130.0B</title></path>
+    <path d="M 58.0 2285.9 C 318.2 2285.9, 339.8 2148.9, 600.0 2148.9 L 600.0 2183.9 C 339.8 2183.9, 318.2 2320.9, 58.0 2320.9 Z" fill="#64748b" opacity="0.32"><title>Streaming Video: ~$120.0B</title></path>
+    <path d="M 58.0 2320.9 C 318.2 2320.9, 339.8 2201.9, 600.0 2201.9 L 600.0 2220.9 C 339.8 2220.9, 318.2 2339.9, 58.0 2339.9 Z" fill="#f43f5e" opacity="0.32"><title>Physical AI &amp; Robotics: ~$65.0B</title></path>
+    <path d="M 58.0 2339.9 C 318.2 2339.9, 339.8 2238.9, 600.0 2238.9 L 600.0 2256.4 C 339.8 2256.4, 318.2 2357.4, 58.0 2357.4 Z" fill="#38bdf8" opacity="0.32"><title>Generative AI &amp; Foundation Models: ~$60.0B</title></path>
+    <path d="M 58.0 2357.4 C 318.2 2357.4, 339.8 2274.4, 600.0 2274.4 L 600.0 2285.5 C 339.8 2285.5, 318.2 2368.5, 58.0 2368.5 Z" fill="#e11d48" opacity="0.32"><title>Web3 &amp; Blockchain Infrastructure: ~$38.0B</title></path>
+    <path d="M 58.0 2368.5 C 318.2 2368.5, 339.8 2303.5, 600.0 2303.5 L 600.0 2304.0 C 339.8 2304.0, 318.2 2369.0, 58.0 2369.0 Z" fill="#22d3ee" opacity="0.32"><title>Quantum Computing: ~$1.8B</title></path>
+    <path d="M 622.0 110.0 C 937.8 110.0, 964.2 110.0, 1280.0 110.0 L 1280.0 220.9 C 964.2 220.9, 937.8 220.9, 622.0 220.9 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Amazon: ~$380.0B</title></path>
+    <path d="M 622.0 220.9 C 937.8 220.9, 964.2 469.6, 1280.0 469.6 L 1280.0 510.4 C 964.2 510.4, 937.8 261.7, 622.0 261.7 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Alibaba Group: ~$140.0B</title></path>
+    <path d="M 622.0 261.7 C 937.8 261.7, 964.2 668.1, 1280.0 668.1 L 1280.0 714.8 C 964.2 714.8, 937.8 308.4, 622.0 308.4 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; JD.com: ~$160.0B</title></path>
+    <path d="M 622.0 308.4 C 937.8 308.4, 964.2 833.1, 1280.0 833.1 L 1280.0 862.3 C 964.2 862.3, 937.8 337.6, 622.0 337.6 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Walmart Online: ~$100.0B</title></path>
+    <path d="M 622.0 337.6 C 937.8 337.6, 964.2 955.9, 1280.0 955.9 L 1280.0 964.7 C 964.2 964.7, 937.8 346.4, 622.0 346.4 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; ByteDance: ~$30.0B</title></path>
+    <path d="M 622.0 346.4 C 937.8 346.4, 964.2 1096.7, 1280.0 1096.7 L 1280.0 1111.3 C 964.2 1111.3, 937.8 361.0, 622.0 361.0 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; PDD Holdings: ~$50.0B</title></path>
+    <path d="M 622.0 361.0 C 937.8 361.0, 964.2 1209.3, 1280.0 1209.3 L 1280.0 1222.7 C 964.2 1222.7, 937.8 374.4, 622.0 374.4 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Meituan: ~$46.0B</title></path>
+    <path d="M 622.0 374.4 C 937.8 374.4, 964.2 1624.5, 1280.0 1624.5 L 1280.0 1630.4 C 964.2 1630.4, 937.8 380.2, 622.0 380.2 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Mercado Libre: ~$20.0B</title></path>
+    <path d="M 622.0 380.2 C 937.8 380.2, 964.2 1930.7, 1280.0 1930.7 L 1280.0 2244.1 C 964.2 2244.1, 937.8 693.6, 622.0 693.6 Z" fill="#6366f1" opacity="0.38"><title>B2C E-commerce -&gt; Other Industry Players: ~$1,074.0B</title></path>
+    <path d="M 622.0 711.6 C 937.8 711.6, 964.2 220.9, 1280.0 220.9 L 1280.0 238.3 C 964.2 238.3, 937.8 729.0, 622.0 729.0 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Amazon: ~$59.6B</title></path>
+    <path d="M 622.0 729.0 C 937.8 729.0, 964.2 295.3, 1280.0 295.3 L 1280.0 346.3 C 964.2 346.3, 937.8 780.0, 622.0 780.0 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Alphabet (Google): ~$174.8B</title></path>
+    <path d="M 622.0 780.0 C 937.8 780.0, 964.2 386.7, 1280.0 386.7 L 1280.0 390.7 C 964.2 390.7, 937.8 784.1, 622.0 784.1 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Microsoft: ~$13.9B</title></path>
+    <path d="M 622.0 784.1 C 937.8 784.1, 964.2 510.4, 1280.0 510.4 L 1280.0 519.1 C 964.2 519.1, 937.8 792.8, 622.0 792.8 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Alibaba Group: ~$29.8B</title></path>
+    <path d="M 622.0 792.8 C 937.8 792.8, 964.2 540.1, 1280.0 540.1 L 1280.0 591.9 C 964.2 591.9, 937.8 844.5, 622.0 844.5 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Meta: ~$177.4B</title></path>
+    <path d="M 622.0 844.5 C 937.8 844.5, 964.2 728.8, 1280.0 728.8 L 1280.0 731.9 C 964.2 731.9, 937.8 847.6, 622.0 847.6 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Apple: ~$10.6B</title></path>
+    <path d="M 622.0 847.6 C 937.8 847.6, 964.2 964.7, 1280.0 964.7 L 1280.0 980.0 C 964.2 980.0, 937.8 862.9, 622.0 862.9 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; ByteDance: ~$52.3B</title></path>
+    <path d="M 622.0 862.9 C 937.8 862.9, 964.2 1063.2, 1280.0 1063.2 L 1280.0 1068.0 C 964.2 1068.0, 937.8 867.7, 622.0 867.7 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Tencent: ~$16.6B</title></path>
+    <path d="M 622.0 867.7 C 937.8 867.7, 964.2 2244.1, 1280.0 2244.1 L 1280.0 2281.2 C 964.2 2281.2, 937.8 904.8, 622.0 904.8 Z" fill="#8b5cf6" opacity="0.38"><title>Digital Advertising -&gt; Other Industry Players: ~$127.1B</title></path>
+    <path d="M 622.0 922.8 C 937.8 922.8, 964.2 605.9, 1280.0 605.9 L 1280.0 634.7 C 964.2 634.7, 937.8 951.6, 622.0 951.6 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Samsung: ~$98.8B</title></path>
+    <path d="M 622.0 951.6 C 937.8 951.6, 964.2 731.9, 1280.0 731.9 L 1280.0 762.3 C 964.2 762.3, 937.8 982.0, 622.0 982.0 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Apple: ~$104.0B</title></path>
+    <path d="M 622.0 982.0 C 937.8 982.0, 964.2 916.3, 1280.0 916.3 L 1280.0 923.9 C 964.2 923.9, 937.8 989.6, 622.0 989.6 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Huawei: ~$26.0B</title></path>
+    <path d="M 622.0 989.6 C 937.8 989.6, 964.2 994.0, 1280.0 994.0 L 1280.0 1015.2 C 964.2 1015.2, 937.8 1010.8, 622.0 1010.8 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Xiaomi: ~$72.8B</title></path>
+    <path d="M 622.0 1010.8 C 937.8 1010.8, 964.2 1029.2, 1280.0 1029.2 L 1280.0 1033.8 C 964.2 1033.8, 937.8 1015.4, 622.0 1015.4 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Lenovo: ~$15.6B</title></path>
+    <path d="M 622.0 1015.4 C 937.8 1015.4, 964.2 1181.6, 1280.0 1181.6 L 1280.0 1195.3 C 964.2 1195.3, 937.8 1029.0, 622.0 1029.0 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Transsion: ~$46.8B</title></path>
+    <path d="M 622.0 1029.0 C 937.8 1029.0, 964.2 1263.9, 1280.0 1263.9 L 1280.0 1276.8 C 964.2 1276.8, 937.8 1041.9, 622.0 1041.9 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Oppo: ~$44.2B</title></path>
+    <path d="M 622.0 1041.9 C 937.8 1041.9, 964.2 1367.8, 1280.0 1367.8 L 1280.0 1379.2 C 964.2 1379.2, 937.8 1053.3, 622.0 1053.3 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Vivo: ~$39.0B</title></path>
+    <path d="M 622.0 1053.3 C 937.8 1053.3, 964.2 1513.9, 1280.0 1513.9 L 1280.0 1523.0 C 964.2 1523.0, 937.8 1062.4, 622.0 1062.4 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Honor: ~$31.2B</title></path>
+    <path d="M 622.0 1062.4 C 937.8 1062.4, 964.2 1742.5, 1280.0 1742.5 L 1280.0 1747.8 C 964.2 1747.8, 937.8 1067.7, 622.0 1067.7 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Realme: ~$18.2B</title></path>
+    <path d="M 622.0 1067.7 C 937.8 1067.7, 964.2 2281.2, 1280.0 2281.2 L 1280.0 2288.1 C 964.2 2288.1, 937.8 1074.6, 622.0 1074.6 Z" fill="#06b6d4" opacity="0.38"><title>Smartphones -&gt; Other Industry Players: ~$23.4B</title></path>
+    <path d="M 622.0 1092.6 C 937.8 1092.6, 964.2 238.3, 1280.0 238.3 L 1280.0 241.2 C 964.2 241.2, 937.8 1095.5, 622.0 1095.5 Z" fill="#84cc16" opacity="0.38"><title>B2B E-commerce -&gt; Amazon: ~$10.0B</title></path>
+    <path d="M 622.0 1095.5 C 937.8 1095.5, 964.2 519.1, 1280.0 519.1 L 1280.0 521.3 C 964.2 521.3, 937.8 1097.7, 622.0 1097.7 Z" fill="#84cc16" opacity="0.38"><title>B2B E-commerce -&gt; Alibaba Group: ~$7.5B</title></path>
+    <path d="M 622.0 1097.7 C 937.8 1097.7, 964.2 1856.8, 1280.0 1856.8 L 1280.0 1861.5 C 964.2 1861.5, 937.8 1102.3, 622.0 1102.3 Z" fill="#84cc16" opacity="0.38"><title>B2B E-commerce -&gt; W.W. Grainger: ~$16.0B</title></path>
+    <path d="M 622.0 1102.3 C 937.8 1102.3, 964.2 2288.1, 1280.0 2288.1 L 1280.0 2424.2 C 964.2 2424.2, 937.8 1238.5, 622.0 1238.5 Z" fill="#84cc16" opacity="0.38"><title>B2B E-commerce -&gt; Other Industry Players: ~$466.5B</title></path>
+    <path d="M 622.0 1256.5 C 937.8 1256.5, 964.2 346.3, 1280.0 346.3 L 1280.0 350.5 C 964.2 350.5, 937.8 1260.7, 622.0 1260.7 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Alphabet (Google): ~$14.6B</title></path>
+    <path d="M 622.0 1260.7 C 937.8 1260.7, 964.2 390.7, 1280.0 390.7 L 1280.0 416.3 C 964.2 416.3, 937.8 1286.4, 622.0 1286.4 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Microsoft: ~$87.8B</title></path>
+    <path d="M 622.0 1286.4 C 937.8 1286.4, 964.2 1125.3, 1280.0 1125.3 L 1280.0 1139.5 C 964.2 1139.5, 937.8 1300.6, 622.0 1300.6 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Salesforce: ~$48.8B</title></path>
+    <path d="M 622.0 1300.6 C 937.8 1300.6, 964.2 1466.0, 1280.0 1466.0 L 1280.0 1472.4 C 964.2 1472.4, 937.8 1307.0, 622.0 1307.0 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Oracle: ~$22.0B</title></path>
+    <path d="M 622.0 1307.0 C 937.8 1307.0, 964.2 1581.8, 1280.0 1581.8 L 1280.0 1589.7 C 964.2 1589.7, 937.8 1314.9, 622.0 1314.9 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; SAP: ~$26.8B</title></path>
+    <path d="M 622.0 1314.9 C 937.8 1314.9, 964.2 1683.9, 1280.0 1683.9 L 1280.0 1689.6 C 964.2 1689.6, 937.8 1320.6, 622.0 1320.6 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Adobe: ~$19.5B</title></path>
+    <path d="M 622.0 1320.6 C 937.8 1320.6, 964.2 1800.1, 1280.0 1800.1 L 1280.0 1805.1 C 964.2 1805.1, 937.8 1325.5, 622.0 1325.5 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Intuit: ~$17.1B</title></path>
+    <path d="M 622.0 1325.5 C 937.8 1325.5, 964.2 2424.2, 1280.0 2424.2 L 1280.0 2497.5 C 964.2 2497.5, 937.8 1398.9, 622.0 1398.9 Z" fill="#f97316" opacity="0.38"><title>SaaS -&gt; Other Industry Players: ~$251.3B</title></path>
+    <path d="M 622.0 1416.9 C 937.8 1416.9, 964.2 634.7, 1280.0 634.7 L 1280.0 652.5 C 964.2 652.5, 937.8 1434.7, 622.0 1434.7 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Samsung: ~$61.1B</title></path>
+    <path d="M 622.0 1434.7 C 937.8 1434.7, 964.2 1153.5, 1280.0 1153.5 L 1280.0 1167.3 C 964.2 1167.3, 937.8 1448.4, 622.0 1448.4 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Intel: ~$47.0B</title></path>
+    <path d="M 622.0 1448.4 C 937.8 1448.4, 964.2 1316.7, 1280.0 1316.7 L 1280.0 1328.3 C 964.2 1328.3, 937.8 1460.1, 622.0 1460.1 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; SK Hynix: ~$40.0B</title></path>
+    <path d="M 622.0 1460.1 C 937.8 1460.1, 964.2 1342.3, 1280.0 1342.3 L 1280.0 1351.9 C 964.2 1351.9, 937.8 1469.7, 622.0 1469.7 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Broadcom: ~$32.9B</title></path>
+    <path d="M 622.0 1469.7 C 937.8 1469.7, 964.2 1417.7, 1280.0 1417.7 L 1280.0 1427.9 C 964.2 1427.9, 937.8 1480.0, 622.0 1480.0 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Qualcomm: ~$35.3B</title></path>
+    <path d="M 622.0 1480.0 C 937.8 1480.0, 964.2 1559.5, 1280.0 1559.5 L 1280.0 1565.0 C 964.2 1565.0, 937.8 1485.5, 622.0 1485.5 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; AMD: ~$18.8B</title></path>
+    <path d="M 622.0 1485.5 C 937.8 1485.5, 964.2 1603.7, 1280.0 1603.7 L 1280.0 1610.5 C 964.2 1610.5, 937.8 1492.3, 622.0 1492.3 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Micron: ~$23.5B</title></path>
+    <path d="M 622.0 1492.3 C 937.8 1492.3, 964.2 1838.0, 1280.0 1838.0 L 1280.0 1842.8 C 964.2 1842.8, 937.8 1497.1, 622.0 1497.1 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; MediaTek: ~$16.5B</title></path>
+    <path d="M 622.0 1497.1 C 937.8 1497.1, 964.2 2497.5, 1280.0 2497.5 L 1280.0 2554.5 C 964.2 2554.5, 937.8 1554.0, 622.0 1554.0 Z" fill="#d946ef" opacity="0.38"><title>General Semiconductors -&gt; Other Industry Players: ~$195.1B</title></path>
+    <path d="M 622.0 1572.0 C 937.8 1572.0, 964.2 241.2, 1280.0 241.2 L 1280.0 275.9 C 964.2 275.9, 937.8 1606.7, 622.0 1606.7 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Amazon: ~$118.9B</title></path>
+    <path d="M 622.0 1606.7 C 937.8 1606.7, 964.2 350.5, 1280.0 350.5 L 1280.0 366.1 C 964.2 366.1, 937.8 1622.3, 622.0 1622.3 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Alphabet (Google): ~$53.3B</title></path>
+    <path d="M 622.0 1622.3 C 937.8 1622.3, 964.2 416.3, 1280.0 416.3 L 1280.0 440.3 C 964.2 440.3, 937.8 1646.2, 622.0 1646.2 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Microsoft: ~$82.0B</title></path>
+    <path d="M 622.0 1646.2 C 937.8 1646.2, 964.2 521.3, 1280.0 521.3 L 1280.0 526.1 C 964.2 526.1, 937.8 1651.0, 622.0 1651.0 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Alibaba Group: ~$16.4B</title></path>
+    <path d="M 622.0 1651.0 C 937.8 1651.0, 964.2 923.9, 1280.0 923.9 L 1280.0 926.9 C 964.2 926.9, 937.8 1654.0, 622.0 1654.0 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Huawei: ~$10.3B</title></path>
+    <path d="M 622.0 1654.0 C 937.8 1654.0, 964.2 1068.0, 1280.0 1068.0 L 1280.0 1071.0 C 964.2 1071.0, 937.8 1657.0, 622.0 1657.0 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Tencent: ~$10.3B</title></path>
+    <path d="M 622.0 1657.0 C 937.8 1657.0, 964.2 1472.4, 1280.0 1472.4 L 1280.0 1476.0 C 964.2 1476.0, 937.8 1660.6, 622.0 1660.6 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Oracle: ~$12.3B</title></path>
+    <path d="M 622.0 1660.6 C 937.8 1660.6, 964.2 2554.5, 1280.0 2554.5 L 1280.0 2585.6 C 964.2 2585.6, 937.8 1691.7, 622.0 1691.7 Z" fill="#10b981" opacity="0.38"><title>Cloud Infrastructure -&gt; Other Industry Players: ~$106.6B</title></path>
+    <path d="M 622.0 1709.7 C 937.8 1709.7, 964.2 366.1, 1280.0 366.1 L 1280.0 369.4 C 964.2 369.4, 937.8 1713.0, 622.0 1713.0 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Alphabet (Google): ~$11.3B</title></path>
+    <path d="M 622.0 1713.0 C 937.8 1713.0, 964.2 440.3, 1280.0 440.3 L 1280.0 448.5 C 964.2 448.5, 937.8 1721.2, 622.0 1721.2 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Microsoft: ~$28.1B</title></path>
+    <path d="M 622.0 1721.2 C 937.8 1721.2, 964.2 762.3, 1280.0 762.3 L 1280.0 767.2 C 964.2 767.2, 937.8 1726.1, 622.0 1726.1 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Apple: ~$16.9B</title></path>
+    <path d="M 622.0 1726.1 C 937.8 1726.1, 964.2 1071.0, 1280.0 1071.0 L 1280.0 1081.5 C 964.2 1081.5, 937.8 1736.6, 622.0 1736.6 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Tencent: ~$36.0B</title></path>
+    <path d="M 622.0 1736.6 C 937.8 1736.6, 964.2 1441.9, 1280.0 1441.9 L 1280.0 1451.5 C 964.2 1451.5, 937.8 1746.1, 622.0 1746.1 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Sony: ~$32.6B</title></path>
+    <path d="M 622.0 1746.1 C 937.8 1746.1, 964.2 2585.6, 1280.0 2585.6 L 1280.0 2614.8 C 964.2 2614.8, 937.8 1775.3, 622.0 1775.3 Z" fill="#f59e0b" opacity="0.38"><title>Gaming -&gt; Other Industry Players: ~$100.1B</title></path>
+    <path d="M 622.0 1793.3 C 937.8 1793.3, 964.2 448.5, 1280.0 448.5 L 1280.0 449.1 C 964.2 449.1, 937.8 1794.0, 622.0 1794.0 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Microsoft: ~$2.2B</title></path>
+    <path d="M 622.0 1794.0 C 937.8 1794.0, 964.2 652.5, 1280.0 652.5 L 1280.0 654.1 C 964.2 654.1, 937.8 1795.6, 622.0 1795.6 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Samsung: ~$5.5B</title></path>
+    <path d="M 622.0 1795.6 C 937.8 1795.6, 964.2 767.2, 1280.0 767.2 L 1280.0 773.0 C 964.2 773.0, 937.8 1801.4, 622.0 1801.4 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Apple: ~$19.8B</title></path>
+    <path d="M 622.0 1801.4 C 937.8 1801.4, 964.2 926.9, 1280.0 926.9 L 1280.0 928.1 C 964.2 928.1, 937.8 1802.6, 622.0 1802.6 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Huawei: ~$4.4B</title></path>
+    <path d="M 622.0 1802.6 C 937.8 1802.6, 964.2 1033.8, 1280.0 1033.8 L 1280.0 1049.2 C 964.2 1049.2, 937.8 1818.1, 622.0 1818.1 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Lenovo: ~$52.8B</title></path>
+    <path d="M 622.0 1818.1 C 937.8 1818.1, 964.2 1236.7, 1280.0 1236.7 L 1280.0 1249.9 C 964.2 1249.9, 937.8 1831.2, 622.0 1831.2 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; HP Inc.: ~$45.1B</title></path>
+    <path d="M 622.0 1831.2 C 937.8 1831.2, 964.2 1490.0, 1280.0 1490.0 L 1280.0 1499.9 C 964.2 1499.9, 937.8 1841.2, 622.0 1841.2 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Dell: ~$34.1B</title></path>
+    <path d="M 622.0 1841.2 C 937.8 1841.2, 964.2 1875.5, 1280.0 1875.5 L 1280.0 1880.0 C 964.2 1880.0, 937.8 1845.7, 622.0 1845.7 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; ASUS: ~$15.4B</title></path>
+    <path d="M 622.0 1845.7 C 937.8 1845.7, 964.2 2614.8, 1280.0 2614.8 L 1280.0 2626.7 C 964.2 2626.7, 937.8 1857.5, 622.0 1857.5 Z" fill="#ec4899" opacity="0.38"><title>PC Hardware -&gt; Other Industry Players: ~$40.7B</title></path>
+    <path d="M 622.0 1875.5 C 937.8 1875.5, 964.2 876.3, 1280.0 876.3 L 1280.0 898.9 C 964.2 898.9, 937.8 1898.1, 622.0 1898.1 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Cisco: ~$77.4B</title></path>
+    <path d="M 622.0 1898.1 C 937.8 1898.1, 964.2 928.1, 1280.0 928.1 L 1280.0 941.9 C 964.2 941.9, 937.8 1911.9, 622.0 1911.9 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Huawei: ~$47.3B</title></path>
+    <path d="M 622.0 1911.9 C 937.8 1911.9, 964.2 1723.2, 1280.0 1723.2 L 1280.0 1728.5 C 964.2 1728.5, 937.8 1917.3, 622.0 1917.3 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Arista Networks: ~$18.3B</title></path>
+    <path d="M 622.0 1917.3 C 937.8 1917.3, 964.2 1894.0, 1280.0 1894.0 L 1280.0 1898.4 C 964.2 1898.4, 937.8 1921.7, 622.0 1921.7 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Nokia: ~$15.1B</title></path>
+    <path d="M 622.0 1921.7 C 937.8 1921.7, 964.2 2626.7, 1280.0 2626.7 L 1280.0 2643.3 C 964.2 2643.3, 937.8 1938.3, 622.0 1938.3 Z" fill="#a855f7" opacity="0.38"><title>Enterprise Networking &amp; Telecom Equipment -&gt; Other Industry Players: ~$57.0B</title></path>
+    <path d="M 622.0 1956.3 C 937.8 1956.3, 964.2 449.1, 1280.0 449.1 L 1280.0 455.6 C 964.2 455.6, 937.8 1962.7, 622.0 1962.7 Z" fill="#eab308" opacity="0.38"><title>Cybersecurity -&gt; Microsoft: ~$22.1B</title></path>
+    <path d="M 622.0 1962.7 C 937.8 1962.7, 964.2 898.9, 1280.0 898.9 L 1280.0 902.3 C 964.2 902.3, 937.8 1966.1, 622.0 1966.1 Z" fill="#eab308" opacity="0.38"><title>Cybersecurity -&gt; Cisco: ~$11.6B</title></path>
+    <path d="M 622.0 1966.1 C 937.8 1966.1, 964.2 1761.8, 1280.0 1761.8 L 1280.0 1767.0 C 964.2 1767.0, 937.8 1971.3, 622.0 1971.3 Z" fill="#eab308" opacity="0.38"><title>Cybersecurity -&gt; Palo Alto Networks: ~$17.9B</title></path>
+    <path d="M 622.0 1971.3 C 937.8 1971.3, 964.2 2643.3, 1280.0 2643.3 L 1280.0 2689.6 C 964.2 2689.6, 937.8 2017.6, 622.0 2017.6 Z" fill="#eab308" opacity="0.38"><title>Cybersecurity -&gt; Other Industry Players: ~$158.6B</title></path>
+    <path d="M 622.0 2035.6 C 937.8 2035.6, 964.2 1393.2, 1280.0 1393.2 L 1280.0 1403.7 C 964.2 1403.7, 937.8 2046.0, 622.0 2046.0 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; ASML: ~$35.8B</title></path>
+    <path d="M 622.0 2046.0 C 937.8 2046.0, 964.2 1537.0, 1280.0 1537.0 L 1280.0 1545.5 C 964.2 1545.5, 937.8 2054.5, 622.0 2054.5 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; Applied Materials: ~$29.0B</title></path>
+    <path d="M 622.0 2054.5 C 937.8 2054.5, 964.2 1664.2, 1280.0 1664.2 L 1280.0 1669.9 C 964.2 1669.9, 937.8 2060.2, 622.0 2060.2 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; Lam Research: ~$19.6B</title></path>
+    <path d="M 622.0 2060.2 C 937.8 2060.2, 964.2 1781.0, 1280.0 1781.0 L 1280.0 1786.1 C 964.2 1786.1, 937.8 2065.3, 622.0 2065.3 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; Tokyo Electron: ~$17.6B</title></path>
+    <path d="M 622.0 2065.3 C 937.8 2065.3, 964.2 2689.6, 1280.0 2689.6 L 1280.0 2699.2 C 964.2 2699.2, 937.8 2075.0, 622.0 2075.0 Z" fill="#14b8a6" opacity="0.38"><title>Semiconductor Capital Equipment -&gt; Other Industry Players: ~$33.1B</title></path>
+    <path d="M 622.0 2093.0 C 937.8 2093.0, 964.2 788.0, 1280.0 788.0 L 1280.0 819.1 C 964.2 819.1, 937.8 2124.1, 622.0 2124.1 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; Nvidia: ~$106.6B</title></path>
+    <path d="M 622.0 2124.1 C 937.8 2124.1, 964.2 1167.3, 1280.0 1167.3 L 1280.0 1167.6 C 964.2 1167.6, 937.8 2124.4, 622.0 2124.4 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; Intel: ~$1.3B</title></path>
+    <path d="M 622.0 2124.4 C 937.8 2124.4, 964.2 1351.9, 1280.0 1351.9 L 1280.0 1353.8 C 964.2 1353.8, 937.8 2126.3, 622.0 2126.3 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; Broadcom: ~$6.5B</title></path>
+    <path d="M 622.0 2126.3 C 937.8 2126.3, 964.2 1565.0, 1280.0 1565.0 L 1280.0 1567.8 C 964.2 1567.8, 937.8 2129.2, 622.0 2129.2 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; AMD: ~$9.8B</title></path>
+    <path d="M 622.0 2129.2 C 937.8 2129.2, 964.2 2699.2, 1280.0 2699.2 L 1280.0 2700.9 C 964.2 2700.9, 937.8 2130.9, 622.0 2130.9 Z" fill="#0ea5e9" opacity="0.38"><title>AI Chips &amp; GPUs -&gt; Other Industry Players: ~$5.9B</title></path>
+    <path d="M 622.0 2148.9 C 937.8 2148.9, 964.2 275.9, 1280.0 275.9 L 1280.0 279.9 C 964.2 279.9, 937.8 2152.9, 622.0 2152.9 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Amazon: ~$13.8B</title></path>
+    <path d="M 622.0 2152.9 C 937.8 2152.9, 964.2 773.0, 1280.0 773.0 L 1280.0 774.0 C 964.2 774.0, 937.8 2154.0, 622.0 2154.0 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Apple: ~$3.6B</title></path>
+    <path d="M 622.0 2154.0 C 937.8 2154.0, 964.2 1081.5, 1280.0 1081.5 L 1280.0 1082.7 C 964.2 1082.7, 937.8 2155.2, 622.0 2155.2 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Tencent: ~$4.2B</title></path>
+    <path d="M 622.0 2155.2 C 937.8 2155.2, 964.2 1290.8, 1280.0 1290.8 L 1280.0 1302.7 C 964.2 1302.7, 937.8 2167.1, 622.0 2167.1 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Netflix: ~$40.8B</title></path>
+    <path d="M 622.0 2167.1 C 937.8 2167.1, 964.2 1451.5, 1280.0 1451.5 L 1280.0 1452.0 C 964.2 1452.0, 937.8 2167.6, 622.0 2167.6 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Sony: ~$1.8B</title></path>
+    <path d="M 622.0 2167.6 C 937.8 2167.6, 964.2 1703.6, 1280.0 1703.6 L 1280.0 1709.2 C 964.2 1709.2, 937.8 2173.2, 622.0 2173.2 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Disney: ~$19.2B</title></path>
+    <path d="M 622.0 2173.2 C 937.8 2173.2, 964.2 2700.9, 1280.0 2700.9 L 1280.0 2711.6 C 964.2 2711.6, 937.8 2183.9, 622.0 2183.9 Z" fill="#64748b" opacity="0.38"><title>Streaming Video -&gt; Other Industry Players: ~$36.6B</title></path>
+    <path d="M 622.0 2201.9 C 937.8 2201.9, 964.2 279.9, 1280.0 279.9 L 1280.0 281.2 C 964.2 281.2, 937.8 2203.2, 622.0 2203.2 Z" fill="#f43f5e" opacity="0.38"><title>Physical AI &amp; Robotics -&gt; Amazon: ~$4.6B</title></path>
+    <path d="M 622.0 2203.2 C 937.8 2203.2, 964.2 2711.6, 1280.0 2711.6 L 1280.0 2729.2 C 964.2 2729.2, 937.8 2220.9, 622.0 2220.9 Z" fill="#f43f5e" opacity="0.38"><title>Physical AI &amp; Robotics -&gt; Other Industry Players: ~$60.5B</title></path>
+    <path d="M 622.0 2238.9 C 937.8 2238.9, 964.2 369.4, 1280.0 369.4 L 1280.0 372.6 C 964.2 372.6, 937.8 2242.1, 622.0 2242.1 Z" fill="#38bdf8" opacity="0.38"><title>Generative AI &amp; Foundation Models -&gt; Alphabet (Google): ~$11.1B</title></path>
+    <path d="M 622.0 2242.1 C 937.8 2242.1, 964.2 1644.4, 1280.0 1644.4 L 1280.0 1650.2 C 964.2 1650.2, 937.8 2247.9, 622.0 2247.9 Z" fill="#38bdf8" opacity="0.38"><title>Generative AI &amp; Foundation Models -&gt; OpenAI: ~$19.8B</title></path>
+    <path d="M 622.0 2247.9 C 937.8 2247.9, 964.2 1912.4, 1280.0 1912.4 L 1280.0 1916.7 C 964.2 1916.7, 937.8 2252.3, 622.0 2252.3 Z" fill="#38bdf8" opacity="0.38"><title>Generative AI &amp; Foundation Models -&gt; Anthropic: ~$15.0B</title></path>
+    <path d="M 622.0 2252.3 C 937.8 2252.3, 964.2 2729.2, 1280.0 2729.2 L 1280.0 2733.3 C 964.2 2733.3, 937.8 2256.4, 622.0 2256.4 Z" fill="#38bdf8" opacity="0.38"><title>Generative AI &amp; Foundation Models -&gt; Other Industry Players: ~$14.1B</title></path>
+    <path d="M 622.0 2274.4 C 937.8 2274.4, 964.2 1819.1, 1280.0 1819.1 L 1280.0 1824.0 C 964.2 1824.0, 937.8 2279.3, 622.0 2279.3 Z" fill="#e11d48" opacity="0.38"><title>Web3 &amp; Blockchain Infrastructure -&gt; Binance: ~$16.7B</title></path>
+    <path d="M 622.0 2279.3 C 937.8 2279.3, 964.2 2733.3, 1280.0 2733.3 L 1280.0 2739.6 C 964.2 2739.6, 937.8 2285.5, 622.0 2285.5 Z" fill="#e11d48" opacity="0.38"><title>Web3 &amp; Blockchain Infrastructure -&gt; Other Industry Players: ~$21.3B</title></path>
+    <path d="M 622.0 2303.5 C 937.8 2303.5, 964.2 372.6, 1280.0 372.6 L 1280.0 372.7 C 964.2 372.7, 937.8 2303.5, 622.0 2303.5 Z" fill="#22d3ee" opacity="0.38"><title>Quantum Computing -&gt; Alphabet (Google): ~$0.1B</title></path>
+    <path d="M 622.0 2303.5 C 937.8 2303.5, 964.2 2739.6, 1280.0 2739.6 L 1280.0 2740.0 C 964.2 2740.0, 937.8 2304.0, 622.0 2304.0 Z" fill="#22d3ee" opacity="0.38"><title>Quantum Computing -&gt; Other Industry Players: ~$1.5B</title></path>
+  </g>
+  <g transform="translate(36, 481.0)">
+    <rect width="22" height="1888.0" rx="5" fill="#38bdf8" />
+    <text x="34" y="936.0" fill="#f8fafc" font-size="14" font-weight="600">All Sectors</text>
+    <text x="34" y="956.0" fill="#94a3b8" font-size="12">~$6.47T</text>
+  </g>
+  <g transform="translate(600, 110.0)">
+    <rect width="22" height="583.6" rx="4" fill="#6366f1" />
+    <text x="-12" y="288.8" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">B2C E-commerce</text>
+    <text x="-12" y="303.8" text-anchor="end" fill="#94a3b8" font-size="11">~$2.00T</text>
+  </g>
+  <g transform="translate(600, 711.6)">
+    <rect width="22" height="193.2" rx="4" fill="#8b5cf6" />
+    <text x="-12" y="93.6" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Digital Advertising</text>
+    <text x="-12" y="108.6" text-anchor="end" fill="#94a3b8" font-size="11">~$662B</text>
+  </g>
+  <g transform="translate(600, 922.8)">
+    <rect width="22" height="151.7" rx="4" fill="#06b6d4" />
+    <text x="-12" y="72.9" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Smartphones</text>
+    <text x="-12" y="87.9" text-anchor="end" fill="#94a3b8" font-size="11">~$520B</text>
+  </g>
+  <g transform="translate(600, 1092.6)">
+    <rect width="22" height="145.9" rx="4" fill="#84cc16" />
+    <text x="-12" y="70.0" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">B2B E-commerce</text>
+    <text x="-12" y="85.0" text-anchor="end" fill="#94a3b8" font-size="11">~$500B</text>
+  </g>
+  <g transform="translate(600, 1256.5)">
+    <rect width="22" height="142.4" rx="4" fill="#f97316" />
+    <text x="-12" y="68.2" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">SaaS</text>
+    <text x="-12" y="83.2" text-anchor="end" fill="#94a3b8" font-size="11">~$488B</text>
+  </g>
+  <g transform="translate(600, 1416.9)">
+    <rect width="22" height="137.2" rx="4" fill="#d946ef" />
+    <text x="-12" y="65.6" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">General Semiconductors</text>
+    <text x="-12" y="80.6" text-anchor="end" fill="#94a3b8" font-size="11">~$470B</text>
+  </g>
+  <g transform="translate(600, 1572.0)">
+    <rect width="22" height="119.6" rx="4" fill="#10b981" />
+    <text x="-12" y="56.8" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Cloud Infrastructure</text>
+    <text x="-12" y="71.8" text-anchor="end" fill="#94a3b8" font-size="11">~$410B</text>
+  </g>
+  <g transform="translate(600, 1709.7)">
+    <rect width="22" height="65.7" rx="4" fill="#f59e0b" />
+    <text x="-12" y="29.8" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Gaming</text>
+    <text x="-12" y="44.8" text-anchor="end" fill="#94a3b8" font-size="11">~$225B</text>
+  </g>
+  <g transform="translate(600, 1793.3)">
+    <rect width="22" height="64.2" rx="4" fill="#ec4899" />
+    <text x="-12" y="29.1" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">PC Hardware</text>
+    <text x="-12" y="44.1" text-anchor="end" fill="#94a3b8" font-size="11">~$220B</text>
+  </g>
+  <g transform="translate(600, 1875.5)">
+    <rect width="22" height="62.7" rx="4" fill="#a855f7" />
+    <text x="-12" y="28.4" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Enterprise Networking &amp; Telecom Equipment</text>
+    <text x="-12" y="43.4" text-anchor="end" fill="#94a3b8" font-size="11">~$215B</text>
+  </g>
+  <g transform="translate(600, 1956.3)">
+    <rect width="22" height="61.3" rx="4" fill="#eab308" />
+    <text x="-12" y="27.6" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Cybersecurity</text>
+    <text x="-12" y="42.6" text-anchor="end" fill="#94a3b8" font-size="11">~$210B</text>
+  </g>
+  <g transform="translate(600, 2035.6)">
+    <rect width="22" height="39.4" rx="4" fill="#14b8a6" />
+    <text x="-12" y="16.7" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Semiconductor Capital Equipment</text>
+    <text x="-12" y="31.7" text-anchor="end" fill="#94a3b8" font-size="11">~$135B</text>
+  </g>
+  <g transform="translate(600, 2093.0)">
+    <rect width="22" height="37.9" rx="4" fill="#0ea5e9" />
+    <text x="-12" y="16.0" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">AI Chips &amp; GPUs</text>
+    <text x="-12" y="31.0" text-anchor="end" fill="#94a3b8" font-size="11">~$130B</text>
+  </g>
+  <g transform="translate(600, 2148.9)">
+    <rect width="22" height="35.0" rx="4" fill="#64748b" />
+    <text x="-12" y="14.5" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Streaming Video</text>
+    <text x="-12" y="29.5" text-anchor="end" fill="#94a3b8" font-size="11">~$120B</text>
+  </g>
+  <g transform="translate(600, 2201.9)">
+    <rect width="22" height="19.0" rx="4" fill="#f43f5e" />
+    <text x="-12" y="14.0" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Physical AI &amp; Robotics <tspan fill="#94a3b8" font-size="11">(~$65B)</tspan></text>
+  </g>
+  <g transform="translate(600, 2238.9)">
+    <rect width="22" height="17.5" rx="4" fill="#38bdf8" />
+    <text x="-12" y="13.3" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Generative AI &amp; Foundation Models <tspan fill="#94a3b8" font-size="11">(~$60B)</tspan></text>
+  </g>
+  <g transform="translate(600, 2274.4)">
+    <rect width="22" height="11.1" rx="4" fill="#e11d48" />
+    <text x="-12" y="10.0" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Web3 &amp; Blockchain Infrastructure <tspan fill="#94a3b8" font-size="11">(~$38B)</tspan></text>
+  </g>
+  <g transform="translate(600, 2303.5)">
+    <rect width="22" height="0.5" rx="4" fill="#22d3ee" />
+    <text x="-12" y="4.8" text-anchor="end" fill="#f8fafc" font-size="12.5" font-weight="600">Quantum Computing <tspan fill="#94a3b8" font-size="11">(~$1.8B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 110.0)">
+    <rect width="22" height="171.3" rx="4" fill="#f97316" />
+    <text x="34" y="82.6" fill="#f8fafc" font-size="12.5" font-weight="600">Amazon</text>
+    <text x="34" y="97.6" fill="#94a3b8" font-size="11">~$587B</text>
+  </g>
+  <g transform="translate(1280, 295.3)">
+    <rect width="22" height="77.4" rx="4" fill="#38bdf8" />
+    <text x="34" y="35.7" fill="#f8fafc" font-size="12.5" font-weight="600">Alphabet (Google)</text>
+    <text x="34" y="50.7" fill="#94a3b8" font-size="11">~$265B</text>
+  </g>
+  <g transform="translate(1280, 386.7)">
+    <rect width="22" height="68.9" rx="4" fill="#8b5cf6" />
+    <text x="34" y="31.5" fill="#f8fafc" font-size="12.5" font-weight="600">Microsoft</text>
+    <text x="34" y="46.5" fill="#94a3b8" font-size="11">~$236B</text>
+  </g>
+  <g transform="translate(1280, 469.6)">
+    <rect width="22" height="56.5" rx="4" fill="#10b981" />
+    <text x="34" y="25.3" fill="#f8fafc" font-size="12.5" font-weight="600">Alibaba Group</text>
+    <text x="34" y="40.3" fill="#94a3b8" font-size="11">~$194B</text>
+  </g>
+  <g transform="translate(1280, 540.1)">
+    <rect width="22" height="51.8" rx="4" fill="#f59e0b" />
+    <text x="34" y="22.9" fill="#f8fafc" font-size="12.5" font-weight="600">Meta</text>
+    <text x="34" y="37.9" fill="#94a3b8" font-size="11">~$177B</text>
+  </g>
+  <g transform="translate(1280, 605.9)">
+    <rect width="22" height="48.3" rx="4" fill="#ec4899" />
+    <text x="34" y="21.1" fill="#f8fafc" font-size="12.5" font-weight="600">Samsung</text>
+    <text x="34" y="36.1" fill="#94a3b8" font-size="11">~$165B</text>
+  </g>
+  <g transform="translate(1280, 668.1)">
+    <rect width="22" height="46.7" rx="4" fill="#06b6d4" />
+    <text x="34" y="20.3" fill="#f8fafc" font-size="12.5" font-weight="600">JD.com</text>
+    <text x="34" y="35.3" fill="#94a3b8" font-size="11">~$160B</text>
+  </g>
+  <g transform="translate(1280, 728.8)">
+    <rect width="22" height="45.2" rx="4" fill="#a855f7" />
+    <text x="34" y="19.6" fill="#f8fafc" font-size="12.5" font-weight="600">Apple</text>
+    <text x="34" y="34.6" fill="#94a3b8" font-size="11">~$155B</text>
+  </g>
+  <g transform="translate(1280, 788.0)">
+    <rect width="22" height="31.1" rx="4" fill="#84cc16" />
+    <text x="34" y="12.6" fill="#f8fafc" font-size="12.5" font-weight="600">Nvidia</text>
+    <text x="34" y="27.6" fill="#94a3b8" font-size="11">~$107B</text>
+  </g>
+  <g transform="translate(1280, 833.1)">
+    <rect width="22" height="29.2" rx="4" fill="#6366f1" />
+    <text x="34" y="11.6" fill="#f8fafc" font-size="12.5" font-weight="600">Walmart Online</text>
+    <text x="34" y="26.6" fill="#94a3b8" font-size="11">~$100B</text>
+  </g>
+  <g transform="translate(1280, 876.3)">
+    <rect width="22" height="26.0" rx="4" fill="#eab308" />
+    <text x="34" y="10.0" fill="#f8fafc" font-size="12.5" font-weight="600">Cisco</text>
+    <text x="34" y="25.0" fill="#94a3b8" font-size="11">~$89B</text>
+  </g>
+  <g transform="translate(1280, 916.3)">
+    <rect width="22" height="25.7" rx="4" fill="#14b8a6" />
+    <text x="34" y="9.8" fill="#f8fafc" font-size="12.5" font-weight="600">Huawei</text>
+    <text x="34" y="24.8" fill="#94a3b8" font-size="11">~$88B</text>
+  </g>
+  <g transform="translate(1280, 955.9)">
+    <rect width="22" height="24.0" rx="4" fill="#f43f5e" />
+    <text x="34" y="9.0" fill="#f8fafc" font-size="12.5" font-weight="600">ByteDance</text>
+    <text x="34" y="24.0" fill="#94a3b8" font-size="11">~$82B</text>
+  </g>
+  <g transform="translate(1280, 994.0)">
+    <rect width="22" height="21.2" rx="4" fill="#22d3ee" />
+    <text x="34" y="15.1" fill="#f8fafc" font-size="12.5" font-weight="600">Xiaomi <tspan fill="#94a3b8" font-size="11">(~$73B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1029.2)">
+    <rect width="22" height="20.0" rx="4" fill="#e11d48" />
+    <text x="34" y="14.5" fill="#f8fafc" font-size="12.5" font-weight="600">Lenovo <tspan fill="#94a3b8" font-size="11">(~$68B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1063.2)">
+    <rect width="22" height="19.6" rx="4" fill="#10b981" />
+    <text x="34" y="14.3" fill="#f8fafc" font-size="12.5" font-weight="600">Tencent <tspan fill="#94a3b8" font-size="11">(~$67B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1096.7)">
+    <rect width="22" height="14.6" rx="4" fill="#3b82f6" />
+    <text x="34" y="11.8" fill="#f8fafc" font-size="12.5" font-weight="600">PDD Holdings <tspan fill="#94a3b8" font-size="11">(~$50B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1125.3)">
+    <rect width="22" height="14.2" rx="4" fill="#f97316" />
+    <text x="34" y="11.6" fill="#f8fafc" font-size="12.5" font-weight="600">Salesforce <tspan fill="#94a3b8" font-size="11">(~$49B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1153.5)">
+    <rect width="22" height="14.1" rx="4" fill="#8b5cf6" />
+    <text x="34" y="11.5" fill="#f8fafc" font-size="12.5" font-weight="600">Intel <tspan fill="#94a3b8" font-size="11">(~$48B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1181.6)">
+    <rect width="22" height="13.7" rx="4" fill="#0ea5e9" />
+    <text x="34" y="11.3" fill="#f8fafc" font-size="12.5" font-weight="600">Transsion <tspan fill="#94a3b8" font-size="11">(~$47B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1209.3)">
+    <rect width="22" height="13.4" rx="4" fill="#14b8a6" />
+    <text x="34" y="11.2" fill="#f8fafc" font-size="12.5" font-weight="600">Meituan <tspan fill="#94a3b8" font-size="11">(~$46B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1236.7)">
+    <rect width="22" height="13.2" rx="4" fill="#f59e0b" />
+    <text x="34" y="11.1" fill="#f8fafc" font-size="12.5" font-weight="600">HP Inc. <tspan fill="#94a3b8" font-size="11">(~$45B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1263.9)">
+    <rect width="22" height="12.9" rx="4" fill="#ec4899" />
+    <text x="34" y="10.9" fill="#f8fafc" font-size="12.5" font-weight="600">Oppo <tspan fill="#94a3b8" font-size="11">(~$44B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1290.8)">
+    <rect width="22" height="11.9" rx="4" fill="#a855f7" />
+    <text x="34" y="10.5" fill="#f8fafc" font-size="12.5" font-weight="600">Netflix <tspan fill="#94a3b8" font-size="11">(~$41B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1316.7)">
+    <rect width="22" height="11.7" rx="4" fill="#84cc16" />
+    <text x="34" y="10.3" fill="#f8fafc" font-size="12.5" font-weight="600">SK Hynix <tspan fill="#94a3b8" font-size="11">(~$40B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1342.3)">
+    <rect width="22" height="11.5" rx="4" fill="#6366f1" />
+    <text x="34" y="10.2" fill="#f8fafc" font-size="12.5" font-weight="600">Broadcom <tspan fill="#94a3b8" font-size="11">(~$39B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1367.8)">
+    <rect width="22" height="11.4" rx="4" fill="#eab308" />
+    <text x="34" y="10.2" fill="#f8fafc" font-size="12.5" font-weight="600">Vivo <tspan fill="#94a3b8" font-size="11">(~$39B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1393.2)">
+    <rect width="22" height="10.4" rx="4" fill="#38bdf8" />
+    <text x="34" y="9.7" fill="#f8fafc" font-size="12.5" font-weight="600">ASML <tspan fill="#94a3b8" font-size="11">(~$36B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1417.7)">
+    <rect width="22" height="10.3" rx="4" fill="#f43f5e" />
+    <text x="34" y="9.6" fill="#f8fafc" font-size="12.5" font-weight="600">Qualcomm <tspan fill="#94a3b8" font-size="11">(~$35B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1441.9)">
+    <rect width="22" height="10.0" rx="4" fill="#22d3ee" />
+    <text x="34" y="9.5" fill="#f8fafc" font-size="12.5" font-weight="600">Sony <tspan fill="#94a3b8" font-size="11">(~$34B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1466.0)">
+    <rect width="22" height="10.0" rx="4" fill="#f97316" />
+    <text x="34" y="9.5" fill="#f8fafc" font-size="12.5" font-weight="600">Oracle <tspan fill="#94a3b8" font-size="11">(~$34B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1490.0)">
+    <rect width="22" height="10.0" rx="4" fill="#38bdf8" />
+    <text x="34" y="9.5" fill="#f8fafc" font-size="12.5" font-weight="600">Dell <tspan fill="#94a3b8" font-size="11">(~$34B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1513.9)">
+    <rect width="22" height="9.1" rx="4" fill="#8b5cf6" />
+    <text x="34" y="9.1" fill="#f8fafc" font-size="12.5" font-weight="600">Honor <tspan fill="#94a3b8" font-size="11">(~$31B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1537.0)">
+    <rect width="22" height="8.5" rx="4" fill="#10b981" />
+    <text x="34" y="8.7" fill="#f8fafc" font-size="12.5" font-weight="600">Applied Materials <tspan fill="#94a3b8" font-size="11">(~$29B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1559.5)">
+    <rect width="22" height="8.3" rx="4" fill="#f59e0b" />
+    <text x="34" y="8.7" fill="#f8fafc" font-size="12.5" font-weight="600">AMD <tspan fill="#94a3b8" font-size="11">(~$29B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1581.8)">
+    <rect width="22" height="7.8" rx="4" fill="#ec4899" />
+    <text x="34" y="8.4" fill="#f8fafc" font-size="12.5" font-weight="600">SAP <tspan fill="#94a3b8" font-size="11">(~$27B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1603.7)">
+    <rect width="22" height="6.9" rx="4" fill="#06b6d4" />
+    <text x="34" y="7.9" fill="#f8fafc" font-size="12.5" font-weight="600">Micron <tspan fill="#94a3b8" font-size="11">(~$24B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1624.5)">
+    <rect width="22" height="5.8" rx="4" fill="#a855f7" />
+    <text x="34" y="7.4" fill="#f8fafc" font-size="12.5" font-weight="600">Mercado Libre <tspan fill="#94a3b8" font-size="11">(~$20B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1644.4)">
+    <rect width="22" height="5.8" rx="4" fill="#84cc16" />
+    <text x="34" y="7.4" fill="#f8fafc" font-size="12.5" font-weight="600">OpenAI <tspan fill="#94a3b8" font-size="11">(~$20B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1664.2)">
+    <rect width="22" height="5.7" rx="4" fill="#6366f1" />
+    <text x="34" y="7.4" fill="#f8fafc" font-size="12.5" font-weight="600">Lam Research <tspan fill="#94a3b8" font-size="11">(~$20B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1683.9)">
+    <rect width="22" height="5.7" rx="4" fill="#eab308" />
+    <text x="34" y="7.3" fill="#f8fafc" font-size="12.5" font-weight="600">Adobe <tspan fill="#94a3b8" font-size="11">(~$20B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1703.6)">
+    <rect width="22" height="5.6" rx="4" fill="#14b8a6" />
+    <text x="34" y="7.3" fill="#f8fafc" font-size="12.5" font-weight="600">Disney <tspan fill="#94a3b8" font-size="11">(~$19B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1723.2)">
+    <rect width="22" height="5.3" rx="4" fill="#f43f5e" />
+    <text x="34" y="7.2" fill="#f8fafc" font-size="12.5" font-weight="600">Arista Networks <tspan fill="#94a3b8" font-size="11">(~$18B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1742.5)">
+    <rect width="22" height="5.3" rx="4" fill="#22d3ee" />
+    <text x="34" y="7.2" fill="#f8fafc" font-size="12.5" font-weight="600">Realme <tspan fill="#94a3b8" font-size="11">(~$18B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1761.8)">
+    <rect width="22" height="5.2" rx="4" fill="#e11d48" />
+    <text x="34" y="7.1" fill="#f8fafc" font-size="12.5" font-weight="600">Palo Alto Networks <tspan fill="#94a3b8" font-size="11">(~$18B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1781.0)">
+    <rect width="22" height="5.1" rx="4" fill="#10b981" />
+    <text x="34" y="7.1" fill="#f8fafc" font-size="12.5" font-weight="600">Tokyo Electron <tspan fill="#94a3b8" font-size="11">(~$18B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1800.1)">
+    <rect width="22" height="5.0" rx="4" fill="#3b82f6" />
+    <text x="34" y="7.0" fill="#f8fafc" font-size="12.5" font-weight="600">Intuit <tspan fill="#94a3b8" font-size="11">(~$17B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1819.1)">
+    <rect width="22" height="4.9" rx="4" fill="#f97316" />
+    <text x="34" y="6.9" fill="#f8fafc" font-size="12.5" font-weight="600">Binance <tspan fill="#94a3b8" font-size="11">(~$17B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1838.0)">
+    <rect width="22" height="4.8" rx="4" fill="#8b5cf6" />
+    <text x="34" y="6.9" fill="#f8fafc" font-size="12.5" font-weight="600">MediaTek <tspan fill="#94a3b8" font-size="11">(~$16B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1856.8)">
+    <rect width="22" height="4.7" rx="4" fill="#0ea5e9" />
+    <text x="34" y="6.8" fill="#f8fafc" font-size="12.5" font-weight="600">W.W. Grainger <tspan fill="#94a3b8" font-size="11">(~$16B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1875.5)">
+    <rect width="22" height="4.5" rx="4" fill="#14b8a6" />
+    <text x="34" y="6.7" fill="#f8fafc" font-size="12.5" font-weight="600">ASUS <tspan fill="#94a3b8" font-size="11">(~$15B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1894.0)">
+    <rect width="22" height="4.4" rx="4" fill="#f59e0b" />
+    <text x="34" y="6.7" fill="#f8fafc" font-size="12.5" font-weight="600">Nokia <tspan fill="#94a3b8" font-size="11">(~$15B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1912.4)">
+    <rect width="22" height="4.4" rx="4" fill="#ec4899" />
+    <text x="34" y="6.7" fill="#f8fafc" font-size="12.5" font-weight="600">Anthropic <tspan fill="#94a3b8" font-size="11">(~$15B)</tspan></text>
+  </g>
+  <g transform="translate(1280, 1930.7)">
+    <rect width="22" height="809.3" rx="4" fill="#475569" />
+    <text x="34" y="401.6" fill="#f8fafc" font-size="12.5" font-weight="600">Other Industry Players</text>
+    <text x="34" y="416.6" fill="#94a3b8" font-size="11">~$2.77T</text>
   </g>
 </svg>
