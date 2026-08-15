@@ -1,0 +1,292 @@
+{
+  "year": "2025–2026",
+  "title": "Market Size and Market Share by Tech Sector (2025–2026 Estimates)",
+  "total_revenue": "~$5.843 Trillion",
+  "total_gmv": "~$31.3 Trillion",
+  "sectors": [
+    {
+      "id": "saas",
+      "name": "SaaS",
+      "subtitle": "Enterprise Software",
+      "revenue": "~$488 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Microsoft", "share": "18.0%" },
+        { "name": "Salesforce", "share": "12.5%" },
+        { "name": "SAP", "share": "5.5%" },
+        { "name": "Oracle", "share": "4.5%" },
+        { "name": "Adobe", "share": "4.0%" },
+        { "name": "Intuit", "share": "3.5%" },
+        { "name": "Google (Workspace)", "share": "3.0%" },
+        { "name": "ServiceNow", "share": "2.5%" },
+        { "name": "Workday", "share": "2.0%" },
+        { "name": "Shopify", "share": "1.5%" },
+        { "name": "Atlassian", "share": "1.2%" }
+      ]
+    },
+    {
+      "id": "generative_ai",
+      "name": "Generative AI & Foundation Models",
+      "subtitle": "LLMs, APIs & Subscriptions",
+      "revenue": "~$60 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "OpenAI", "share": "33.0%" },
+        { "name": "Anthropic", "share": "25.0%" },
+        { "name": "Google (Gemini)", "share": "18.5%" },
+        { "name": "xAI (Grok)", "share": "5.0%" },
+        { "name": "DeepSeek", "share": "4.5%" },
+        { "name": "Zhipu AI", "share": "2.5%" },
+        { "name": "MiniMax", "share": "2.0%" },
+        { "name": "Moonshot AI (Kimi)", "share": "1.5%" },
+        { "name": "Mistral AI", "share": "2.0%" },
+        { "name": "ElevenLabs", "share": "1.5%" },
+        { "name": "Cohere", "share": "1.5%" }
+      ]
+    },
+    {
+      "id": "cloud_infrastructure",
+      "name": "Cloud Infrastructure",
+      "subtitle": "IaaS/PaaS/Hosted Cloud",
+      "revenue": "~$410 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Amazon (AWS)", "share": "29.0%" },
+        { "name": "Microsoft (Azure)", "share": "20.0%" },
+        { "name": "Google Cloud", "share": "13.0%" },
+        { "name": "Alibaba Cloud", "share": "4.0%" },
+        { "name": "Oracle Cloud (OCI)", "share": "3.0%" },
+        { "name": "IBM Cloud", "share": "2.5%" },
+        { "name": "Tencent Cloud", "share": "2.5%" },
+        { "name": "Huawei Cloud", "share": "2.5%" },
+        { "name": "Baidu AI Cloud", "share": "1.5%" },
+        { "name": "CoreWeave", "share": "1.5%" }
+      ]
+    },
+    {
+      "id": "digital_advertising",
+      "name": "Digital Advertising",
+      "subtitle": "Search, Social, Video & Retail Ads",
+      "revenue": "~$662 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Meta (Facebook/Instagram)", "share": "26.8%" },
+        { "name": "Google (Alphabet)", "share": "26.4%" },
+        { "name": "Amazon Ads", "share": "9.0%" },
+        { "name": "ByteDance (TikTok/Douyin)", "share": "7.9%" },
+        { "name": "Alibaba", "share": "4.5%" },
+        { "name": "Tencent", "share": "2.5%" },
+        { "name": "Microsoft (LinkedIn/Bing)", "share": "2.1%" },
+        { "name": "Baidu", "share": "1.8%" },
+        { "name": "Apple Ads", "share": "1.6%" },
+        { "name": "Kuaishou", "share": "1.4%" }
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming",
+      "subtitle": "Software, Services & Hardware",
+      "revenue": "~$225 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Tencent", "share": "16.0%" },
+        { "name": "Sony (PlayStation)", "share": "14.5%" },
+        { "name": "Microsoft (Xbox / ABK)", "share": "12.5%" },
+        { "name": "Apple (App Store Games)", "share": "7.5%" },
+        { "name": "Nintendo", "share": "6.0%" },
+        { "name": "NetEase", "share": "5.5%" },
+        { "name": "Google (Play Games)", "share": "5.0%" },
+        { "name": "Electronic Arts (EA)", "share": "3.5%" },
+        { "name": "Take-Two Interactive", "share": "2.5%" },
+        { "name": "Bandai Namco", "share": "2.0%" },
+        { "name": "Ubisoft", "share": "1.0%" }
+      ]
+    },
+    {
+      "id": "pc_hardware",
+      "name": "PC Hardware",
+      "subtitle": "Laptops & Desktops",
+      "revenue": "~$220 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Lenovo", "share": "24.0%" },
+        { "name": "HP Inc.", "share": "20.5%" },
+        { "name": "Dell", "share": "15.5%" },
+        { "name": "Apple (Mac)", "share": "9.0%" },
+        { "name": "ASUS", "share": "7.0%" },
+        { "name": "Acer", "share": "6.5%" },
+        { "name": "Samsung", "share": "2.5%" },
+        { "name": "Huawei", "share": "2.0%" },
+        { "name": "MSI", "share": "1.5%" },
+        { "name": "Microsoft (Surface)", "share": "1.0%" }
+      ]
+    },
+    {
+      "id": "smartphones",
+      "name": "Smartphones",
+      "subtitle": "Hardware Devices",
+      "revenue": "~$520 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Apple", "share": "20.0%", "note": ">45% revenue share" },
+        { "name": "Samsung", "share": "19.0%" },
+        { "name": "Xiaomi", "share": "14.0%" },
+        { "name": "Transsion", "share": "9.0%" },
+        { "name": "Oppo", "share": "8.5%" },
+        { "name": "Vivo", "share": "7.5%" },
+        { "name": "Honor", "share": "6.0%" },
+        { "name": "Huawei", "share": "5.0%" },
+        { "name": "Realme", "share": "3.5%" },
+        { "name": "Motorola / Lenovo", "share": "3.0%" }
+      ]
+    },
+    {
+      "id": "b2c_ecommerce",
+      "name": "B2C E-commerce",
+      "subtitle": "Retail & Consumer Goods",
+      "revenue": "~$2.0 Trillion",
+      "gmv": "~$6.3 Trillion",
+      "leaders": [
+        { "name": "Alibaba (Taobao/Tmall)", "share": "20.5%" },
+        { "name": "Amazon", "share": "12.5%" },
+        { "name": "PDD Holdings (Temu/Pinduoduo)", "share": "10.5%" },
+        { "name": "JD.com", "share": "8.5%" },
+        { "name": "Douyin E-commerce", "share": "5.5%" },
+        { "name": "Meituan", "share": "4.5%" },
+        { "name": "Shopify (Merchant Ecosystem)", "share": "4.0%" },
+        { "name": "Walmart Online", "share": "2.0%" },
+        { "name": "Shopee (Sea Group)", "share": "1.5%" },
+        { "name": "eBay", "share": "1.2%" },
+        { "name": "Mercado Libre", "share": "1.0%" }
+      ]
+    },
+    {
+      "id": "b2b_ecommerce",
+      "name": "B2B E-commerce",
+      "subtitle": "Wholesale Procurement",
+      "revenue": "~$500 Billion",
+      "gmv": "~$22.0 Trillion",
+      "note": "Highly Fragmented / Offline & EDI dominated",
+      "leaders": [
+        { "name": "Alibaba.com", "share": "~1.5%" },
+        { "name": "W.W. Grainger", "share": "~0.8%" },
+        { "name": "Amazon Business", "share": "~0.5%" },
+        { "name": "Fastenal", "share": "~0.4%" },
+        { "name": "Global Sources", "share": "<0.5%" },
+        { "name": "Made-in-China", "share": "<0.5%" },
+        { "name": "IndiaMART", "share": "<0.5%" }
+      ]
+    },
+    {
+      "id": "ai_chips",
+      "name": "AI Chips & GPUs",
+      "subtitle": "Data Center & AI Accelerators",
+      "revenue": "~$130 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Nvidia", "share": "82.0%" },
+        { "name": "AMD (Instinct)", "share": "7.5%" },
+        { "name": "Broadcom (Custom AI XPUs)", "share": "5.0%" },
+        { "name": "Cloud ASICs (TPU/Trainium/MTIA)", "share": "3.5%" },
+        { "name": "Intel (Gaudi)", "share": "1.0%" },
+        { "name": "Marvell Technology", "share": "1.0%" }
+      ]
+    },
+    {
+      "id": "general_semiconductors",
+      "name": "General Semiconductors",
+      "subtitle": "Memory, Mobile SoCs & CPUs",
+      "revenue": "~$470 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Samsung Electronics", "share": "13.0%" },
+        { "name": "Intel", "share": "10.0%" },
+        { "name": "SK Hynix", "share": "8.5%" },
+        { "name": "Qualcomm", "share": "7.5%" },
+        { "name": "Broadcom", "share": "7.0%" },
+        { "name": "Micron", "share": "5.0%" },
+        { "name": "AMD (Client/Embedded)", "share": "4.0%" },
+        { "name": "MediaTek", "share": "3.5%" },
+        { "name": "Texas Instruments", "share": "3.0%" },
+        { "name": "NXP Semiconductors", "share": "2.5%" },
+        { "name": "Infineon", "share": "2.5%" },
+        { "name": "STMicroelectronics", "share": "2.0%" },
+        { "name": "Analog Devices (ADI)", "share": "2.0%" }
+      ]
+    },
+    {
+      "id": "streaming_video",
+      "name": "Streaming Video",
+      "subtitle": "SVOD Platforms",
+      "revenue": "~$120 Billion",
+      "gmv": "-",
+      "leaders": [
+        { "name": "Netflix", "share": "34.0%" },
+        { "name": "Disney+ / Hulu", "share": "16.0%" },
+        { "name": "Amazon Prime Video", "share": "11.5%" },
+        { "name": "Warner Bros (Max)", "share": "9.0%" },
+        { "name": "Paramount+", "share": "4.5%" },
+        { "name": "Peacock", "share": "3.5%" },
+        { "name": "Tencent Video / iQIYI", "share": "~3.5% each" },
+        { "name": "Apple TV+", "share": "3.0%" },
+        { "name": "Crunchyroll (Sony)", "share": "1.5%" },
+        { "name": "JioCinema / Hotstar", "share": "1.2%" }
+      ]
+    },
+    {
+      "id": "web3_blockchain",
+      "name": "Web3 & Blockchain Infrastructure",
+      "subtitle": "Exchanges, Protocols & Dev Infra",
+      "revenue": "~$38 Billion",
+      "gmv": "~$3.0 Trillion (Market Cap)",
+      "leaders": [
+        { "name": "Binance", "share": "44.0%" },
+        { "name": "Coinbase", "share": "12.0%" },
+        { "name": "OKX", "share": "9.0%" },
+        { "name": "Bybit", "share": "8.0%" },
+        { "name": "Tether / Circle", "share": "6.5%" },
+        { "name": "L1/L2 Protocols (Ethereum/Solana fees)", "share": "5.5%" },
+        { "name": "Kraken", "share": "3.5%" },
+        { "name": "Robinhood Crypto", "share": "2.5%" },
+        { "name": "Developer Infra (Alchemy/Consensys/Chainlink)", "share": "2.0%" }
+      ]
+    }
+  ],
+  "highlights": [
+    {
+      "icon": "🤖",
+      "title": "The Generative AI \"Bifurcation\" (Consumer vs. Enterprise)",
+      "text": "While OpenAI maintains leadership in direct consumer subscriptions (~60%+ of web AI traffic), Anthropic (Claude) has surged to capture ~32-38% of enterprise API / coding spend (as tracked by Menlo Ventures and Ramp data), closely rivaling OpenAI in business revenue. Google Gemini captures ~18.5% through enterprise Workspace & GCP integration."
+    },
+    {
+      "icon": "🇨🇳",
+      "title": "China's Frontier AI Landscape",
+      "text": "Beyond open-weights leader DeepSeek, China's top foundation model startups—notably Zhipu AI (GLM), MiniMax (global consumer/voice apps), and Moonshot AI (Kimi's long-context breakthroughs)—collectively command ~10-12% of the global foundation model market."
+    },
+    {
+      "icon": "⛓️",
+      "title": "Web3 Asset Scale vs. Cash-Flow Capture",
+      "text": "While crypto asset market cap spans ~$3.0 Trillion with trillions in turnover, direct platform/protocol fee capture stands at ~$38 Billion, concentrated in centralized liquidity hubs (Binance, Coinbase, OKX), stablecoin reserve rails, and Layer 1/2 gas fees."
+    },
+    {
+      "icon": "🎯",
+      "title": "Digital Advertising Realignment",
+      "text": "Meta and Google now each control ~26-27% of global digital advertising, with Meta surging due to AI-driven ad performance (Advantage+). Meanwhile, ByteDance (TikTok + Douyin) and Amazon Ads have expanded significantly to claim ~8% and ~9% global shares respectively."
+    },
+    {
+      "icon": "🛍️",
+      "title": "Global E-commerce vs. Regional Nuance",
+      "text": "While Amazon commands ~38% of US e-commerce, on a global GMV basis Alibaba Group (Taobao/Tmall) leads at >20%, followed by Amazon (~12.5%) and fast-growing PDD Holdings / Temu (~10.5%)."
+    },
+    {
+      "icon": "☁️",
+      "title": "Cloud & AI Hyperscaling",
+      "text": "The Cloud Infrastructure (IaaS/PaaS) \"Big Three\" (AWS, Azure, GCP) command ~62% of enterprise cloud spend, with Azure & GCP closing the gap on AWS via generative AI workloads."
+    },
+    {
+      "icon": "💻",
+      "title": "PC Consolidation",
+      "text": "The \"Big 3\" (Lenovo, HP, and Dell) command ~60% of the entire PC hardware market, while Apple Mac captures ~9% volume with a significantly higher premium ASP (Average Selling Price)."
+    }
+  ]
+}
